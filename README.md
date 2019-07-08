@@ -5,7 +5,7 @@
 
 > Website for ITU LAN written in Vue.js
 
-### 🏠 [Homepage](itulan.kols.dk)
+### 🏠 [Homepage](https://itulan.kols.dk/)
 
 ## Install
 
