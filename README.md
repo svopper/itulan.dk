@@ -30,4 +30,3 @@ npm run deploy
 👤 **Kasper Olsen <root@kols.dk>**
 
 * Github: [@svopper](https://github.com/svopper)
-* 
