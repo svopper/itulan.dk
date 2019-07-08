@@ -1,29 +1,33 @@
-# itulan.dk
+<h1 align="center">Welcome to itulan.dk 👋</h1>
+<p>
+  <img src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-## Project setup
-```
+> Website for ITU LAN written in Vue.js
+
+### 🏠 [Homepage](itulan.kols.dk)
+
+## Install
+
+```sh
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+## Usage
+
+```sh
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+## Deployment
+
+```sh
+npm run deploy
 ```
 
-### Run your tests
-```
-npm run test
-```
+## Author
 
-### Lints and fixes files
-```
-npm run lint
-```
+👤 **Kasper Olsen <root@kols.dk>**
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* Github: [@svopper](https://github.com/svopper)
+* 
