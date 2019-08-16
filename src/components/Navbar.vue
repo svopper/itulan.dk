@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">
+  <nav id="nav">
     <router-link class="router-link" to="/">
       <span class="router-link-text">Home</span>
     </router-link>
@@ -18,7 +18,7 @@
     <router-link class="router-link" to="/contact">
       <span class="router-link-text">Contact</span>
     </router-link>
-  </div>
+  </nav>
 </template>
 
 <style>
@@ -60,5 +60,8 @@
 #nav a.router-link-exact-active span {
   color: #2f3eac;
   background-color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
 }
 </style>

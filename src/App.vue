@@ -24,4 +24,12 @@ export default {
   padding: 2rem;
   position: relative;
 }
+
+@media only screen and (max-width: 800px) {
+  .router-view {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 15px 2% 50px 2%;
+  }
+}
 </style>
