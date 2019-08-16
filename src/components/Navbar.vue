@@ -47,6 +47,7 @@
   font-weight: bold;
   color: #fff;
   padding: 1rem 1rem;
+  letter-spacing: 5px;
 }
 
 #nav a:visited {
@@ -63,5 +64,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+}
+@media only screen and (max-width: 970px) {
+  #nav a span {
+    letter-spacing: initial;
+  }
 }
 </style>
