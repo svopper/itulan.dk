@@ -6,10 +6,11 @@ import Tournaments from "./views/Tournaments.vue";
 import StreamComponent from "./views/Stream.vue";
 import FAQ from "./views/FAQ.vue";
 import Contact from "./views/Contact.vue";
+import NotFound from "./views/NotFound.vue";
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
@@ -39,9 +40,15 @@ export default new Router({
       component: FAQ
     },
     {
-      path: "/Contact",
+      path: "/contact",
       name: "contact",
       component: Contact
+    },
+    {
+      path: "*",
+      component: NotFound
     }
   ]
 });
+
+export default router;
