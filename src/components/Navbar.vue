@@ -1,73 +1,46 @@
 <template>
-  <nav id="nav">
-    <router-link class="router-link" to="/">
-      <span class="router-link-text">Home</span>
-    </router-link>
-    <router-link class="router-link" to="/tickets">
-      <span class="router-link-text">Tickets</span>
-    </router-link>
-    <router-link class="router-link" to="/tournaments">
-      <span class="router-link-text">Tournaments</span>
-    </router-link>
-    <router-link class="router-link" to="/stream">
-      <span class="router-link-text">Stream</span>
-    </router-link>
-    <router-link class="router-link" to="/faq">
-      <span class="router-link-text">FAQ</span>
-    </router-link>
-    <router-link class="router-link" to="/contact">
-      <span class="router-link-text">Contact</span>
-    </router-link>
+  <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
+    <div class="flex items-center flex-no-shrink text-white mr-6">
+      <router-link class="router-link" to="/">
+        <span class="router-link-text">ITU LAN</span>
+      </router-link>
+    </div>
+    <div class="block sm:hidden">
+      <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+      <div class="text-sm sm:flex-grow">
+        <router-link class="router-link" to="/news">
+          <span class="router-link-text">News</span>
+        </router-link>
+        <router-link class="router-link" to="/tournaments">
+          <span class="router-link-text">Tournaments</span>
+        </router-link>
+        <router-link class="router-link" to="/information">
+          <span class="router-link-text">Information</span>
+        </router-link>
+      </div>
+    </div>
   </nav>
 </template>
 
-<style>
-.router-link {
-  color: #fff;
-}
-
-.router-link::after {
-  content: " | ";
-}
-
-.router-link:last-child:after {
-  content: "";
-}
-
-#nav {
-  padding: 30px 30px 15px 30px;
-  text-align: center;
-}
-
-#nav a {
-  text-decoration: none;
-}
-
-#nav a span {
-  font-weight: bold;
-  color: #fff;
-  padding: 1rem 1rem;
-  letter-spacing: 5px;
-}
-
-#nav a:visited {
-  text-decoration: none;
-}
-
-#nav a:active {
-  text-decoration: none;
-}
-
-#nav a.router-link-exact-active span {
-  color: #2f3eac;
-  background-color: #fff;
-}
-
-@media only screen and (max-width: 800px) {
-}
-@media only screen and (max-width: 970px) {
-  #nav a span {
-    letter-spacing: initial;
+<script>
+export default {
+  data() {
+    return {
+      open: false,
+    }
+  },
+  methods: {
+  	toggle() {
+    	this.open = !this.open
+    }
   }
 }
+</script>
+
+<style scoped>
+
 </style>

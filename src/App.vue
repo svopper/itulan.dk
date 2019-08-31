@@ -16,20 +16,10 @@ export default {
 
 <style>
 .router-view {
-  background-color: #fff;
-  color: #000;
-  height: 80vh;
-  overflow-y: scroll;
-  margin: 0 5%;
-  padding: 2rem;
-  position: relative;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 800px) {
-  .router-view {
-    height: 100%;
-    overflow-y: initial;
-    margin: 15px 2% 50px 2%;
-  }
+  
 }
 </style>

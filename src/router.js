@@ -1,11 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
-import Tickets from "./views/Tickets.vue";
+import News from './views/News.vue';
 import Tournaments from "./views/Tournaments.vue";
-import StreamComponent from "./views/Stream.vue";
-import FAQ from "./views/FAQ.vue";
-import Contact from "./views/Contact.vue";
+import Information from "./views/Information.vue";
 import NotFound from "./views/NotFound.vue";
 
 Vue.use(Router);
@@ -23,11 +21,11 @@ const router = new Router({
       }
     },
     {
-      path: "/tickets",
-      name: "tickets",
-      component: Tickets,
+      path: "/news",
+      name: "news",
+      component: News,
       meta: {
-        title: "ITU LAN - Tickets"
+        title: "ITU LAN - News"
       }
     },
     {
@@ -39,27 +37,11 @@ const router = new Router({
       }
     },
     {
-      path: "/stream",
-      name: "stream",
-      component: StreamComponent,
+      path: "/information",
+      name: "information",
+      component: Information,
       meta: {
-        title: "ITU LAN - Stream"
-      }
-    },
-    {
-      path: "/faq",
-      name: "faq",
-      component: FAQ,
-      meta: {
-        title: "ITU LAN - FAQ"
-      }
-    },
-    {
-      path: "/contact",
-      name: "contact",
-      component: Contact,
-      meta: {
-        title: "ITU LAN - Contact"
+        title: "ITU LAN - Information"
       }
     },
     {

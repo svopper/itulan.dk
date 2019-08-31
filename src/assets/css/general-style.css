@@ -1,3 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 body {
   background-color: #2f3eac;
 }
@@ -11,13 +17,10 @@ body {
 
 .router-view > h1,
 .router-link-text {
-  text-transform: uppercase;
+  
 }
 .router-view > h1 {
-  text-align: center;
-  font-size: 4rem;
-  margin-top: 0px;
-  font-weight: bold;
+  
 }
 
 .center-image {
@@ -28,6 +31,6 @@ body {
 
 @media only screen and (max-width: 800px) {
   .router-view > h1 {
-    font-size: 3rem;
+    
   }
 }
