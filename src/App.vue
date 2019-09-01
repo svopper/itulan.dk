@@ -16,10 +16,9 @@ export default {
 
 <style>
 .router-view {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 @media only screen and (max-width: 800px) {
-  
 }
 </style>
