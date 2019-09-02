@@ -1,34 +1,37 @@
 <template>
-  <header class="v-header container">
-    <div class="fullscreen-video-wrap">
-      <video
-        src="https://dreamhackcdn.com/videos/d4bf6378-c268-464c-b169-c5174ed3baff/original.mp4"
-        autoplay
-        loop
-        muted
-      ></video>
-    </div>
-    <div class="header-overlay"></div>
-    <div class="header-content text-md-center">
-      <h1>25-27 October</h1>
-      <h2>Fall 2019</h2>
-    </div>
-  </header>
+  <div class="home">
+    <header class="v-header container">
+      <div class="fullscreen-video-wrap">
+        <video src="http://dev.itulan.dk/vid/bg.mp4" autoplay loop muted playsinline></video>
+      </div>
+      <div class="header-overlay"></div>
+      <div class="header-content text-md-center">
+        <h1>25-27 October</h1>
+        <h2>Fall 2019</h2>
+        <div id="ticket-circle">
+          <text-circle message="Buy tickets here!" radius="230px" />
+        </div>
+      </div>
+    </header>
+  </div>
 </template>
 
-https://dreamhackcdn.com/videos/d4bf6378-c268-464c-b169-c5174ed3baff/original.mp4
-<style scoped>
-@font-face {
-  font-family: Anton;
-  src: url("../assets/fonts/Anton/Anton-Regular.ttf");
-}
+<script>
+import TextCircle from "../components/Circle";
+export default {
+  components: {
+    TextCircle
+  }
+};
+</script>
 
+<style scoped>
 * {
   box-sizing: border-box;
 }
 
 .v-header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   height: 100vh;
@@ -36,7 +39,7 @@ https://dreamhackcdn.com/videos/d4bf6378-c268-464c-b169-c5174ed3baff/original.mp
   display: flex;
   align-items: center;
   color: #fff;
-  z-index: -10;
+  /* z-index: 0; */
 }
 
 .container {
@@ -44,6 +47,7 @@ https://dreamhackcdn.com/videos/d4bf6378-c268-464c-b169-c5174ed3baff/original.mp
   padding-left: 1rem;
   padding-right: 1rem;
   margin: auto;
+  margin-top: -62px;
   text-align: center;
 }
 
@@ -74,12 +78,12 @@ https://dreamhackcdn.com/videos/d4bf6378-c268-464c-b169-c5174ed3baff/original.mp
   z-index: 2;
   margin: 0 auto;
   font-family: Anton, Arial, Helvetica, sans-serif;
-  letter-spacing: 7px;
 }
 
 .header-content h1,
 .header-content h2 {
   text-transform: uppercase;
+  letter-spacing: 7px;
 }
 
 .header-content h1 {
@@ -90,12 +94,53 @@ https://dreamhackcdn.com/videos/d4bf6378-c268-464c-b169-c5174ed3baff/original.mp
 .header-content h2 {
   font-size: 5rem;
   margin-bottom: 0;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+#ticket-circle {
+  position: fixed;
+  z-index: 1000;
+  right: 10%;
 }
 
 @media (max-width: 960px) {
   .container {
     padding-right: 3rem;
     padding-left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-content h1 {
+    font-size: 4.5rem;
+  }
+
+  .header-content h2 {
+    font-size: 3rem;
+  }
+
+  #ticket-circle {
+    right: 13%;
+  }
+
+  .header-content {
+    margin-top: -250px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .header-content {
+    margin-top: -200px;
   }
 }
 </style>
