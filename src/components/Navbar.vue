@@ -3,8 +3,7 @@
     class="navbar"
     v-bind:class="{open: isMobile && mobileNavOpen}"
     toggleable="lg"
-    type="dark
-  "
+    type="dark"
     variant="info"
   >
     <b-navbar-brand href="/">
@@ -79,6 +78,20 @@ export default {
 .navbar {
   z-index: 100;
 }
+
+.navbar-dark .navbar-toggler {
+  border: none !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  color: #fff !important;
+  
+}
+
+.navbar-toggler-icon {
+  color: #fff !important;
+}
+
 .bg-info {
   background-color: transparent !important;
 }
