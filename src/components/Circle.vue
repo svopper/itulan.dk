@@ -67,7 +67,7 @@ a:hover {
   display: block;
   margin: 0 auto;
   font-size: 2.5rem;
-  width: 50%;
+  width: 70%;
   letter-spacing: 2px;
   text-align: center;
   line-height: 40px;

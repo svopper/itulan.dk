@@ -85,7 +85,6 @@ export default {
 
 .navbar-dark .navbar-toggler-icon {
   color: #fff !important;
-  
 }
 
 .navbar-toggler-icon {
