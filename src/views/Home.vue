@@ -9,7 +9,7 @@
         <h1>25-27 October</h1>
         <h2>Fall 2019</h2>
         <div id="ticket-circle">
-          <text-circle message="Buy tickets here!" radius="230px" />
+          <text-circle message="Buy ticket here!" radius="230px" />
         </div>
       </div>
     </header>
