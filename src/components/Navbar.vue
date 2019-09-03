@@ -48,7 +48,24 @@
 
 
 <script>
+import {
+  BNavbar,
+  BCollapse,
+  BNavbarNav,
+  BNavItem,
+  BNavbarToggle,
+  BNavbarBrand
+} from "bootstrap-vue";
+
 export default {
+  components: {
+    BNavbar,
+    BCollapse,
+    BNavbarNav,
+    BNavItem,
+    BNavbarToggle,
+    BNavbarBrand
+  },
   data() {
     return {
       windowWidth: null,
