@@ -24,7 +24,7 @@ npm run serve
 ```sh
 npm run deploy
 ```
-
+Gets deployed to [https://itulan.kols.dk/](https://itulan.kols.dk/)
 ## Author
 
 👤 **Kasper Olsen <root@kols.dk>**
