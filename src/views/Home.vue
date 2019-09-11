@@ -47,7 +47,7 @@ export default {
   padding-left: 1rem;
   padding-right: 1rem;
   margin: auto;
-  margin-top: -62px;
+  margin-top: -58px; /* navbar height = 58px */
   text-align: center;
 }
 
