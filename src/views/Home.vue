@@ -10,7 +10,9 @@
         <h1 data-aos="fade-right" data-aos-delay="100">October</h1>
         <h2 data-aos="fade-right" data-aos-delay="200" class="hollow-text">Fall 2019</h2>
         <div data-aos="fade-left" id="ticket-circle">
-          <text-circle message="Buy ticket here!" radius="180px" />
+          <a href="https://itulan.safeticket.dk/itulanspring19" target="_blank">
+            <text-circle message="Buy ticket here!" radius="180px" />
+          </a>
         </div>
       </div>
     </header>
@@ -29,6 +31,14 @@ export default {
 <style scoped>
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 .v-header {

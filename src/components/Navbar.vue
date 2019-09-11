@@ -39,6 +39,9 @@
         <router-link class="router-link" to="/information">
           <span class="router-link-text">Information</span>
         </router-link>
+        <router-link class="router-link" to="/tickets">
+          <span class="router-link-text">Tickets</span>
+        </router-link>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->

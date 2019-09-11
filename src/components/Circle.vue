@@ -1,13 +1,8 @@
 <template>
   <div class="circle-outline">
-    <a
-      href="https://itulan.safeticket.dk/itulanspring19"
-      target="_blank"
-      :style="style"
-      class="circle"
-    >
+    <div :style="style" class="circle">
       <span class="message">{{ message }}</span>
-    </a>
+    </div>
   </div>
 </template>
 
@@ -36,14 +31,6 @@ export default {
 </script>
 
 <style scoped>
-a {
-  color: inherit;
-}
-a:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
 .circle {
   margin: 1.5rem;
   background-color: #0800ff;

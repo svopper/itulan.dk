@@ -75,10 +75,6 @@ h3 {
   padding: 15px;
 }
 
-.information p {
-  font-size: 1rem;
-}
-
 .address > p {
   margin-top: 0;
   margin-bottom: 0;
