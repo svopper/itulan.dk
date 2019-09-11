@@ -12,7 +12,7 @@ export default {
     radius: {
       type: String,
       required: true,
-      default: "230px"
+      default: "200px"
     },
     message: {
       type: String,
@@ -53,7 +53,7 @@ a:hover {
 .circle:hover {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  transform: scale(1.2);
+  transform: scale(1.27);
 }
 
 .circle-outline {
@@ -66,7 +66,7 @@ a:hover {
   text-transform: uppercase;
   display: block;
   margin: 0 auto;
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 70%;
   letter-spacing: 2px;
   text-align: center;

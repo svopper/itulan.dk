@@ -9,7 +9,7 @@
         <h1>25-27 October</h1>
         <h2>Fall 2019</h2>
         <div id="ticket-circle">
-          <text-circle message="Buy ticket here!" radius="230px" />
+          <text-circle message="Buy ticket here!" radius="180px" />
         </div>
       </div>
     </header>
@@ -84,16 +84,16 @@ export default {
 .header-content h2 {
   text-transform: uppercase;
   letter-spacing: 7px;
+  margin-bottom: 0;
 }
 
 .header-content h1 {
   font-size: 7rem;
-  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .header-content h2 {
   font-size: 5rem;
-  margin-bottom: 0;
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #fff;
