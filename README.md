@@ -24,7 +24,13 @@ npm run serve
 ```sh
 npm run deploy
 ```
+
 Gets deployed to [https://itulan.kols.dk/](https://itulan.kols.dk/)
+
+## Follow the Development
+
+I try to use a Trello board as much as possible. Find it [here](https://trello.com/b/wMbMTeIp/itulandk).
+
 ## Author
 
 👤 **Kasper Olsen <root@kols.dk>**
