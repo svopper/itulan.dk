@@ -34,3 +34,7 @@ body {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #fff;
 }
+
+button {
+  padding: 0;
+}

@@ -179,7 +179,7 @@ button {
 
   .router-link :not(.router-link-home) {
     margin: 0 auto;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
