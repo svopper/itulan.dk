@@ -12,9 +12,22 @@
       </router-link>
     </b-navbar-brand>
 
-    <b-navbar-toggle @click="toggleOpen" target="nav-collapse"></b-navbar-toggle>
+    <button
+      @click="toggleOpen"
+      target="nav-collapse"
+      aria-label="Toggle navigation"
+      aria-controls="nav-collapse"
+      aria-expanded="false"
+      v-bind:class="{'is-active': mobileNavOpen}"
+      class="hamburger hamburger--collapse"
+      type="button"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
 
-    <b-collapse id="nav-collapse" is-nav>
+    <b-collapse v-model="mobileNavOpen" id="nav-collapse" is-nav>
       <b-navbar-nav>
         <router-link class="router-link" to="/news">
           <span class="router-link-text">News</span>
@@ -29,17 +42,17 @@
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="some-buttons ml-auto">
-        <b-nav-item class="some-button" href="https://discord.gg/nSFXWQN">
-          <img src="../assets/img/discord_icon.svg" height="30px" />
+        <b-nav-item class="some-button" href="https://discord.gg/nSFXWQN" target="_blank">
+          <img src="../assets/img/discord_icon.svg" height="25px" />
         </b-nav-item>
-        <b-nav-item class="some-button" href="https://www.facebook.com/itulan">
-          <img src="../assets/img/facebook_icon.svg" height="30px" />
+        <b-nav-item class="some-button" href="https://www.facebook.com/itulan" target="_blank">
+          <img src="../assets/img/facebook_icon.svg" height="25px" />
         </b-nav-item>
-        <b-nav-item class="some-button" href="https://www.instagram.com/itulan/">
-          <img src="../assets/img/insta_icon.svg" height="30px" />
+        <b-nav-item class="some-button" href="https://www.instagram.com/itulan/" target="_blank">
+          <img src="../assets/img/insta_icon.svg" height="25px" />
         </b-nav-item>
-        <b-nav-item class="some-button" href="https://www.twitch.tv/itulan">
-          <img src="../assets/img/twitch_icon.svg" height="30px" />
+        <b-nav-item class="some-button" href="https://www.twitch.tv/itulan" target="_blank">
+          <img src="../assets/img/twitch_icon.svg" height="25px" />
         </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
@@ -53,7 +66,6 @@ import {
   BCollapse,
   BNavbarNav,
   BNavItem,
-  BNavbarToggle,
   BNavbarBrand
 } from "bootstrap-vue";
 
@@ -63,7 +75,6 @@ export default {
     BCollapse,
     BNavbarNav,
     BNavItem,
-    BNavbarToggle,
     BNavbarBrand
   },
   data() {
@@ -96,6 +107,10 @@ export default {
   z-index: 100;
 }
 
+button {
+  outline: none !important;
+}
+
 .navbar-dark .navbar-toggler {
   border: none !important;
 }
@@ -119,6 +134,7 @@ export default {
 .some-button {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  margin: 0 20px;
 }
 
 .some-button:hover {
@@ -133,6 +149,10 @@ export default {
   text-decoration: none;
 }
 
+.router-link :not(.router-link-home) {
+  font-size: 14px;
+}
+
 .router-link-home {
   font-family: Anton, Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
@@ -145,7 +165,7 @@ export default {
 @media only screen and (max-width: 992px) {
   .some-buttons {
     flex-direction: initial;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .router-link-text {
@@ -163,6 +183,20 @@ export default {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .router-link-active :not(.router-link-home) {
+    color: initial;
+    -webkit-text-stroke-width: initial;
+    -webkit-text-stroke-color: initial;
+  }
+
+  .some-button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 </style>

@@ -6,9 +6,10 @@
       </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
-        <h1>25-27 October</h1>
-        <h2>Fall 2019</h2>
-        <div id="ticket-circle">
+        <h2 data-aos="fade-right" class="hollow-text">25-27</h2>
+        <h1 data-aos="fade-right" data-aos-delay="100" class="month">October</h1>
+        <h2 data-aos="fade-right" data-aos-delay="200" class="hollow-text">Fall 2019</h2>
+        <div data-aos="fade-left" id="ticket-circle">
           <text-circle message="Buy ticket here!" radius="180px" />
         </div>
       </div>
@@ -39,7 +40,6 @@ export default {
   display: flex;
   align-items: center;
   color: #fff;
-  /* z-index: 0; */
 }
 
 .container {
@@ -94,9 +94,6 @@ export default {
 
 .header-content h2 {
   font-size: 5rem;
-  color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #fff;
 }
 
 #ticket-circle {
@@ -104,7 +101,7 @@ export default {
   right: 10%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 991px) {
   .container {
     padding-right: 3rem;
     padding-left: 3rem;

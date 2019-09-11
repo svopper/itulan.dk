@@ -1,6 +1,11 @@
 <template>
   <div class="circle-outline">
-    <a href="https://itulan.safeticket.dk/itulanspring19" :style="style" class="circle">
+    <a
+      href="https://itulan.safeticket.dk/itulanspring19"
+      target="_blank"
+      :style="style"
+      class="circle"
+    >
       <span class="message">{{ message }}</span>
     </a>
   </div>

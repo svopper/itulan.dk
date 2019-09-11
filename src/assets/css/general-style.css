@@ -28,3 +28,9 @@ body {
 .bold {
   font-weight: 900;
 }
+
+.hollow-text {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
