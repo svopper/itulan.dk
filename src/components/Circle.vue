@@ -69,6 +69,7 @@ a:hover {
 
 .message {
   text-transform: uppercase;
+  font-family: Anton, Arial, Helvetica, sans-serif;
   display: block;
   margin: 0 auto;
   font-size: 2rem;

@@ -12,6 +12,29 @@ body {
   background-color: #031d44;
 }
 
+h1,
+h2,
+h3 {
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-family: Anton, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
 #app {
   font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

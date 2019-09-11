@@ -7,7 +7,7 @@
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
         <h2 data-aos="fade-right" class="hollow-text">25-27</h2>
-        <h1 data-aos="fade-right" data-aos-delay="100" class="month">October</h1>
+        <h1 data-aos="fade-right" data-aos-delay="100">October</h1>
         <h2 data-aos="fade-right" data-aos-delay="200" class="hollow-text">Fall 2019</h2>
         <div data-aos="fade-left" id="ticket-circle">
           <text-circle message="Buy ticket here!" radius="180px" />
@@ -77,23 +77,15 @@ export default {
 .header-content {
   z-index: 2;
   margin: 0 auto;
-  font-family: Anton, Arial, Helvetica, sans-serif;
 }
 
 .header-content h1,
 .header-content h2 {
-  text-transform: uppercase;
-  letter-spacing: 7px;
   margin-bottom: 0;
 }
 
 .header-content h1 {
-  font-size: 7rem;
   margin-top: 0;
-}
-
-.header-content h2 {
-  font-size: 5rem;
 }
 
 #ticket-circle {

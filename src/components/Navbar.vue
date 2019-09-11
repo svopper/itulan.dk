@@ -13,6 +13,7 @@
     </b-navbar-brand>
 
     <button
+      v-show="isMobile"
       @click="toggleOpen"
       target="nav-collapse"
       aria-label="Toggle navigation"
@@ -51,8 +52,8 @@
         <b-nav-item class="some-button" href="https://www.instagram.com/itulan/" target="_blank">
           <img src="../assets/img/insta_icon.svg" height="25px" />
         </b-nav-item>
-        <b-nav-item class="some-button" href="https://www.twitch.tv/itulan" target="_blank">
-          <img src="../assets/img/twitch_icon.svg" height="25px" />
+        <b-nav-item class="some-button" href="https://www.youtube.com/itulan" target="_blank">
+          <img src="../assets/img/youtube_icon.png" height="20px" />
         </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
@@ -89,6 +90,8 @@ export default {
     }
   },
   mounted() {
+    this.windowWidth = window.innerWidth;
+
     window.addEventListener("resize", () => {
       this.windowWidth = window.innerWidth;
     });
@@ -134,7 +137,7 @@ button {
 .some-button {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  margin: 0 20px;
+  margin: 0 5px;
 }
 
 .some-button:hover {
@@ -197,6 +200,8 @@ button {
   .some-button {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 </style>

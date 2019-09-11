@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1>Tournaments</h1>
+    <h3>Tournaments</h3>
   </div>
 </template>

@@ -1,17 +1,13 @@
 <template>
-   <div>
-      <h1>News</h1>
-      <post
-      v-for="post in posts"
-      :key="post.id"
-      :date="formatDate(post.created_time)"
-      :message="post.message"
-    />
-   </div>
+  <div class="news">
+    <h3>News</h3>
+    <post v-for="post in posts" :key="post.id" :date="post.created_time" :message="post.message" />
+  </div>
 </template>
 
 <script>
 import axios from "axios";
+import formatDistance from "date-fns/formatDistance";
 import Post from "@/components/Post";
 import { FACEBOOK_ACCESS_TOKEN, FACEBOOK_PAGE_ID } from "../../config/keys";
 export default {
@@ -27,8 +23,9 @@ export default {
   methods: {
     formatDate(date) {
       let parsedDate = new Date(Date.parse(date));
-      return `${parsedDate.getFullYear()}/${parsedDate.getMonth() +
-        1}/${parsedDate.getDate()} - ${parsedDate.getHours()}:${parsedDate.getMinutes()}`;
+      return formatDistance(parsedDate, new Date());
+      // return `${parsedDate.getFullYear()}/${parsedDate.getMonth() +
+      //   1}/${parsedDate.getDate()}`;
     }
   },
   async mounted() {
@@ -44,3 +41,11 @@ export default {
   }
 };
 </script>
+
+<style>
+.news {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 15px;
+}
+</style>
