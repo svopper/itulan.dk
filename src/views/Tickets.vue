@@ -1,6 +1,9 @@
 <template>
   <div class="tickets">
     <h1 class="title">Buy Ticket</h1>
+    <a class="ticket-link" href="https://itulan.safeticket.dk/itulanspring19" target="_blank">
+      <text-circle message="Buy ticket here!" radius="180px" font-size="2rem" />
+    </a>
 
     <div class="steps">
       <h3 class="hollow-text">1.</h3>
@@ -16,21 +19,21 @@
       <h3>Find seat</h3>
       <p>Choose your table and seat number during the booking process. The table number from your booking is final. Ignore any other table numbers than the ones posted on ITU LAN posters on the tables.</p>
       <img
-        height="300px"
+        width="100%"
         src="http://giphygifs.s3.amazonaws.com/media/sIIhZliB2McAo/giphy.gif"
         data-aos="fade-up"
         data-aos-delay="200"
         data-aos-anchor="#step-one"
       />
       <img
-        height="300px"
+        width="100%"
         src="http://giphygifs.s3.amazonaws.com/media/sIIhZliB2McAo/giphy.gif"
         data-aos="fade-up"
         data-aos-delay="400"
         data-aos-anchor="#step-one"
       />
       <img
-        height="300px"
+        width="100%"
         src="http://giphygifs.s3.amazonaws.com/media/sIIhZliB2McAo/giphy.gif"
         data-aos="fade-up"
         data-aos-delay="600"
@@ -42,19 +45,47 @@
         <h3 class="hollow-text">2.</h3>
         <h3>Buy Ticket</h3>
         <p>
-          <a href="https://itulan.safeticket.dk/itulanspring19" target="_blank">But your ticket here</a>
+          <a
+            id="inline-link"
+            href="https://itulan.safeticket.dk/itulanspring19"
+            target="_blank"
+          >But your ticket here</a>
         </p>
       </div>
       <div id="step-three">
         <h3 class="hollow-text">3.</h3>
         <h3>Check-in</h3>
-        <p>When you arrive please check-in at 2A30. Here you will also receive your exclusive ITU LAN wristband.</p>
+        <p>When you arrive, please check-in at 2A30. Here you will also receive your exclusive ITU LAN wristband.</p>
       </div>
     </div>
   </div>
 </template>
 
+<script>
+import TextCircle from "../components/Circle";
+export default {
+  components: {
+    TextCircle
+  }
+};
+</script>
+
+
 <style scoped>
+.ticket-link {
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.ticket-link {
+  color: inherit !important;
+}
+
+.ticket-link:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 .tickets {
   margin: 0 auto;
   max-width: 800px;
@@ -97,5 +128,44 @@
 
 img {
   margin: 10px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tickets h3 {
+    letter-spacing: 1px;
+  }
+
+  .ticket-link {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .title {
+    font-size: 4rem;
+    padding-bottom: 0;
+  }
+
+  .steps {
+    margin-bottom: 3rem;
+  }
+
+  .steps h3 {
+    font-size: 1.3rem;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .flex-wrapper > div {
+    flex-basis: 100%;
+  }
+
+  #step-one,
+  #step-two {
+    margin-bottom: 2rem;
+  }
 }
 </style>

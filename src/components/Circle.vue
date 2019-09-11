@@ -1,7 +1,7 @@
 <template>
   <div class="circle-outline">
-    <div :style="style" class="circle">
-      <span class="message">{{ message }}</span>
+    <div :style="styleCircle" class="circle">
+      <span :style="styleMessage" class="message">{{ message }}</span>
     </div>
   </div>
 </template>
@@ -14,16 +14,25 @@ export default {
       required: true,
       default: "200px"
     },
+    fontSize: {
+      type: String,
+      default: "2rem"
+    },
     message: {
       type: String,
       required: true
     }
   },
   computed: {
-    style() {
+    styleCircle() {
       return {
         width: this.radius,
         height: this.radius
+      };
+    },
+    styleMessage() {
+      return {
+        fontSize: this.fontSize
       };
     }
   }
@@ -59,11 +68,10 @@ export default {
   font-family: Anton, Arial, Helvetica, sans-serif;
   display: block;
   margin: 0 auto;
-  font-size: 2rem;
   width: 70%;
   letter-spacing: 2px;
   text-align: center;
-  line-height: 40px;
+  line-height: 120%;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }

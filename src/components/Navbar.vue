@@ -47,16 +47,16 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="some-buttons ml-auto">
         <b-nav-item class="some-button" href="https://discord.gg/nSFXWQN" target="_blank">
-          <img src="../assets/img/discord_icon.svg" height="25px" />
+          <img src="../assets/img/socialmedia/discord_icon.svg" height="25px" />
         </b-nav-item>
         <b-nav-item class="some-button" href="https://www.facebook.com/itulan" target="_blank">
-          <img src="../assets/img/facebook_icon.svg" height="25px" />
+          <img src="../assets/img/socialmedia/facebook_icon.svg" height="25px" />
         </b-nav-item>
         <b-nav-item class="some-button" href="https://www.instagram.com/itulan/" target="_blank">
-          <img src="../assets/img/insta_icon.svg" height="25px" />
+          <img src="../assets/img/socialmedia/insta_icon.svg" height="25px" />
         </b-nav-item>
         <b-nav-item class="some-button" href="https://www.youtube.com/itulan" target="_blank">
-          <img src="../assets/img/youtube_icon.png" height="20px" />
+          <img src="../assets/img/socialmedia/youtube_icon.png" height="20px" />
         </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
