@@ -27,7 +27,7 @@ export default {
     return {
       majors: [
         {
-          title: "Counter Strike: Global Offence",
+          title: "Counter-Strike: Global Offence",
           url:
             "https://widget.toornament.com/tournaments/2811126039466532864/registration?_locale=en_US&theme=discipline",
           description:
