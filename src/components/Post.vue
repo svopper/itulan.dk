@@ -19,8 +19,11 @@ export default {
       let regex = new RegExp(expression);
       var res = post.match(expression);
       if (res !== null) {
+        res.forEach(() => {
+          post = post.replace(regex, "");
+        });
         res.forEach(m => {
-          post = post.replace(regex, `<a target="_blank" href="${m}">LINK</a>`);
+          post = `${post}<br><a target="_blank" href="${m}">Link</a>`;
         });
       }
       return post;
