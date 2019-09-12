@@ -1,5 +1,6 @@
 <template>
   <div class="information">
+    <h1>Information</h1>
     <h3>Where</h3>
     <p>ITU LAN Fall 2019 takes place from October 25th to October 27th at the IT University of Copenhagen.</p>
     <h3>CONTACTING CREW</h3>
@@ -70,7 +71,7 @@ h3 {
 }
 
 .information {
-  margin: 0 auto;
+  margin: 80px auto;
   max-width: 600px;
   padding: 15px;
 }

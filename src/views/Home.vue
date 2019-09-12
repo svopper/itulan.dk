@@ -57,7 +57,7 @@ a:hover {
   padding-left: 1rem;
   padding-right: 1rem;
   margin: auto;
-  margin-top: -58px; /* navbar height = 58px */
+  /*margin-top: -58px; /* navbar height = 58px */
   text-align: center;
 }
 
@@ -80,8 +80,9 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .header-content {

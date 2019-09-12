@@ -12,7 +12,6 @@
 
 <script>
 import axios from "axios";
-import formatDistance from "date-fns/formatDistance";
 import Post from "@/components/Post";
 import { FACEBOOK_ACCESS_TOKEN, FACEBOOK_PAGE_ID } from "../../config/keys";
 import LoadingSpinner from "../components/LoadingSpinner";
@@ -27,12 +26,6 @@ export default {
       posts: [],
       isLoading: false
     };
-  },
-  methods: {
-    formatDate(date) {
-      let parsedDate = new Date(Date.parse(date));
-      return formatDistance(parsedDate, new Date());
-    }
   },
   async mounted() {
     this.isLoading = true;
@@ -52,7 +45,7 @@ export default {
 
 <style>
 .news {
-  margin: 0 auto;
+  margin: 80px auto;
   max-width: 600px;
   padding: 15px;
 }

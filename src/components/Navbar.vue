@@ -8,7 +8,7 @@
   >
     <b-navbar-brand href="/">
       <router-link class="router-link" to="/">
-        <span class="router-link-home">ITU LAN</span>
+        <span @click="closeMenu" class="router-link-home">ITU LAN</span>
       </router-link>
     </b-navbar-brand>
 
@@ -30,18 +30,11 @@
 
     <b-collapse v-model="mobileNavOpen" id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <router-link class="router-link" to="/news">
-          <span class="router-link-text">News</span>
-        </router-link>
-        <router-link class="router-link" to="/tournaments">
-          <span class="router-link-text">Tournaments</span>
-        </router-link>
-        <router-link class="router-link" to="/information">
-          <span class="router-link-text">Information</span>
-        </router-link>
-        <router-link class="router-link" to="/tickets">
-          <span class="router-link-text">Tickets</span>
-        </router-link>
+        <span v-for="route in routes" :key="route.name">
+          <router-link class="router-link" :to="route.path">
+            <span @click="toggleOpen" class="router-link-text">{{ route.name }}</span>
+          </router-link>
+        </span>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -89,7 +82,12 @@ export default {
   },
   methods: {
     toggleOpen() {
-      this.mobileNavOpen = !this.mobileNavOpen;
+      if (this.isMobile) {
+        this.mobileNavOpen = !this.mobileNavOpen;
+      }
+    },
+    closeMenu() {
+      this.mobileNavOpen = false;
     }
   },
   mounted() {
@@ -102,6 +100,18 @@ export default {
   computed: {
     isMobile() {
       return this.windowWidth < 992;
+    },
+    routes() {
+      let allRoutes = this.$router.options.routes;
+      let relevantRoutes = allRoutes.filter(r => {
+        return (
+          r.name === "news" ||
+          r.name === "tournaments" ||
+          r.name === "information" ||
+          r.name === "tickets"
+        );
+      });
+      return relevantRoutes;
     }
   }
 };
@@ -111,6 +121,10 @@ export default {
 <style scoped>
 .navbar {
   z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 button {
@@ -159,6 +173,10 @@ button {
   font-size: 14px;
 }
 
+.router-link-text {
+  text-transform: uppercase;
+}
+
 .router-link-home {
   font-family: Anton, Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
@@ -177,6 +195,7 @@ button {
   .router-link-text {
     font-family: "Anton", Arial, Helvetica, sans-serif;
     text-align: center;
+    line-height: 0.5;
   }
 
   .router-link-active span {

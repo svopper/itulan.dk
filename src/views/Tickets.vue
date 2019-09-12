@@ -87,11 +87,10 @@ export default {
 }
 
 .tickets {
-  margin: 0 auto;
+  margin: 80px auto;
   max-width: 800px;
   padding: 15px;
   text-align: center;
-  margin-bottom: 80px;
 }
 
 .tickets h3 {

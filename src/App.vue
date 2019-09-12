@@ -15,6 +15,4 @@ export default {
 </script>
 
 <style>
-@media only screen and (max-width: 800px) {
-}
 </style>

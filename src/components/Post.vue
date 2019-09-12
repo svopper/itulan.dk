@@ -3,9 +3,6 @@
     <div class="fb-post">
       <p class="date">{{ formattedDate }}</p>
       <p v-html="parsedPost" class="message"></p>
-      <a
-        href="stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url"
-      >lik</a>
     </div>
   </div>
 </template>
@@ -20,19 +17,17 @@ export default {
       let post = this.message;
       let expression = /\bhttps?:\/\/\S+/gi;
       let regex = new RegExp(expression);
-
       var res = post.match(expression);
-
       if (res !== null) {
         res.forEach(m => {
           post = post.replace(regex, `<a target="_blank" href="${m}">LINK</a>`);
         });
       }
-
       return post;
     },
     formattedDate() {
-      let parsedDate = Date.parse(this.date);
+      let trimmedDate = this.date.slice(0, -5);
+      let parsedDate = new Date(trimmedDate);
       return `${formatDistance(parsedDate, new Date())} ago`;
     }
   }
