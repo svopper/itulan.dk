@@ -10,7 +10,7 @@
         <h1 data-aos="fade-right" data-aos-delay="100">October</h1>
         <h2 data-aos="fade-right" data-aos-delay="200" class="hollow-text">Fall 2019</h2>
         <div data-aos="fade-left" id="ticket-circle">
-          <a href="https://itulan.safeticket.dk/itulanspring19" target="_blank">
+          <a href="/tickets">
             <text-circle message="Buy ticket here!" radius="180px" />
           </a>
         </div>

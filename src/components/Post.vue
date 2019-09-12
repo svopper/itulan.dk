@@ -51,4 +51,8 @@ export default {
   margin-top: 0px;
   overflow-wrap: break-word;
 }
+
+.date {
+  font-weight: 900;
+}
 </style>
