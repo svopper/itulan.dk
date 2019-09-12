@@ -7,7 +7,7 @@
       <h2 class="hollow-text">Majors</h2>
       <div v-for="major in majors" :key="major.url">
         <h3>{{ major.title }}</h3>
-        <small>{{major.platform}}</small>
+        <small class="platform">Platform: {{major.platform}}</small>
         <iframe width="100%" height="88" :src="major.url" allowfullscreen frameborder="0"></iframe>
         <p>{{ major.description }}</p>
       </div>
