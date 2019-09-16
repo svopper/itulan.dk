@@ -9,6 +9,7 @@
 
 <script>
 import formatDistance from "date-fns/formatDistance";
+import parseISO from "date-fns/parseISO";
 
 export default {
   props: ["date", "message"],
@@ -29,9 +30,8 @@ export default {
       return post;
     },
     formattedDate() {
-      let trimmedDate = this.date.slice(0, -5);
-      let parsedDate = new Date(trimmedDate);
-      return `${formatDistance(parsedDate, new Date())} ago`;
+      let isoDate = parseISO(this.date);
+      return `${formatDistance(isoDate, new Date())} ago`;
     }
   }
 };

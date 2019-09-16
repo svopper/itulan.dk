@@ -6,10 +6,15 @@
       </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
-        <h2 data-aos="fade-right" class="hollow-text">25-27</h2>
-        <h1 data-aos="fade-right" data-aos-delay="100">October</h1>
-        <h2 data-aos="fade-right" data-aos-delay="200" class="hollow-text">Fall 2019</h2>
-        <div data-aos="fade-left" id="ticket-circle">
+        <h2 data-aos-once="true" data-aos="fade-right" class="hollow-text">25-27</h2>
+        <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">October</h1>
+        <h2
+          data-aos-once="true"
+          data-aos="fade-right"
+          data-aos-delay="200"
+          class="hollow-text"
+        >Fall 2019</h2>
+        <div data-aos-once="true" data-aos="fade-left" id="ticket-circle">
           <a href="/tickets">
             <text-circle message="Buy ticket here!" radius="180px" />
           </a>
@@ -57,7 +62,6 @@ a:hover {
   padding-left: 1rem;
   padding-right: 1rem;
   margin: auto;
-  /*margin-top: -58px; /* navbar height = 58px */
   text-align: center;
 }
 
@@ -104,10 +108,16 @@ a:hover {
   right: 10%;
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .container {
     padding-right: 3rem;
     padding-left: 3rem;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  #ticket-circle {
+    top: 40%;
   }
 }
 
@@ -129,7 +139,19 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1200px) {
+  #ticket-circle {
+    right: 5%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #ticket-circle {
+    transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 400px), screen and (max-height: 400px) {
   .header-content h1 {
     font-size: 3.5rem;
   }
@@ -137,7 +159,9 @@ a:hover {
   .header-content h2 {
     font-size: 2.5rem;
   }
+}
 
+@media only screen and (max-width: 400px) {
   .header-content {
     margin-top: -200px;
   }

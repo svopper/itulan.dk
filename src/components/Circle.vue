@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .circle {
-  margin: 1.5rem;
+  /* margin: 1.5rem; */
   background-color: #0800ff;
   border-radius: 50%;
   display: flex;
@@ -59,11 +59,12 @@ export default {
 
 .circle-outline {
   border: 2px solid #fff;
+  padding: 1.5rem;
   border-radius: 50%;
   display: inline-block;
 }
 
-.message {
+.circle-outline .message {
   text-transform: uppercase;
   font-family: Anton, Arial, Helvetica, sans-serif;
   display: block;

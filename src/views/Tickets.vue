@@ -6,39 +6,50 @@
     </a>
 
     <div class="steps">
-      <h3 class="hollow-text">1.</h3>
-      <h3>Find seat</h3>
-      <h3 class="hollow-text">2.</h3>
-      <h3>Buy ticket</h3>
-      <h3 class="hollow-text">3.</h3>
-      <h3>Check-in</h3>
+      <span data-aos="fade-left" data-aos-delay="300">
+        <h3 class="hollow-text">1.</h3>
+        <h3>Find seat</h3>
+      </span>
+      <span data-aos="fade-left" data-aos-delay="600">
+        <h3 class="hollow-text">2.</h3>
+        <h3>Buy ticket</h3>
+      </span>
+      <span data-aos="fade-left" data-aos-delay="900">
+        <h3 class="hollow-text">3.</h3>
+        <h3>Check-in</h3>
+      </span>
     </div>
 
     <div id="step-one">
       <h3 class="hollow-text">1.</h3>
       <h3>Find seat</h3>
       <p>Choose your table and seat number during the booking process. The table number from your booking is final. Ignore any other table numbers than the ones posted on ITU LAN posters on the tables.</p>
-      <img
-        width="100%"
-        src="http://giphygifs.s3.amazonaws.com/media/sIIhZliB2McAo/giphy.gif"
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-anchor="#step-one"
-      />
-      <img
-        width="100%"
-        src="http://giphygifs.s3.amazonaws.com/media/sIIhZliB2McAo/giphy.gif"
-        data-aos="fade-up"
-        data-aos-delay="400"
-        data-aos-anchor="#step-one"
-      />
-      <img
-        width="100%"
-        src="http://giphygifs.s3.amazonaws.com/media/sIIhZliB2McAo/giphy.gif"
-        data-aos="fade-up"
-        data-aos-delay="600"
-        data-aos-anchor="#step-one"
-      />
+      <div class="floor-wrapper">
+        <img
+          width="100%"
+          id="floor-4"
+          src="../assets/img/floors/4th_floor.png"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-anchor="#step-one"
+        />
+        <img
+          width="100%"
+          id="floor-3"
+          src="../assets/img/floors/3rd_floor.png"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          data-aos-anchor="#step-one"
+        />
+        <img
+          width="100%"
+          id="floor-2"
+          src="../assets/img/floors/2nd_floor.png"
+          data-aos="fade-up"
+          data-aos-delay="1700"
+          data-aos-anchor="#step-one"
+        />
+      </div>
     </div>
     <div class="flex-wrapper">
       <div id="step-two">
@@ -110,6 +121,11 @@ export default {
 
 .steps {
   margin-bottom: 4rem;
+  position: relative;
+}
+
+.steps > span {
+  /* width: 1000px; */
 }
 
 .flex-wrapper {
@@ -125,8 +141,12 @@ export default {
   margin-bottom: 4rem;
 }
 
-img {
-  margin: 10px 0px;
+.floor-wrapper {
+  position: relative;
+}
+
+.floor-wrapper > img:not(:first-child) {
+  margin-top: -20%;
 }
 
 @media only screen and (max-width: 600px) {

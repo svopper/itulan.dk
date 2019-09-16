@@ -36,7 +36,7 @@ export default {
       .then(res => {
         return res.data.data;
       });
-
+    console.log(posts);
     this.posts = posts.filter(post => post.message !== undefined);
     this.isLoading = false;
   }
