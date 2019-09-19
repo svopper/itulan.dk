@@ -128,7 +128,6 @@ export default {
     },
     routes() {
       let allRoutes = this.$router.options.routes;
-      console.log(allRoutes);
       let relevantRoutes = allRoutes.filter(r => {
         return r.name !== "home" && r.name !== undefined;
       });
