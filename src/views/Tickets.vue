@@ -2,7 +2,7 @@
   <div class="tickets">
     <h1 class="title">Buy Ticket</h1>
     <a class="ticket-link" href="https://itulan.safeticket.dk/itulanfall19" target="_blank">
-      <text-circle message="Buy ticket here!" radius="180px" font-size="2rem" />
+      <text-circle message="Buy tickets here!" radius="180px" font-size="2rem" />
     </a>
 
     <div class="steps">

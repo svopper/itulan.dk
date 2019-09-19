@@ -1,30 +1,17 @@
 <template>
   <div class="tournaments">
     <h1 class="title">Tournaments</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus animi officiis dolor obcaecati dignissimos sapiente rerum maiores veritatis iste ipsa minima soluta error officia hic excepturi id reprehenderit suscipit, magnam laboriosam, atque et? Possimus, ipsum dolorem exercitationem explicabo amet earum unde suscipit! Doloribus, quasi tempora? Dolores fugit vitae qui ducimus. Are you up for the challenge?!</p>
-
-    <!-- <div class="new-tournaments-wrapper">
-      <div class="tournament-wrapper" v-for="major in majors" :key="major.url">
-        <h3>{{ major.title }}</h3>
-      </div>
-    </div>-->
-
-    <div class="tournaments-wrapper">
-      <h2 class="hollow-text">Majors</h2>
-      <div v-for="major in majors" :key="major.url">
-        <h3>{{ major.title }}</h3>
-        <small class="platform">Platform: {{major.platform}}</small>
-        <iframe width="100%" height="88" :src="major.url" allowfullscreen frameborder="0"></iframe>
-        <p>{{ major.description }}</p>
-      </div>
+    <p>ITU LAN is hosting several tounament during the weekend, and here you can sse an overview over the tournaments. Are you up for the challenge?!</p>
+    <div v-if="!isPublic">
+      <h3>Tournaments will be announced soon...</h3>
     </div>
-    <div class="tournaments-wrapper">
-      <h2 class="hollow-text">Minors</h2>
-      <div v-for="minor in minors" :key="minor.url">
-        <h3>{{ minor.title }}</h3>
-        <small class="platform">Platform: {{minor.platform}}</small>
-        <iframe width="100%" height="88" :src="minor.url" allowfullscreen frameborder="0"></iframe>
-        <p>{{ minor.description }}</p>
+    <div v-else class="tournaments-wrapper">
+      <div v-for="t in tournaments" :key="t.url">
+        <h3>{{ t.title }}</h3>
+        <small class="platform">Platform: {{t.platform}}</small>
+        <iframe width="100%" height="88" :src="t.url" allowfullscreen frameborder="0"></iframe>
+        <p v-if="t.description">{{ t.description }}</p>
+        <p v-else>Description TBA</p>
       </div>
     </div>
   </div>
@@ -32,54 +19,54 @@
 
 <script>
 export default {
+  computed: {
+    isPublic() {
+      return new Date() > new Date("2019-10-03T00:00:00");
+    }
+  },
   data() {
     return {
-      majors: [
+      tournaments: [
         {
           title: "Counter-Strike: Global Offence",
           url:
             "https://widget.toornament.com/tournaments/2811126039466532864/registration?_locale=en_US&theme=discipline",
-          description:
-            "The CS:GO tournament is the best way for you and your team to compete against other dedicated teams. You will have the time of your life beating those n00bs on the other teams. But don’t have too much fun, because you have to win to get our amazing prices! So gather four of your friends and sign up for the ultimate intense heartbreaking mindblowing competition, the ITU LAN CS:GO tournament! #GottaShootEmAll.",
+          description: "",
           platform: "PC"
         },
         {
           title: "CS:GO Danger Zone",
           url:
             "https://widget.toornament.com/tournaments/2811222221909147648/registration?_locale=en_US&theme=discipline",
-          description:
-            "For the first time ever ITULAN will host a Battle Royale tournament! The platform will be Danger Zone in CS:GO, which is free to play now, so everyone can participate!",
+          description: "",
           platform: "PC"
         },
         {
           title: "Rocket League",
           url:
             "https://widget.toornament.com/tournaments/2811210599123623936/registration?_locale=en_US&theme=discipline",
-          description:
-            "Once again we are proud to announce the Rocket League Tournament for ITU LAN Fall'19. This time it has been promoted to a 'Major' Tournament. So prepare to compete for even greater prizes!",
+          description: "",
           platform: "PC"
         },
         {
           title: "Warcraft 3 Warlock",
           url:
             "https://widget.toornament.com/tournaments/2854040897888059392/registration?_locale=en_US&theme=discipline",
-          description: "Descriptive text",
+          description: "",
           platform: "PC"
-        }
-      ],
-      minors: [
+        },
         {
           title: "Mario Kart 8 Deluxe",
           url:
             "https://widget.toornament.com/tournaments/2811201601864605696/registration?_locale=en_US&theme=discipline",
-          description: "Descriptive text",
+          description: "",
           platform: "Nintendo Switch"
         },
         {
           title: "Stellaris",
           url:
             "https://widget.toornament.com/tournaments/2854042174398095360/registration?_locale=en_US&theme=discipline",
-          description: "Descriptive text",
+          description: "",
           platform: "PC"
         },
         {
@@ -94,8 +81,7 @@ export default {
           title: "Super Smash Bros Ultimate",
           url:
             "https://widget.toornament.com/tournaments/2811215611487911936/registration?_locale=en_US&theme=discipline",
-          description:
-            "Super Smash Bros are returning for this years LAN, and again we're hosting a tournament!",
+          description: "",
           platform: "Nintendo Switch"
         }
       ]

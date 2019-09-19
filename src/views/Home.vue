@@ -16,7 +16,7 @@
         >Fall 2019</h2>
         <div data-aos-once="true" data-aos="fade-left" id="ticket-circle">
           <a href="/tickets">
-            <text-circle message="Buy ticket here!" radius="180px" />
+            <text-circle message="Buy tickets here!" radius="180px" />
           </a>
         </div>
       </div>

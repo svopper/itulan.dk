@@ -1,6 +1,6 @@
 <template>
   <div class="information">
-    <h1>Information</h1>
+    <h1 class="title">Information</h1>
     <h3>Where</h3>
     <p>ITU LAN Fall 2019 takes place from October 25th to October 27th at the IT University of Copenhagen.</p>
     <h3>CONTACTING CREW</h3>
@@ -16,7 +16,7 @@
     <p>The info screens by the elevators will post event specific information as well.</p>
     <h3>MAIN CONTACT INFORMATION</h3>
     <ul>
-      <li>In-person help: Crew area 2A30 (2nd floor in the corner above ScrollBar)</li>
+      <li>In-person help: Crew area 4A10 (4th floor in the corner above Analog)</li>
       <li>Facebook</li>
       <li>
         <a href="mailto:admin@itulan.dk">Mail</a>
@@ -34,7 +34,7 @@
     <p>For info or support please contact the event responsible, which can be seen on the tournament’s Toornament page.</p>
     <h3>GETTING IN</h3>
     <p>There will be a guard on duty all weekend. We’ve coordinated with facilities management, that you can get in with either a valid student ID, or with an ITU LAN ticket. Please have it ready upon entry.</p>
-    <p>You get your wristband to use for access at the organizer area (2A30 – 2nd floor above ScrollBar)</p>
+    <p>You get your wristband to use for access at the organizer area (4A10 – 4th floor above Analog)</p>
     <h3>FINDING YOUR TABLE</h3>
     <p>You have chosen your table and seat number during the booking process. The table number from you booking is final. Ignore any other table numbers than the ones posted on ITU LAN posters on the tables.</p>
     <h3>FOOD & BEVERAGES</h3>
@@ -56,7 +56,7 @@
     <p>There is no sleeping accommodations at ITU LAN. This is because of a strict fire code set for the building. We recommend going home and sleep there. We provide free storage for your gear in the meantime.</p>
     <h3>STORAGE</h3>
     <p>
-      Storage will be in 2A12. If you need to store or pickup your gear please contact the crew at 2A30, or write @keywarden on
+      Storage will be in 2A12. If you need to store or pickup your gear please contact the crew at 4A10, or write @keywarden on
       <a
         href="https://discord.gg/nSFXWQN"
         target="_blank"
@@ -79,5 +79,12 @@ h3 {
 .address > p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .title {
+    font-size: 3rem;
+    padding-bottom: 0;
+  }
 }
 </style>
