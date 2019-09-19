@@ -3,6 +3,12 @@
     <h1 class="title">Tournaments</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus animi officiis dolor obcaecati dignissimos sapiente rerum maiores veritatis iste ipsa minima soluta error officia hic excepturi id reprehenderit suscipit, magnam laboriosam, atque et? Possimus, ipsum dolorem exercitationem explicabo amet earum unde suscipit! Doloribus, quasi tempora? Dolores fugit vitae qui ducimus. Are you up for the challenge?!</p>
 
+    <!-- <div class="new-tournaments-wrapper">
+      <div class="tournament-wrapper" v-for="major in majors" :key="major.url">
+        <h3>{{ major.title }}</h3>
+      </div>
+    </div>-->
+
     <div class="tournaments-wrapper">
       <h2 class="hollow-text">Majors</h2>
       <div v-for="major in majors" :key="major.url">
@@ -50,7 +56,7 @@ export default {
           url:
             "https://widget.toornament.com/tournaments/2811210599123623936/registration?_locale=en_US&theme=discipline",
           description:
-            "Once again we are proud to announce the Rocket League Tournament for ITU LAN Spring'19. This time it has been promoted to a 'Major' Tournament. So prepare to compete for even greater prizes!",
+            "Once again we are proud to announce the Rocket League Tournament for ITU LAN Fall'19. This time it has been promoted to a 'Major' Tournament. So prepare to compete for even greater prizes!",
           platform: "PC"
         },
         {
@@ -81,7 +87,7 @@ export default {
           url:
             "https://widget.toornament.com/tournaments/2811215862838206464/registration?_locale=en_US&theme=discipline",
           description:
-            "At LAN this year, the very first ITU LAN Championship in Magic: The Gathering will be held. The tournament will be using MTGA (Magic: The Gathering Arena), the new online client, and the format will be a Standard BO3 tournament. Each player will bring 1 deck. We are lucky enough that a Standard rotation has just happened at the time of the tournament, so we get to play with cards from the newest set: Throne of Eldraine!",
+            "Greetings Planeswalkers: It's time to dddddddddddddduel! At LAN this year, the very first ITU LAN Championship in Magic: The Gathering will be held. The tournament will be using MTGA (Magic: The Gathering Arena), the new online client, and the format will be a Standard BO3 tournament. Each player will bring 1 deck. We are lucky enough that a Standard rotation has just happened at the time of the tournament, so we get to play with cards from the newest set: Throne of Eldraine! If we are lucky, the tournament will be streamed, and of course there are going to be amazing prizes for the winner!",
           platform: "PC"
         },
         {
@@ -99,6 +105,13 @@ export default {
 </script>
 
 <style scoped>
+.tournament-wrapper {
+  background-color: #444546;
+  height: 72px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
 .tournaments {
   margin: 80px auto;
   max-width: 800px;

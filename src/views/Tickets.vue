@@ -1,7 +1,7 @@
 <template>
   <div class="tickets">
     <h1 class="title">Buy Ticket</h1>
-    <a class="ticket-link" href="https://itulan.safeticket.dk/itulanspring19" target="_blank">
+    <a class="ticket-link" href="https://itulan.safeticket.dk/itulanfall19" target="_blank">
       <text-circle message="Buy ticket here!" radius="180px" font-size="2rem" />
     </a>
 
@@ -28,7 +28,7 @@
         <img
           width="100%"
           id="floor-4"
-          src="../assets/img/floors/4th_floor.png"
+          src="../assets/img/floors/4_floor.png"
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-anchor="#step-one"
@@ -36,7 +36,7 @@
         <img
           width="100%"
           id="floor-3"
-          src="../assets/img/floors/3rd_floor.png"
+          src="../assets/img/floors/3_floor.png"
           data-aos="fade-up"
           data-aos-delay="1000"
           data-aos-anchor="#step-one"
@@ -44,7 +44,7 @@
         <img
           width="100%"
           id="floor-2"
-          src="../assets/img/floors/2nd_floor.png"
+          src="../assets/img/floors/2_floor.png"
           data-aos="fade-up"
           data-aos-delay="1700"
           data-aos-anchor="#step-one"
@@ -58,7 +58,7 @@
         <p>
           <a
             id="inline-link"
-            href="https://itulan.safeticket.dk/itulanspring19"
+            href="https://itulan.safeticket.dk/itulanfall19"
             target="_blank"
           >But your ticket here</a>
         </p>
@@ -66,7 +66,7 @@
       <div id="step-three">
         <h3 class="hollow-text">3.</h3>
         <h3>Check-in</h3>
-        <p>When you arrive, please check-in at 2A30. Here you will also receive your exclusive ITU LAN wristband.</p>
+        <p>When you arrive, please check-in at 4A10. Here you will also receive your exclusive ITU LAN wristband.</p>
       </div>
     </div>
   </div>

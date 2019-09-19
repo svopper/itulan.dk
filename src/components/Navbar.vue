@@ -48,7 +48,11 @@
         <b-nav-item class="some-button" href="https://www.instagram.com/itulan/" target="_blank">
           <img src="../assets/img/socialmedia/insta_icon.svg" height="25px" />
         </b-nav-item>
-        <b-nav-item class="some-button" href="https://www.youtube.com/itulan" target="_blank">
+        <b-nav-item
+          class="some-button"
+          href="https://www.youtube.com/channel/UCa8UEVBGtOfykw6N9G6db8g"
+          target="_blank"
+        >
           <img src="../assets/img/socialmedia/youtube_icon.png" height="20px" />
         </b-nav-item>
       </b-navbar-nav>

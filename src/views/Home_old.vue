@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <header class="v-header container">
-      <div class="fullscreen-background-wrap">
-        <img src="../assets/img/home_background.jpg" alt />
+      <div class="fullscreen-video-wrap">
+        <video src="http://dev.itulan.dk/vid/bg.mp4" autoplay loop muted playsinline></video>
       </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
@@ -65,7 +65,7 @@ a:hover {
   text-align: center;
 }
 
-.fullscreen-background-wrap {
+.fullscreen-video-wrap {
   position: absolute;
   top: 0;
   left: 0;
@@ -74,7 +74,7 @@ a:hover {
   overflow: hidden;
 }
 
-.fullscreen-background-wrap img {
+.fullscreen-video-wrap video {
   min-height: 100%;
   min-width: 100%;
 }
@@ -86,7 +86,7 @@ a:hover {
   left: 0;
   width: 100%;
   z-index: 1;
-  background-color: #031d4466;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .header-content {
