@@ -24,7 +24,7 @@ export default {
           post = post.replace(regex, "");
         });
         res.forEach(m => {
-          post = `${post}<br><a target="_blank" href="${m}">Link</a>`;
+          post = `${post}<br><a target="_blank" rel="noopener" href="${m}">Link</a>`;
         });
       }
       return post;

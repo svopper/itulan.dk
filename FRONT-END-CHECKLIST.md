@@ -42,7 +42,7 @@ Some resources possess an emoticon to help you understand which type of content 
 
 ### Meta tag
 
-* [ ] **Doctype:** ![High][high_img] The Doctype is HTML5 and is at the top of all your HTML pages.
+* [x] **Doctype:** ![High][high_img] The Doctype is HTML5 and is at the top of all your HTML pages.
 
 ```html
 <!doctype html> <!-- HTML5 -->
@@ -52,21 +52,21 @@ Some resources possess an emoticon to help you understand which type of content 
 
 *The next 2 meta tags (Charset and Viewport) need to come first in the head.*
 
-* [ ] **Charset:** ![High][high_img] The charset (UTF-8) is declared correctly.
+* [x] **Charset:** ![High][high_img] The charset (UTF-8) is declared correctly.
 
 ```html
 <!-- Set character encoding for the document -->
 <meta charset="utf-8">
 ```
 
-* [ ] **Viewport:** ![High][high_img] The viewport is declared correctly.
+* [x] **Viewport:** ![High][high_img] The viewport is declared correctly.
 
 ```html
 <!-- Viewport for responsive web design -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 ```
 
-* [ ] **Title:** ![High][high_img] A title is used on all pages (SEO: Google calculates the pixel width of the characters used in the title, and it cuts off between 472 and 482 pixels. The average character limit would be around 55-characters).
+* [x] **Title:** ![High][high_img] A title is used on all pages (SEO: Google calculates the pixel width of the characters used in the title, and it cuts off between 472 and 482 pixels. The average character limit would be around 55-characters).
 
 ```html
 <!-- Document Title -->
@@ -154,13 +154,13 @@ Minimum required xml markup for the `browserconfig.xml` file is as follows:
 
 ### HTML tags
 
-* [ ] **Language attribute:** ![High][high_img] The `lang` attribute of your website is specified and related to the language of the current page.
+* [x] **Language attribute:** ![High][high_img] The `lang` attribute of your website is specified and related to the language of the current page.
 
 ```html
 <html lang="en">
 ```
 
-* [ ] **Direction attribute:** ![Medium][medium_img] The direction of lecture is specified on the html tag (It can be used on another HTML tag).
+* [x] **Direction attribute:** ![Medium][medium_img] The direction of lecture is specified on the html tag (It can be used on another HTML tag).
 
 ```html
 <html dir="rtl">
@@ -168,31 +168,13 @@ Minimum required xml markup for the `browserconfig.xml` file is as follows:
 
 > * 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
-* [ ] **Alternate language:** ![Low][low_img] The language tag of your website is specified and related to the language of the current page.
-
-```html
-<link rel="alternate" href="https://es.example.com/" hreflang="es">
-```
-
-* [ ] **Conditional comments:** ![Low][low_img] Conditional comments are present for IE if needed.
-
-> * 📖 [About conditional comments (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
-
-* [ ] **RSS feed:** ![Low][low_img] If your project is a blog or has articles, an RSS link was provided.
-
-* [ ] **CSS Critical:** ![Medium][medium_img] The CSS critical (or "above the fold") collects all the CSS used to render the visible portion of the page. It is embedded before your principal CSS call and between `<style></style>` in a single line (minified).
-
-> * 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) automates this.
-
-* [ ] **CSS order:** ![High][high_img] All CSS files are loaded before any JavaScript files in the `<head>`. (Except the case where sometimes JS files are loaded asynchronously on top of your page).
-
 ### Social meta
 
 Visualize and generate automatically our social meta tags with [Meta Tags](https://metatags.io/)
 
 ***Facebook OG*** and ***Twitter Cards*** are, for any website, highly recommended. The other social media tags can be considered if you target a particular presence on those and want to ensure the display.
 
-* [ ] **Facebook Open Graph:** ![Low][low_img] All Facebook Open Graph (OG) are tested and no one is missing or with a false information. Images need to be at least 600 x 315 pixels, although 1200 x 630 pixels is recommended.
+* [x] **Facebook Open Graph:** ![Low][low_img] All Facebook Open Graph (OG) are tested and no one is missing or with a false information. Images need to be at least 600 x 315 pixels, although 1200 x 630 pixels is recommended.
 
 > **Notes:** Using `og:image:width` and `og:image:height` will specify the image dimensions to the crawler so that it can render the image immediately without having to asynchronously download and process it.
 
@@ -213,7 +195,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 > * 📖 [Best Practices - Sharing](https://developers.facebook.com/docs/sharing/best-practices/)
 > * 🛠 Test your page with the [Facebook OG testing](https://developers.facebook.com/tools/debug/)
 
-* [ ] **Twitter Card:** ![Low][low_img]
+* [x] **Twitter Card:** ![Low][low_img]
 
 ```html
 <meta name="twitter:card" content="summary">
@@ -236,38 +218,17 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 ### Best practices
 
-* [ ] **HTML5 Semantic Elements:** ![High][high_img] HTML5 Semantic Elements are used appropriately (header, section, footer, main...).
+* [x] **HTML5 Semantic Elements:** ![High][high_img] HTML5 Semantic Elements are used appropriately (header, section, footer, main...).
 
 > * 📖 [HTML Reference](http://htmlreference.io/)
 
-* [ ] **Error pages:** ![High][high_img] Error 404 page and 5xx exist. Remember that the 5xx error pages need to have their CSS integrated (no external call on the current server).
+* [x] **Error pages:** ![High][high_img] Error 404 page and 5xx exist. Remember that the 5xx error pages need to have their CSS integrated (no external call on the current server).
 
-* [ ] **Noopener:** ![Medium][medium_img] In case you are using external links with `target="_blank"`, your link should have a `rel="noopener"` attribute to prevent tab nabbing. If you need to support older versions of Firefox, use `rel="noopener noreferrer"`.
+* [x] **Noopener:** ![Medium][medium_img] In case you are using external links with `target="_blank"`, your link should have a `rel="noopener"` attribute to prevent tab nabbing. If you need to support older versions of Firefox, use `rel="noopener noreferrer"`.
 
 > * 📖 [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
 
-* [ ] **Clean up comments:** ![Low][low_img] Unnecessary code needs to be removed before sending the page to production.
-
-### HTML testing
-
-* [ ] **W3C compliant:** ![High][high_img] All pages need to be tested with the W3C validator to identify possible issues in the HTML code.
-
-> * 🛠 [W3C validator](https://validator.w3.org/)
-
-* [ ] **HTML Lint:** ![High][high_img] I use tools to help me analyze any issues I could have on my HTML code.
-
-> * 🛠 [Dirty markup](https://dirtymarkup.com/)
-
-> * 🛠 [webhint](https://webhint.io/)
-
-* [ ] **Link checker:** ![High][high_img] There are no broken links in my page, verify that you don't have any 404 error.
-
-> * 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
-
-* [ ] **Adblockers test:** ![Medium][medium_img] Your website shows your content correctly with adblockers enabled (You can provide a message encouraging people to disable their adblocker).
-
-> * 📖 [Use AdBlocking in your Dev Environment](https://andreicioara.com/use-adblocking-in-your-dev-environment-48db500d9b86)
-
+* [x] **Clean up comments:** ![Low][low_img] Unnecessary code needs to be removed before sending the page to production.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -287,7 +248,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 * [ ] **Webfont size:** ![High][high_img] Webfont sizes don't exceed 2 MB (all variants included).
 
-* [ ] **Webfont loader:** ![Low][low_img] Control loading behavior with a webfont loader
+* [x] **Webfont loader:** ![Low][low_img] Control loading behavior with a webfont loader
 
 > * 🛠 [Typekit Web Font Loader](https://github.com/typekit/webfontloader)
 
@@ -299,34 +260,25 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 > **Notes:** Take a look at [CSS guidelines](https://cssguidelin.es/) and [Sass Guidelines](https://sass-guidelin.es/) followed by most  Front-End developers. If you have a doubt about CSS properties, you can visit [CSS Reference](http://cssreference.io/). There is also a short [Code Guide](http://codeguide.co/) for consistency.
 
-* [ ] **Responsive Web Design:** ![High][high_img] The website is using responsive web design.
-* [ ] **CSS Print:** ![Medium][medium_img] A print stylesheet is provided and is correct on each page.
+* [x] **Responsive Web Design:** ![High][high_img] The website is using responsive web design.
 * [ ] **Preprocessors:** ![Low][low_img] Your project is using a CSS preprocessor (e.g [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), [Stylus](http://stylus-lang.com/)).
-* [ ] **Unique ID:** ![High][high_img] If IDs are used, they are unique to a page.
-* [ ] **Reset CSS:** ![High][high_img] A CSS reset (reset, normalize or reboot) is used and up to date. *(If you are using a CSS Framework like Bootstrap or Foundation, a Normalize is already included into it.)*
+* [x] **Unique ID:** ![High][high_img] If IDs are used, they are unique to a page.
+* [x] **Reset CSS:** ![High][high_img] A CSS reset (reset, normalize or reboot) is used and up to date. *(If you are using a CSS Framework like Bootstrap or Foundation, a Normalize is already included into it.)*
 
 > * 📖 [Reset.css](https://meyerweb.com/eric/tools/css/reset/)
 > * 📖 [Normalize.css](https://necolas.github.io/normalize.css/)
 > * 📖 [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/)
 
-* [ ] **JS prefix:** ![Low][low_img] All classes (or id- used in JavaScript files) begin with **js-** and are not styled into the CSS files.
-
-```html
-<div id="js-slider" class="my-slider">
-<!-- Or -->
-<div id="id-used-by-cms" class="js-slider my-slider">
-```
-
-* [ ] **embedded or inline CSS:** ![High][high_img] Avoid at all cost embedding CSS in `<style>` tags or using inline CSS: only use for valid reasons (e.g. background-image for slider, critical CSS).
+* [x] **embedded or inline CSS:** ![High][high_img] Avoid at all cost embedding CSS in `<style>` tags or using inline CSS: only use for valid reasons (e.g. background-image for slider, critical CSS).
 * [ ] **Vendor prefixes:** ![High][high_img] CSS vendor prefixes are used and are generated accordingly with your browser support compatibility.
 
 > * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
 
 ### Performance
 
-- [ ] **Concatenation:** ![High][high_img] CSS files are concatenated in a single file *(Not for HTTP/2)*.
-- [ ] **Minification:** ![High][high_img] All CSS files are minified.
-- [ ] **Non-blocking:** ![Medium][medium_img] CSS files need to be non-blocking to prevent the DOM from taking time to load.
+- [x] **Concatenation:** ![High][high_img] CSS files are concatenated in a single file *(Not for HTTP/2)*.
+- [x] **Minification:** ![High][high_img] All CSS files are minified.
+- [x] **Non-blocking:** ![Medium][medium_img] CSS files need to be non-blocking to prevent the DOM from taking time to load.
 
 > * 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
 > * 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
@@ -341,12 +293,12 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 ### CSS testing
 
-* [ ] **Stylelint:** ![High][high_img] All CSS or SCSS files are without any errors.
+* [x] **Stylelint:** ![High][high_img] All CSS or SCSS files are without any errors.
 
 > * 🛠 [stylelint, a CSS linter](https://stylelint.io/)
 > * 📖 [Sass guidelines](https://sass-guidelin.es/)
 
-* [ ] **Responsive web design:** ![High][high_img] All pages were tested at the following breakpoints: 320px, 768px, 1024px (can be more / different according to your analytics).
+* [x] **Responsive web design:** ![High][high_img] All pages were tested at the following breakpoints: 320px, 768px, 1024px (can be more / different according to your analytics).
 
 * [ ] **CSS Validator:** ![Medium][medium_img] The CSS was tested and pertinent errors were corrected.
 
@@ -356,7 +308,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 * [ ] **Mobile Browsers:**  ![High][high_img] All pages were tested on all current mobile browsers (Native browser, Chrome, Safari...).
 * [ ] **OS:**  ![High][high_img] All pages were tested on all current OS (Windows, Android, iOS, Mac...).
 
-- [ ] **Design fidelity:** ![Low][low_img] Depending the project and the quality of the creatives, you may be asked to be close to the design. You can use some tools to compare creatives with your code implementation and ensure consistency.
+- [x] **Design fidelity:** ![Low][low_img] Depending the project and the quality of the creatives, you may be asked to be close to the design. You can use some tools to compare creatives with your code implementation and ensure consistency.
 
 > [Pixel Perfect - Chrome Extension](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 

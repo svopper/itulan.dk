@@ -29,6 +29,7 @@
       <a
         href="/tournaments"
         target="_blank"
+        rel="noopener"
       >Tournament</a> menu for more info.
     </p>
     <p>For info or support please contact the event responsible, which can be seen on the tournament’s Toornament page.</p>
@@ -60,6 +61,7 @@
       <a
         href="https://discord.gg/nSFXWQN"
         target="_blank"
+        rel="noopener"
       >our Discord channel.</a>
     </p>
   </div>

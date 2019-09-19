@@ -1,7 +1,12 @@
 <template>
   <div class="tickets">
     <h1 class="title">Buy Ticket</h1>
-    <a class="ticket-link" href="https://itulan.safeticket.dk/itulanfall19" target="_blank">
+    <a
+      class="ticket-link"
+      href="https://itulan.safeticket.dk/itulanfall19"
+      target="_blank"
+      rel="noopener"
+    >
       <text-circle message="Buy tickets here!" radius="180px" font-size="2rem" />
     </a>
 
@@ -60,6 +65,7 @@
             id="inline-link"
             href="https://itulan.safeticket.dk/itulanfall19"
             target="_blank"
+            rel="noopener"
           >But your ticket here</a>
         </p>
       </div>

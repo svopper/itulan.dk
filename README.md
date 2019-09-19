@@ -27,6 +27,8 @@ npm run serve
 npm run deploy
 ```
 
+The website is currently hosted at Google Firebase on the Spark free tier plan.
+
 ## Follow the Development
 
 I try to use a Trello board as much as possible. Find it [here](https://trello.com/b/wMbMTeIp/itulandk).
