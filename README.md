@@ -27,15 +27,13 @@ npm run serve
 npm run deploy
 ```
 
-Gets deployed to [https://itulan.kols.dk/](https://itulan.kols.dk/)
-
 ## Follow the Development
 
 I try to use a Trello board as much as possible. Find it [here](https://trello.com/b/wMbMTeIp/itulandk).
 
 ## Author
 
-👤 **Kasper Olsen <root@kols.dk>**
+👤 **Kasper Olsen**
 
 * Github: [@svopper](https://github.com/svopper)
 * LinkedIn: [Kasper Olsen](https://www.linkedin.com/in/olsenkasper/)
