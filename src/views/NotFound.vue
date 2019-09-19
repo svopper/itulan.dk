@@ -1,19 +1,12 @@
 <template>
   <div class="not-found">
     <h1>404</h1>
-    <p>Oh snap! Never say no to panda! Out developer will now die.</p>
+    <p>Oh snap! Never say no to panda! Our developer will now die.</p>
     <img src="../assets/img/404-gif.gif" alt />
   </div>
 </template>
 
 <style scoped>
-.not-found {
-  margin: 80px auto;
-  max-width: 800px;
-  padding: 15px;
-  text-align: center;
-}
-
 .not-found img {
   width: 100%;
 }

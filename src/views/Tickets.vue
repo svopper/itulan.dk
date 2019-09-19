@@ -97,13 +97,6 @@ export default {
   text-decoration: none !important;
 }
 
-.tickets {
-  margin: 80px auto;
-  max-width: 800px;
-  padding: 15px;
-  text-align: center;
-}
-
 .tickets h3 {
   display: inline;
   letter-spacing: 2px;
@@ -157,11 +150,6 @@ export default {
   .ticket-link {
     margin-bottom: 10px;
     display: inline-block;
-  }
-
-  .title {
-    font-size: 4rem;
-    padding-bottom: 0;
   }
 
   .steps {

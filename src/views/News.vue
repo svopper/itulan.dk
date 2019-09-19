@@ -1,6 +1,12 @@
 <template>
   <div class="news">
-    <h1 class="title">News</h1>
+    <div class="flex-wrapper">
+      <div>
+        <h1 class="title">News</h1>
+        <div></div>
+      </div>
+      <div></div>
+    </div>
     <div class="spinner-wrapper" v-if="isLoading">
       <loading-spinner class="spinner"></loading-spinner>
     </div>
@@ -36,24 +42,13 @@ export default {
       .then(res => {
         return res.data.data;
       });
-    console.log(posts);
     this.posts = posts.filter(post => post.message !== undefined);
     this.isLoading = false;
   }
 };
 </script>
 
-<style>
-.news {
-  margin: 80px auto;
-  max-width: 600px;
-  padding: 15px;
-}
-
-.title {
-  text-align: center;
-}
-
+<style scoped>
 .spinner-wrapper {
   margin: 0 auto;
   display: block;

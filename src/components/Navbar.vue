@@ -30,7 +30,12 @@
 
     <b-collapse v-model="mobileNavOpen" id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <span v-for="route in routes" :key="route.name">
+        <span
+          v-for="route in routes"
+          :key="route.name"
+          v-bind:class="{desktop: !isMobile}"
+          :id="`link-${route.meta.id}`"
+        >
           <router-link class="router-link" :to="route.path">
             <span @click="toggleOpen" class="router-link-text">{{ route.name }}</span>
           </router-link>
@@ -107,13 +112,9 @@ export default {
     },
     routes() {
       let allRoutes = this.$router.options.routes;
+      console.log(allRoutes);
       let relevantRoutes = allRoutes.filter(r => {
-        return (
-          r.name === "news" ||
-          r.name === "tournaments" ||
-          r.name === "information" ||
-          r.name === "tickets"
-        );
+        return r.name !== "home" && r.name !== undefined;
       });
       return relevantRoutes;
     }
@@ -181,6 +182,10 @@ button {
   text-transform: uppercase;
 }
 
+.desktop span {
+  text-transform: capitalize;
+}
+
 .router-link-home {
   font-family: Anton, Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
@@ -188,6 +193,30 @@ button {
 
 .router-link-active span:not(.router-link-home) {
   color: #0800ff;
+}
+
+#link-tickets.desktop {
+  margin-left: 80px;
+}
+
+#link-tickets.desktop::after {
+  content: "<";
+}
+
+#link-tickets.desktop::before {
+  content: ">";
+}
+
+@media only screen and (max-width: 1126px) {
+  .router-link {
+    margin: 0 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .router-link {
+    margin: 0 1.3rem;
+  }
 }
 
 @media only screen and (max-width: 992px) {

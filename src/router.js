@@ -18,7 +18,8 @@ const router = new Router({
       name: "home",
       component: Home,
       meta: {
-        title: "ITU LAN"
+        title: "ITU LAN",
+        id: "home"
       }
     },
     {
@@ -26,7 +27,8 @@ const router = new Router({
       name: "news",
       component: News,
       meta: {
-        title: "ITU LAN - News"
+        title: "ITU LAN - News",
+        id: "news"
       }
     },
     {
@@ -34,7 +36,8 @@ const router = new Router({
       name: "tournaments",
       component: Tournaments,
       meta: {
-        title: "ITU LAN - Tournaments"
+        title: "ITU LAN - Tournaments",
+        id: "tournaments"
       }
     },
     {
@@ -42,15 +45,17 @@ const router = new Router({
       name: "information",
       component: Information,
       meta: {
-        title: "ITU LAN - Information"
+        title: "ITU LAN - Information",
+        id: "information"
       }
     },
     {
       path: "/tickets",
-      name: "tickets",
+      name: "buy tickets",
       component: Tickets,
       meta: {
-        title: "ITU LAN - Tickets"
+        title: "ITU LAN - Tickets",
+        id: "tickets"
       }
     },
     {

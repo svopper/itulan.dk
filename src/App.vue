@@ -15,4 +15,16 @@ export default {
 </script>
 
 <style>
+.router-view:not(.home) {
+  max-width: 600px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .router-view:not(.home) {
+    padding: 15px;
+    margin: 80px auto;
+  }
+}
 </style>

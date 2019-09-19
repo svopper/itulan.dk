@@ -6,8 +6,7 @@
       </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
-        <h2 data-aos-once="true" data-aos="fade-right" class="hollow-text">25-27</h2>
-        <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">October</h1>
+        <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">25-27 October</h1>
         <h2
           data-aos-once="true"
           data-aos="fade-right"
@@ -16,9 +15,10 @@
         >Fall 2019</h2>
         <div data-aos-once="true" data-aos="fade-left" id="ticket-circle">
           <a href="/tickets">
-            <text-circle message="Buy tickets here!" radius="180px" />
+            <text-circle message="Buy Ticket" radius="180px" />
           </a>
         </div>
+        <img src="../assets/img/home_footer.gif" class="bottom-banner" />
       </div>
     </header>
   </div>
@@ -108,10 +108,21 @@ a:hover {
   right: 10%;
 }
 
+.bottom-banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 @media only screen and (max-width: 991px) {
   .container {
     padding-right: 3rem;
     padding-left: 3rem;
+  }
+
+  .bottom-banner {
+    display: none;
   }
 }
 

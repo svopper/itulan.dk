@@ -38,7 +38,7 @@
     <h3>FINDING YOUR TABLE</h3>
     <p>You have chosen your table and seat number during the booking process. The table number from you booking is final. Ignore any other table numbers than the ones posted on ITU LAN posters on the tables.</p>
     <h3>FOOD & BEVERAGES</h3>
-    <p>You provide your own food at ITU LAN. Use the nearby supermarkeds or order your food online.</p>
+    <p>You provide your own food at ITU LAN. Use the nearby supermarkets or order your food online.</p>
     <h3>PIZZA</h3>
     <p>There are several pizzerias nearby. Order your food to:</p>
     <div class="address">
@@ -66,25 +66,12 @@
 </template>
 
 <style scoped>
-h3 {
-  text-align: center;
-}
-
 .information {
-  margin: 80px auto;
-  max-width: 600px;
-  padding: 15px;
+  text-align: left;
 }
 
 .address > p {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-@media only screen and (max-width: 750px) {
-  .title {
-    font-size: 3rem;
-    padding-bottom: 0;
-  }
 }
 </style>

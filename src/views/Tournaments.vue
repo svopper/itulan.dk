@@ -98,13 +98,6 @@ export default {
   margin-bottom: 15px;
 }
 
-.tournaments {
-  margin: 80px auto;
-  max-width: 800px;
-  padding: 15px;
-  text-align: center;
-}
-
 .tournaments-wrapper {
   margin-bottom: 7rem;
 }
@@ -115,11 +108,6 @@ export default {
 }
 
 @media only screen and (max-width: 750px) {
-  .title {
-    font-size: 3rem;
-    padding-bottom: 0;
-  }
-
   .tournaments-wrapper {
     margin-bottom: 3rem;
   }
