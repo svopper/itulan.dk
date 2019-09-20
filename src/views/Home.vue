@@ -130,7 +130,7 @@ a:hover {
   }
 
   #ticket-circle {
-    right: 13%;
+    right: 100%;
   }
 
   .header-content {
@@ -140,13 +140,14 @@ a:hover {
 
 @media only screen and (max-width: 1200px) {
   #ticket-circle {
-    right: 5%;
+    right: 10%;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   #ticket-circle {
     transform: scale(0.7);
+    margin-top: 3rem;
   }
 }
 

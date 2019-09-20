@@ -41,7 +41,6 @@ export default {
 
 <style scoped>
 .circle {
-  /* margin: 1.5rem; */
   background-color: #0800ff;
   border-radius: 50%;
   display: flex;
@@ -62,6 +61,7 @@ export default {
   padding: 1.5rem;
   border-radius: 50%;
   display: inline-block;
+  animation: border-pulsate 2s infinite;
 }
 
 .circle-outline .message {
@@ -75,6 +75,18 @@ export default {
   line-height: 120%;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@keyframes border-pulsate {
+  0% {
+    border-color: #fff;
+  }
+  50% {
+    border-color: #ffffff22;
+  }
+  100% {
+    border-color: #fff;
+  }
 }
 
 @media only screen and (max-width: 600px) {

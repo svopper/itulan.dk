@@ -2,12 +2,12 @@
   <div class="tickets">
     <h1 class="title">Buy Ticket</h1>
     <a
-      class="ticket-link"
+      id="ticket-link"
       href="https://itulan.safeticket.dk/itulanfall19"
       target="_blank"
       rel="noopener"
     >
-      <text-circle message="Buy tickets here!" radius="180px" font-size="2rem" />
+      <text-circle message="Buy ticket" radius="180px" font-size="2rem" />
     </a>
 
     <div class="steps">
@@ -26,8 +26,10 @@
     </div>
 
     <div id="step-one">
-      <h3 class="hollow-text">1.</h3>
-      <h3>Find seat</h3>
+      <span class="step-header">
+        <h3 class="hollow-text">1.</h3>
+        <h3>Find seat</h3>
+      </span>
       <p>Choose your table and seat number during the booking process. The table number from your booking is final. Ignore any other table numbers than the ones posted on ITU LAN posters on the tables.</p>
       <div class="floor-wrapper">
         <img
@@ -61,8 +63,10 @@
     </div>
     <div class="flex-wrapper">
       <div id="step-two">
-        <h3 class="hollow-text">2.</h3>
-        <h3>Buy Ticket</h3>
+        <span class="step-header">
+          <h3 class="hollow-text">2.</h3>
+          <h3>Buy Ticket</h3>
+        </span>
         <p>
           <a
             id="inline-link"
@@ -73,8 +77,10 @@
         </p>
       </div>
       <div id="step-three">
-        <h3 class="hollow-text">3.</h3>
-        <h3>Check-in</h3>
+        <span class="step-header">
+          <h3 class="hollow-text">3.</h3>
+          <h3>Check-in</h3>
+        </span>
         <p>When you arrive, please check-in at 4A10. Here you will also receive your exclusive ITU LAN wristband.</p>
       </div>
     </div>
@@ -92,16 +98,18 @@ export default {
 
 
 <style scoped>
-.ticket-link {
-  margin-bottom: 40px;
-  display: inline-block;
+#ticket-link {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  transform: scale(0.8);
 }
 
-.ticket-link {
+#ticket-link {
   color: inherit !important;
 }
 
-.ticket-link:hover {
+#ticket-link:hover {
   color: inherit !important;
   text-decoration: none !important;
 }
@@ -115,19 +123,23 @@ export default {
   content: " ";
 }
 
+.tickets p {
+  margin-top: 1rem;
+}
+
 .title {
   margin: 0 auto;
   padding-bottom: 25px;
   display: block;
 }
 
+.step-header {
+  margin-bottom: 1rem !important;
+}
+
 .steps {
   margin-bottom: 4rem;
   position: relative;
-}
-
-.steps > span {
-  /* width: 1000px; */
 }
 
 .flex-wrapper {
@@ -151,14 +163,19 @@ export default {
   margin-top: -20%;
 }
 
+@media only screen and (max-width: 992px) {
+  #ticket-link {
+    top: initial;
+    right: initial;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .tickets h3 {
     letter-spacing: 1px;
-  }
-
-  .ticket-link {
-    margin-bottom: 10px;
-    display: inline-block;
   }
 
   .steps {
@@ -167,6 +184,10 @@ export default {
 
   .steps h3 {
     font-size: 1.3rem;
+  }
+
+  #ticket-link {
+    margin-bottom: 0rem;
   }
 
   .flex-wrapper {
