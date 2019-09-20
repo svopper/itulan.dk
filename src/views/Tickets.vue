@@ -37,6 +37,7 @@
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-anchor="#step-one"
+          data-aos-once="true"
         />
         <img
           width="100%"
@@ -45,6 +46,7 @@
           data-aos="fade-up"
           data-aos-delay="1000"
           data-aos-anchor="#step-one"
+          data-aos-once="true"
         />
         <img
           width="100%"
@@ -53,6 +55,7 @@
           data-aos="fade-up"
           data-aos-delay="1700"
           data-aos-anchor="#step-one"
+          data-aos-once="true"
         />
       </div>
     </div>
