@@ -7,7 +7,7 @@
           <span>Follow us</span>
           <img src="../assets/img/pointer_down.gif" alt />
         </div>
-        <div class="grid-container">
+        <div class="some-icon-container">
           <div>
             <a href="https://discord.gg/nSFXWQN" target="_blank" rel="noopener">
               <img src="../assets/img/socialmedia/discord_icon.svg" alt />
@@ -119,7 +119,7 @@ export default {
   padding: 20px 40px;
 }
 
-.grid-container {
+.some-icon-container {
   font-size: 14px;
   text-align: left;
   display: grid;
@@ -129,7 +129,7 @@ export default {
   grid-row-gap: 20px;
 }
 
-.grid-container img:hover {
+.some-icon-container img:hover {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   transform: scale(1.4);
@@ -152,7 +152,7 @@ export default {
     display: none;
   }
 
-  .grid-container {
+  .some-icon-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -160,9 +160,10 @@ export default {
     grid-template-rows: initial;
     grid-column-gap: initial;
     grid-row-gap: initial;
+    margin-bottom: 2rem;
   }
 
-  .grid-container img:hover {
+  .some-icon-container img:hover {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     transform: scale(1.4);
