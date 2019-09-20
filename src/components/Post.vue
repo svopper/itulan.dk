@@ -2,6 +2,7 @@
   <div>
     <div class="fb-post">
       <p class="date">{{ formattedDate }}</p>
+      <br />
       <p v-html="parsedPost" class="message"></p>
     </div>
   </div>
@@ -38,19 +39,17 @@ export default {
 </script>
 
 <style scoped>
-.fb-post {
-  margin: 1rem auto;
-  padding: 0.4rem 3rem;
-  border: 4px #2f3eac solid;
-}
-
 .message {
-  font-size: 1rem;
+  font-size: 14px;
   margin-top: 0px;
   overflow-wrap: break-word;
+  text-align: left;
+  margin-top: 15px;
 }
 
 .date {
   font-weight: 900;
+  float: right;
+  margin-bottom: 0px;
 }
 </style>
