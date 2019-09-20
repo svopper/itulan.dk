@@ -49,6 +49,11 @@
             class="post"
           />
         </div>
+        <div class="stage">
+          <div class="box bounce-2">
+            <img class="arrow" src="../assets/img/arrow-down.svg" alt />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -107,16 +112,20 @@ export default {
 
 #mobile {
   width: 100%;
-  height: 100%;
-  background-color: #07214c;
-  border: 15px solid #000;
-  border-radius: 40px;
+  height: 90%;
   overflow: auto;
   padding: 20% 15px 10px 15px;
 }
 
+#mobile::-webkit-scrollbar {
+  display: none;
+}
+
 #mobile-wrapper {
-  padding: 20px 40px;
+  margin: 10px 15px 10px 15px;
+  background-color: #07214c;
+  border: 15px solid #000;
+  border-radius: 40px;
 }
 
 .some-icon-container {
@@ -133,6 +142,41 @@ export default {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   transform: scale(1.4);
+}
+
+.stage {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.box {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin: 0 auto;
+  transform-origin: bottom;
+}
+
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.arrow {
+  height: 25px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -180,16 +224,23 @@ export default {
   #mobile {
     width: 100%;
     height: 100%;
+    overflow: auto;
+    padding: initial;
+  }
+
+  #mobile-wrapper {
     background-color: initial;
     border: initial;
     border-radius: initial;
-    overflow: auto;
-    padding: initial;
   }
 
   .post {
     border-top: 1px solid #fff;
     padding-top: 25px;
+  }
+
+  .stage {
+    display: none;
   }
 }
 </style>
