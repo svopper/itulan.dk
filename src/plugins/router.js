@@ -51,7 +51,7 @@ const router = new Router({
     },
     {
       path: "/tickets",
-      name: "buy tickets",
+      name: "buy ticket",
       component: Tickets,
       meta: {
         title: "ITU LAN - Tickets",
