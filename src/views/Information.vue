@@ -51,7 +51,7 @@
     <p>You can bring your own food and heat it up in the kitchen on each floor. There is refrigerators and microwave ovens.</p>
     <p class="bold">Please remember to use our trash cans!</p>
     <h3>SCROLLBAR – THE STUDENT BAR</h3>
-    <p>The student bar is open 15.00-02.00 and is well-stocked in beers, soda, drinks, RedBull, etc. at student friendly prices.</p>
+    <p>The student bar is open Friday 15.00-02.00 and is well-stocked in beers, soda, drinks, RedBull, etc. at student friendly prices.</p>
     <p>You have to be 18 to buy alcoholic beverages.</p>
     <h3>SLEEP</h3>
     <p>There is no sleeping accommodations at ITU LAN. This is because of a strict fire code set for the building. We recommend going home and sleep there. We provide free storage for your gear in the meantime.</p>

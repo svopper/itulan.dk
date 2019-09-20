@@ -7,7 +7,7 @@
 
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 
-### 🏠 [Homepage](https://itulan.kols.dk/)
+### 🏠 [Homepage](https://itulan.dk/)
 
 ## Install
 
@@ -22,6 +22,12 @@ npm run serve
 ```
 
 ## Deployment
+The Firebase CLI tool is needed, to deploy.
+```sh
+npm install -g firebase-tools
+```
+
+When Firebase is logged in, run the following command to deploy:
 
 ```sh
 npm run deploy

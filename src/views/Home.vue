@@ -18,7 +18,6 @@
             <text-circle message="Buy Ticket" radius="180px" />
           </a>
         </div>
-        <img src="../assets/img/home_footer.gif" class="bottom-banner" />
       </div>
     </header>
   </div>
@@ -108,21 +107,10 @@ a:hover {
   right: 10%;
 }
 
-.bottom-banner {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
 @media only screen and (max-width: 991px) {
   .container {
     padding-right: 3rem;
     padding-left: 3rem;
-  }
-
-  .bottom-banner {
-    display: none;
   }
 }
 
