@@ -17,22 +17,32 @@
             class="some-desc"
           >Discord is our primary platofrm for contacting the crew during the LAN.</div>
           <div>
-            <img src="../assets/img/socialmedia/facebook_icon.svg" alt />
+            <a href="https://www.facebook.com/itulan" target="_blank" rel="noopener">
+              <img src="../assets/img/socialmedia/facebook_icon.svg" alt />
+            </a>
           </div>
           <div
             class="some-desc"
           >Facebook is the main platform for announcements and event related information.</div>
           <div>
-            <img src="../assets/img/socialmedia/insta_icon.svg" alt />
+            <a href="https://www.instagram.com/itulan/" target="_blank" rel="noopener">
+              <img src="../assets/img/socialmedia/insta_icon.svg" alt />
+            </a>
           </div>
           <div class="some-desc">We use Instagram to post images from the event.</div>
           <div>
-            <img
-              id="youtube-logo"
-              height="25px"
-              src="../assets/img/socialmedia/youtube_icon.png"
-              alt
-            />
+            <a
+              href="https://www.youtube.com/channel/UCa8UEVBGtOfykw6N9G6db8g"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                id="youtube-logo"
+                height="25px"
+                src="../assets/img/socialmedia/youtube_icon.png"
+                alt
+              />
+            </a>
           </div>
           <div
             class="some-desc"
