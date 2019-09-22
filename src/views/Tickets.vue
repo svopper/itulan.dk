@@ -73,7 +73,7 @@
             href="https://itulan.safeticket.dk/itulanfall19"
             target="_blank"
             rel="noopener"
-          >But your ticket here</a>
+          >Buy your ticket here</a>
         </p>
       </div>
       <div id="step-three">
