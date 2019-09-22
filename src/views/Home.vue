@@ -6,16 +6,20 @@
       </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
-        <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">25-27 October</h1>
+        <h1
+          data-aos-once="true"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >{{ $t("home.date.dayMonth") }}</h1>
         <h2
           data-aos-once="true"
           data-aos="fade-right"
           data-aos-delay="200"
           class="hollow-text"
-        >Fall 2019</h2>
+        >{{ $t("home.date.season") }}</h2>
         <div data-aos-once="true" data-aos="fade-left" id="ticket-circle">
           <a href="/tickets">
-            <text-circle message="Buy Ticket" radius="180px" />
+            <text-circle :message="$t('home.ticketButton')" radius="180px" />
           </a>
         </div>
       </div>

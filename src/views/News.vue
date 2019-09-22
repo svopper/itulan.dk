@@ -2,54 +2,39 @@
   <div class="news">
     <div class="flex-wrapper">
       <div>
-        <h1 class="title">News</h1>
-        <div id="pointer">
+        <h1 class="title" data-aos="fade-up">News</h1>
+        <div id="pointer" data-aos="fade-up" data-aos-delay="200">
           <span>Follow us</span>
           <img src="../assets/img/pointer_down.gif" alt />
         </div>
-        <div class="some-icon-container">
+        <div class="some-icon-container" data-aos="fade-up" data-aos-delay="200">
           <div>
-            <a href="https://discord.gg/nSFXWQN" target="_blank" rel="noopener">
+            <a :href="$t('common.socialMedia.discord.url')" target="_blank" rel="noopener">
               <img src="../assets/img/socialmedia/discord_icon.svg" alt />
             </a>
           </div>
-          <div
-            class="some-desc"
-          >Discord is our primary platofrm for contacting the crew during the LAN.</div>
+          <div class="some-desc">{{ $t('common.socialMedia.discord.description') }}</div>
           <div>
-            <a href="https://www.facebook.com/itulan" target="_blank" rel="noopener">
+            <a :href="$t('common.socialMedia.facebook.url')" target="_blank" rel="noopener">
               <img src="../assets/img/socialmedia/facebook_icon.svg" alt />
             </a>
           </div>
-          <div
-            class="some-desc"
-          >Facebook is the main platform for announcements and event related information.</div>
+          <div class="some-desc">{{ $t('common.socialMedia.facebook.description') }}</div>
           <div>
-            <a href="https://www.instagram.com/itulan/" target="_blank" rel="noopener">
+            <a :href="$t('common.socialMedia.instagram.url')" target="_blank" rel="noopener">
               <img src="../assets/img/socialmedia/insta_icon.svg" alt />
             </a>
           </div>
-          <div class="some-desc">We use Instagram to post images from the event.</div>
+          <div class="some-desc">{{ $t('common.socialMedia.instagram.description') }}</div>
           <div>
-            <a
-              href="https://www.youtube.com/channel/UCa8UEVBGtOfykw6N9G6db8g"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                id="youtube-logo"
-                height="25px"
-                src="../assets/img/socialmedia/youtube_icon.png"
-                alt
-              />
+            <a :href="$t('common.socialMedia.youtube.url')" target="_blank" rel="noopener">
+              <img width="40px" src="../assets/img/socialmedia/youtube_icon.png" alt />
             </a>
           </div>
-          <div
-            class="some-desc"
-          >YouTube is our new streaming platform, where videos related to LAN will reside.</div>
+          <div class="some-desc">{{ $t('common.socialMedia.youtube.description') }}</div>
         </div>
       </div>
-      <div id="mobile-wrapper">
+      <div data-aos="fade-left" data-aos-delay="150" id="mobile-wrapper">
         <div id="mobile">
           <post
             v-for="post in posts"
@@ -146,6 +131,11 @@ export default {
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+}
+
+.some-icon-container img {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .some-icon-container img:hover {

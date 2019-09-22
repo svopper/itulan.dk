@@ -1,11 +1,12 @@
 <template>
   <div class="tickets">
-    <h1 class="title">Buy Ticket</h1>
+    <h1 class="title" data-aos="fade-up">Buy Ticket</h1>
     <a
       id="ticket-link"
       href="https://itulan.safeticket.dk/itulanfall19"
       target="_blank"
       rel="noopener"
+      data-aos="fade-up"
     >
       <text-circle message="Buy ticket" radius="180px" font-size="2rem" />
     </a>
@@ -25,7 +26,7 @@
       </span>
     </div>
 
-    <div id="step-one">
+    <div id="step-one" data-aos="fade-up" data-aos-delay="200">
       <span class="step-header">
         <h3 class="hollow-text">1.</h3>
         <h3>Find seat</h3>
