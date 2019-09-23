@@ -10,25 +10,25 @@
         <div class="some-icon-container" data-aos="fade-up" data-aos-delay="200">
           <div>
             <a :href="$t('common.socialMedia.discord.url')" target="_blank" rel="noopener">
-              <img src="../assets/img/socialmedia/discord_icon.svg" alt />
+              <img src="../assets/img/common/socialmedia/discord_icon.svg" alt />
             </a>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.discord.description') }}</div>
           <div>
             <a :href="$t('common.socialMedia.facebook.url')" target="_blank" rel="noopener">
-              <img src="../assets/img/socialmedia/facebook_icon.svg" alt />
+              <img src="../assets/img/common/socialmedia/facebook_icon.svg" alt />
             </a>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.facebook.description') }}</div>
           <div>
             <a :href="$t('common.socialMedia.instagram.url')" target="_blank" rel="noopener">
-              <img src="../assets/img/socialmedia/insta_icon.svg" alt />
+              <img src="../assets/img/common/socialmedia/insta_icon.svg" alt />
             </a>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.instagram.description') }}</div>
           <div>
             <a :href="$t('common.socialMedia.youtube.url')" target="_blank" rel="noopener">
-              <img width="40px" src="../assets/img/socialmedia/youtube_icon.png" alt />
+              <img width="40px" src="../assets/img/common/socialmedia/youtube_icon.png" alt />
             </a>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.youtube.description') }}</div>
@@ -49,7 +49,7 @@
         </div>
         <div class="stage">
           <div class="box bounce-2">
-            <img class="arrow" src="../assets/img/arrow-down.svg" alt />
+            <img class="arrow" src="../assets/img/news/arrow-down.svg" alt />
           </div>
         </div>
         <span id="scroll-for-more">{{ $t('news.scrollMoreLabel') }}</span>

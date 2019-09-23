@@ -12,6 +12,11 @@ export default {
     loadingLabel: "Loading...",
     scrollMoreLabel: "Scroll for more"
   },
+  notFound: {
+    title: "404",
+    text:
+      "Oh snap! You ran into panda! QUICK - run away before he wrecks your HP!"
+  },
   tournaments: {
     title: "Tournaments",
     description:

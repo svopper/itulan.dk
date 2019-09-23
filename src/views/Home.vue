@@ -2,7 +2,7 @@
   <div class="home">
     <header class="v-header container">
       <div class="fullscreen-background-wrap">
-        <img src="../assets/img/home_background.jpg" alt />
+        <img src="../assets/img/home/home_background.jpg" alt />
       </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">

@@ -42,7 +42,7 @@
         <img
           width="100%"
           id="floor-4"
-          src="../assets/img/floors/4_floor.png"
+          src="../assets/img/tickets/floors/4_floor.png"
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-anchor="#step-one"
@@ -51,7 +51,7 @@
         <img
           width="100%"
           id="floor-3"
-          src="../assets/img/floors/3_floor.png"
+          src="../assets/img/tickets/floors/3_floor.png"
           data-aos="fade-up"
           data-aos-delay="1000"
           data-aos-anchor="#step-one"
@@ -60,7 +60,7 @@
         <img
           width="100%"
           id="floor-2"
-          src="../assets/img/floors/2_floor.png"
+          src="../assets/img/tickets/floors/2_floor.png"
           data-aos="fade-up"
           data-aos-delay="1700"
           data-aos-anchor="#step-one"

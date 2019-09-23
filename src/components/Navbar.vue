@@ -50,7 +50,7 @@
           target="_blank"
           rel="noopener"
         >
-          <img src="../assets/img/socialmedia/discord_icon.svg" height="25px" />
+          <img src="../assets/img/common/socialmedia/discord_icon.svg" height="25px" />
         </b-nav-item>
         <b-nav-item
           class="some-button"
@@ -58,7 +58,7 @@
           target="_blank"
           rel="noopener"
         >
-          <img src="../assets/img/socialmedia/facebook_icon.svg" height="25px" />
+          <img src="../assets/img/common/socialmedia/facebook_icon.svg" height="25px" />
         </b-nav-item>
         <b-nav-item
           class="some-button"
@@ -66,7 +66,7 @@
           target="_blank"
           rel="noopener"
         >
-          <img src="../assets/img/socialmedia/insta_icon.svg" height="25px" />
+          <img src="../assets/img/common/socialmedia/insta_icon.svg" height="25px" />
         </b-nav-item>
         <b-nav-item
           class="some-button"
@@ -74,7 +74,7 @@
           target="_blank"
           rel="noopener"
         >
-          <img src="../assets/img/socialmedia/youtube_icon.png" height="20px" />
+          <img src="../assets/img/common/socialmedia/youtube_icon.png" height="20px" />
         </b-nav-item>
       </b-navbar-nav>
     </b-collapse>

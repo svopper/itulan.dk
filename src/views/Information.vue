@@ -2,13 +2,7 @@
   <div class="information">
     <h1 class="title" data-aos="fade-up">{{ $t('information.title') }}</h1>
     <div id="top"></div>
-    <div
-      v-for="(t, index) in topics"
-      :key="t.index"
-      data-aos="fade-up"
-      :data-aos-delay="index * 100"
-      data-aos-anchor="#top"
-    >
+    <div v-for="t in topics" :key="t.index" data-aos="fade-up">
       <h3>{{ t.topic }}</h3>
       <p v-for="(p, index) in t.paragraphs" :key="index" v-html="p"></p>
     </div>
