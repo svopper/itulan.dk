@@ -5,7 +5,7 @@
         <h1 class="title" data-aos="fade-up">News</h1>
         <div id="pointer" data-aos="fade-up" data-aos-delay="200">
           <span>Follow us</span>
-          <img src="../assets/img/pointer_down.gif" alt />
+          <!-- <img src="../assets/img/pointer_down.gif" alt /> -->
         </div>
         <div class="some-icon-container" data-aos="fade-up" data-aos-delay="200">
           <div>
@@ -103,6 +103,7 @@ export default {
 #pointer span {
   display: block;
   font-style: italic;
+  margin-bottom: 40px;
 }
 
 #mobile {
