@@ -52,7 +52,7 @@
             <img class="arrow" src="../assets/img/arrow-down.svg" alt />
           </div>
         </div>
-        <span>Scroll for more</span>
+        <span id="scroll-for-more">{{ $t('news.scrollMoreLabel') }}</span>
       </div>
     </div>
   </div>
@@ -128,6 +128,12 @@ export default {
   border-radius: 40px;
 }
 
+#scroll-for-more {
+  font-size: 12px;
+  display: block;
+  margin-top: 15px;
+}
+
 .some-icon-container {
   font-size: 14px;
   text-align: left;
@@ -151,7 +157,7 @@ export default {
 
 .stage {
   display: flex;
-  margin-top: 10px;
+  margin-top: 5px;
   width: 100%;
 }
 

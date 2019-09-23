@@ -9,7 +9,8 @@ export default {
   news: {
     title: "News",
     followUsLabel: "Follow us",
-    loadingLabel: "Loading..."
+    loadingLabel: "Loading...",
+    scrollMoreLabel: "Scroll for more"
   },
   tournaments: {
     title: "Tournaments",
