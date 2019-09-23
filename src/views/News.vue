@@ -36,13 +36,16 @@
       </div>
       <div data-aos="fade-left" data-aos-delay="150" id="mobile-wrapper">
         <div id="mobile">
-          <post
-            v-for="post in posts"
-            :key="post.id"
-            :date="post.created_time"
-            :message="post.message"
-            class="post"
-          />
+          <div v-if="isLoading">{{ $t('news.loadingLabel') }}</div>
+          <div v-else>
+            <post
+              v-for="post in posts"
+              :key="post.id"
+              :date="post.created_time"
+              :message="post.message"
+              class="post"
+            />
+          </div>
         </div>
         <div class="stage">
           <div class="box bounce-2">

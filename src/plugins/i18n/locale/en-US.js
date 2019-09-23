@@ -8,7 +8,8 @@ export default {
   },
   news: {
     title: "News",
-    followUs: "Follow us"
+    followUs: "Follow us",
+    loadingLabel: "Loading..."
   },
   tournaments: {
     title: "Tournaments",
