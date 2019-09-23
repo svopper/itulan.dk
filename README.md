@@ -22,12 +22,14 @@ npm run serve
 ```
 
 ## Deployment
+
 The Firebase CLI tool is needed, to deploy.
+
 ```sh
 npm install -g firebase-tools
 ```
 
-When Firebase is logged in, run the following command to deploy:
+When you have logged into Firebase with the CLI, run the following command to deploy:
 
 ```sh
 npm run deploy
