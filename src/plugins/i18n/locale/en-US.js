@@ -8,7 +8,7 @@ export default {
   },
   news: {
     title: "News",
-    followUs: "Follow us",
+    followUsLabel: "Follow us",
     loadingLabel: "Loading..."
   },
   tournaments: {
@@ -81,22 +81,23 @@ export default {
     }
   },
   information: {
+    title: "FAQ",
     subjects: [
       {
-        topic: "WHERE",
+        topic: "Where and when is the LAN?",
         paragraphs: [
           "ITU LAN Fall 2019 takes place from October 25th to October 27th at the IT University of Copenhagen."
         ]
       },
       {
-        topic: "GETTING IN",
+        topic: "How do I get in?",
         paragraphs: [
           "You can get in through the various entrances in the building. We’ve coordinated with facilities management, that you can get in with either a valid student ID, or with an ITU LAN ticket. Please have it ready upon entry.",
           "You get your wristband to use for access at the organizer area (4A10 – 4th floor above Analog)"
         ]
       },
       {
-        topic: "CONTACTING THE CREW",
+        topic: "How do I contact the crew?",
         paragraphs: [
           "Before LAN, the best way to contact us if you have any questions related to LAN, is through out Facebook page, which you can find <a target='_blank' rel='noopener' href='https://www.facebook.com/itulan'>here<a>.",
           "The ITU LAN Facebook page will also post status updates throughout the weekend, and we recommend that you follow it for your information needs.",
@@ -106,16 +107,51 @@ export default {
         ]
       },
       {
-        topic: "Finding your table",
+        topic: "How do I find my table?",
         paragraphs: [
           "You have chosen your table and seat number during the booking process. The table number from you booking is final. Ignore any other table numbers, than the ones posted on ITU LAN posters on the tables."
         ]
       },
       {
-        topic: "TOURNAMENTS: SIGN-UP AND INFO",
+        topic: "Where do I find information about tournaments? ",
         paragraphs: [
-          "Deadlines for sign-up for tournaments and events can be found at the Toornament-page for each tournament. See the <a href='tournaments' target='_blank' rel='noopener'>Tournament</a> page for more info.",
-          "For info or support please contact the event responsible, which can be seen on the tournament’s Toornament page, or by writing in the tournament's <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>Discord<a>-channel."
+          "For info or support please contact the event responsible, which can be seen on the tournament’s Toornament page, or by writing in the tournament's <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>Discord<a>-channel.",
+          "Deadlines for sign-up for tournaments and events can be found at the Toornament-page for each tournament. See the <a href='tournaments' target='_blank' rel='noopener'>Tournament</a> page for more info."
+        ]
+      },
+      {
+        topic: "Do you provide food and drinks?",
+        paragraphs: [
+          "No - you have to stock yourself up with food, but there are several supermarkets around.",
+          "Usually our sponsors will provide a limited amount of drinks during the LAN, but is not always guaranteed.",
+          "You can, however, order food online. Order your food to: <br> <b>IT-Universitetet i København</><br><b>Rued Langgaardsvej 7</b><br><b>2300 København S</b>"
+        ]
+      },
+      {
+        topic: "Is there any facilities to heat my food?",
+        paragraphs: [
+          "Yes - you can bring your own food and heat it up in the kitchen on each floor. There is refrigerators and microwave ovens."
+        ]
+      },
+      {
+        topic: "Can I buy drinks in ScrollBar?",
+        paragraphs: [
+          "Yes - ScrollBar is open Friday 15.00-02.00 and is well-stocked with beers, soda, drinks, RedBull, etc. at student friendly prices.",
+          "Please note that alcoholic beverages can only be enjoyed in the ScollBar area, and you have to be 18 years of age to buy them.",
+          "Please drink responsibly."
+        ]
+      },
+      {
+        topic: "Can I sleep at ITU?",
+        paragraphs: [
+          "There is no sleeping accommodations at ITU LAN. This is because of a strict fire code set for the building. We recommend going home and sleep there. We provide free storage for your gear in the meantime."
+        ]
+      },
+      {
+        topic: "Did you say storage?",
+        paragraphs: [
+          "Yes - there will be storage on both 2nd and 3rd floor in 2A12-14 and 3A12-14.",
+          "If you need to store or pickup your gear please contact the crew at 4A10, or write @keywarden on <a href='https://discord.gg/nSFXWQN' target='_blank' rel='noopener'>our Discord channel</a>."
         ]
       }
     ]

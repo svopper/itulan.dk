@@ -2,9 +2,9 @@
   <div class="news">
     <div class="flex-wrapper">
       <div>
-        <h1 class="title" data-aos="fade-up">News</h1>
+        <h1 class="title" data-aos="fade-up">{{ $t('news.title') }}</h1>
         <div id="pointer" data-aos="fade-up" data-aos-delay="200">
-          <span>Follow us</span>
+          <span>{{ $t('news.followUsLabel') }}</span>
           <!-- <img src="../assets/img/pointer_down.gif" alt /> -->
         </div>
         <div class="some-icon-container" data-aos="fade-up" data-aos-delay="200">
@@ -52,6 +52,7 @@
             <img class="arrow" src="../assets/img/arrow-down.svg" alt />
           </div>
         </div>
+        <span>Scroll for more</span>
       </div>
     </div>
   </div>

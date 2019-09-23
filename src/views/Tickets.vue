@@ -6,9 +6,15 @@
       href="https://itulan.safeticket.dk/itulanfall19"
       target="_blank"
       rel="noopener"
-      data-aos="fade-up"
     >
-      <text-circle message="Buy ticket" radius="180px" font-size="2rem" />
+      <text-circle
+        data-aos="fade-left"
+        data-aos-delay="400"
+        data-aos-duration="1250"
+        message="Buy ticket"
+        radius="180px"
+        font-size="2rem"
+      />
     </a>
 
     <div class="steps">
