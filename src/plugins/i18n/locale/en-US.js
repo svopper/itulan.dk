@@ -22,65 +22,75 @@ export default {
     description:
       "ITU LAN is hosting several tournaments during the weekend, and here you can see an overview over the tournaments. Are you up for the challenge?",
     notPublic: "Tournaments will be announced soon...",
+    clickAndRegister: "Click and register",
     tournamentCards: {
       descriptionTBA: "Description TBA",
       platformLabel: "Platform: ",
       tournaments: [
         {
-          title: "Counter-Strike: Global Offence",
-          url:
-            "https://widget.toornament.com/tournaments/2811126039466532864/registration?_locale=en_US&theme=discipline",
-          description: "",
-          platform: "PC"
-        },
-        {
-          title: "CS:GO Danger Zone",
-          url:
-            "https://widget.toornament.com/tournaments/2811222221909147648/registration?_locale=en_US&theme=discipline",
-          description: "",
+          title: "CS:GO",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2811126039466532864/?_locale=en_US",
           platform: "PC"
         },
         {
           title: "Rocket League",
-          url:
-            "https://widget.toornament.com/tournaments/2811210599123623936/registration?_locale=en_US&theme=discipline",
-          description: "",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2811210599123623936/?_locale=en_US",
           platform: "PC"
         },
         {
-          title: "Warcraft 3 Warlock",
-          url:
-            "https://widget.toornament.com/tournaments/2854040897888059392/registration?_locale=en_US&theme=discipline",
-          description: "",
+          title: "Overwatch",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2811235648987381760/?_locale=en_US",
           platform: "PC"
         },
         {
           title: "Mario Kart 8 Deluxe",
-          url:
-            "https://widget.toornament.com/tournaments/2811201601864605696/registration?_locale=en_US&theme=discipline",
-          description: "",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2811201601864605696/?_locale=en_US",
           platform: "Nintendo Switch"
         },
         {
-          title: "Stellaris",
-          url:
-            "https://widget.toornament.com/tournaments/2854042174398095360/registration?_locale=en_US&theme=discipline",
-          description: "",
+          title: "CS:GO Danger Zone",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2811222221909147648/?_locale=en_US",
           platform: "PC"
         },
         {
-          title: "Magic: The Gathering",
-          url:
-            "https://widget.toornament.com/tournaments/2811215862838206464/registration?_locale=en_US&theme=discipline",
-          description:
-            "Greetings Planeswalkers: It's time to dddddddddddddduel! At LAN this year, the very first ITU LAN Championship in Magic: The Gathering will be held. The tournament will be using MTGA (Magic: The Gathering Arena), the new online client, and the format will be a Standard BO3 tournament. Each player will bring 1 deck. We are lucky enough that a Standard rotation has just happened at the time of the tournament, so we get to play with cards from the newest set: Throne of Eldraine! If we are lucky, the tournament will be streamed, and of course there are going to be amazing prizes for the winner!",
+          title: "HearthStone",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2895290115908378624/?_locale=en_US",
+          platform: "PC"
+        },
+        {
+          title: "World of Warcraft - Modem Run",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2894632883396665344/?_locale=en_US",
+          platform: "PC"
+        },
+        {
+          title: "Warcraft 3 Warlock",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2854040897888059392/?_locale=en_US",
+          platform: "PC"
+        },
+        {
+          title: "Stellaris",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2854042174398095360/?_locale=en_US",
+          platform: "PC"
+        },
+        {
+          title: "Magic: The Gathering Online",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2811215862838206464/?_locale=en_US",
           platform: "PC"
         },
         {
           title: "Super Smash Bros Ultimate",
-          url:
-            "https://widget.toornament.com/tournaments/2811215611487911936/registration?_locale=en_US&theme=discipline",
-          description: "",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2811215611487911936/?_locale=en_US",
           platform: "Nintendo Switch"
         }
       ]
@@ -143,7 +153,7 @@ export default {
         topic: "Can I buy drinks in ScrollBar?",
         paragraphs: [
           "Yes - ScrollBar is open Friday 15.00-02.00 and is well-stocked with beers, soda, drinks, RedBull, etc. at student friendly prices.",
-          "Please note that alcoholic beverages can only be enjoyed in the ScollBar area, and you have to be 18 years of age to buy them.",
+          "Please note that alcoholic beverages can only be enjoyed in the ScrollBar area, and you have to be 18 years of age to buy them.",
           "Please drink responsibly."
         ]
       },
@@ -167,7 +177,7 @@ export default {
       discord: {
         url: "https://discord.gg/nSFXWQN",
         description:
-          "Discord is our primary platofrm for contacting the crew during the LAN."
+          "Discord is our primary platform for contacting the crew during the LAN."
       },
       facebook: {
         url: "https://www.facebook.com/itulan",

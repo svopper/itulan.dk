@@ -2,23 +2,29 @@
   <div class="tournaments">
     <h1 class="title" data-aos="fade-up">{{ $t('tournaments.title') }}</h1>
     <p data-aos="fade-up" data-aos-delay="200">{{ $t('tournaments.description') }}</p>
-    <div v-if="!isPublic">
-      <h3 data-aos="fade-up" data-aos-delay="300">{{ $t('tournaments.notPublic') }}</h3>
+    <div v-if="isPublic || test" class="tournaments-wrapper">
+      <small>
+        <i>{{ $t('tournaments.clickAndRegister') }}</i>
+      </small>
+      <br />
+      <img class="hand" width="25px" src="../assets/img/common/finger-down.svg" alt />
+      <accordion v-for="t in tournaments" :key="t.url" :tournament="t" />
     </div>
-    <div v-else class="tournaments-wrapper">
-      <div v-for="t in tournaments" :key="t.url">
-        <h3>{{ t.title }}</h3>
-        <small class="platform">{{ $t('tournaments.tournamentCards.platformLabel') }} {{t.platform}}</small>
-        <iframe width="100%" height="88" :src="t.url" allowfullscreen frameborder="0"></iframe>
-        <p v-if="t.description">{{ t.description }}</p>
-        <p v-else>{{ $t('tournaments.tournamentCards.descriptionTBA') }}</p>
-      </div>
+    <div v-else>
+      <h3 data-aos="fade-up" data-aos-delay="300">{{ $t('tournaments.notPublic') }}</h3>
     </div>
   </div>
 </template>
 
 <script>
+import Accordion from "../components/Accordion";
 export default {
+  components: {
+    Accordion
+  },
+  mounted() {
+    this.test = Boolean(this.$route.query.test);
+  },
   computed: {
     isPublic() {
       return new Date() > new Date("2019-10-03T00:00:00");
@@ -26,13 +32,17 @@ export default {
   },
   data() {
     return {
-      tournaments: this.$t("tournaments.tournamentCards.tournaments")
+      tournaments: this.$t("tournaments.tournamentCards.tournaments"),
+      test: false
     };
   }
 };
 </script>
 
 <style scoped>
+.tournaments {
+  max-width: 800px;
+}
 .tournament-wrapper {
   background-color: #444546;
   height: 72px;
@@ -47,6 +57,10 @@ export default {
 .platform {
   display: block;
   margin-bottom: 10px;
+}
+
+.hand {
+  margin: 10px 0px;
 }
 
 @media only screen and (max-width: 750px) {
