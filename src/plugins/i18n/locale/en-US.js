@@ -20,7 +20,7 @@ export default {
   tournaments: {
     title: "Tournaments",
     description:
-      "ITU LAN is hosting several tounament during the weekend, and here you can sse an overview over the tournaments. Are you up for the challenge?",
+      "ITU LAN is hosting several tournaments during the weekend, and here you can see an overview over the tournaments. Are you up for the challenge?",
     notPublic: "Tournaments will be announced soon...",
     tournamentCards: {
       descriptionTBA: "Description TBA",
@@ -105,23 +105,23 @@ export default {
       {
         topic: "How do I contact the crew?",
         paragraphs: [
-          "Before LAN, the best way to contact us if you have any questions related to LAN, is through out Facebook page, which you can find <a target='_blank' rel='noopener' href='https://www.facebook.com/itulan'>here<a>.",
+          "Before LAN, the best way to contact us if you have any questions related to LAN, is through our Facebook page, which you can find <a target='_blank' rel='noopener' href='https://www.facebook.com/itulan'>here<a>.",
           "The ITU LAN Facebook page will also post status updates throughout the weekend, and we recommend that you follow it for your information needs.",
-          "You can also write is an <a target='_blank' rel='noopener' href='mailto:admin@itulan.dk'>e-mail</a>, and we will contact you as fast as possible.",
-          "During the LAN, the primary platform for contact is our Discord – join it <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>here<a>! Here you can contact us directly, ask game- or event specific questions, and get notifications for the different tournaments.",
+          "You can also write us an <a target='_blank' rel='noopener' href='mailto:admin@itulan.dk'>e-mail</a>, and we will answer you as fast as possible.",
+          "During the LAN, the primary platform for contact is our Discord server – join it <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>here<a>! Here you can contact us directly, ask game- or event specific questions, and get updates on the different tournaments.",
           "If you need in-person help during the LAN, swing by the crew area at 4A10 (4th floor in the corner above Analog)."
         ]
       },
       {
         topic: "How do I find my table?",
         paragraphs: [
-          "You have chosen your table and seat number during the booking process. The table number from you booking is final. Ignore any other table numbers, than the ones posted on ITU LAN posters on the tables."
+          "You have chosen your table and seat during the booking process. The table number from you booking is final. Ignore any other table numbers, than the ones posted on ITU LAN posters on the tables."
         ]
       },
       {
         topic: "Where do I find information about tournaments? ",
         paragraphs: [
-          "For info or support please contact the event responsible, which can be seen on the tournament’s Toornament page, or by writing in the tournament's <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>Discord<a>-channel.",
+          "For info or support please contact the tournament responsible, which can be seen on the tournament’s Toornament page, or by writing in the tournament's <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>Discord<a>-channel.",
           "Deadlines for sign-up for tournaments and events can be found at the Toornament-page for each tournament. See the <a href='tournaments' target='_blank' rel='noopener'>Tournament</a> page for more info."
         ]
       },
@@ -134,7 +134,7 @@ export default {
         ]
       },
       {
-        topic: "Is there any facilities to heat my food?",
+        topic: "Are there any facilities to prepare my own   food?",
         paragraphs: [
           "Yes - you can bring your own food and heat it up in the kitchen on each floor. There is refrigerators and microwave ovens."
         ]
