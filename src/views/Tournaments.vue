@@ -28,11 +28,21 @@ export default {
   computed: {
     isPublic() {
       return new Date() > new Date("2019-10-03T00:00:00");
+    },
+    tournaments() {
+      let tournaments = this.$t("tournaments.tournamentCards.tournaments");
+
+      tournaments.sort((a, b) => {
+        var textA = a.title.toUpperCase();
+        var textB = b.title.toUpperCase();
+        return textA < textB ? -1 : textA > textB ? 1 : 0;
+      });
+
+      return tournaments;
     }
   },
   data() {
     return {
-      tournaments: this.$t("tournaments.tournamentCards.tournaments"),
       test: false
     };
   }
