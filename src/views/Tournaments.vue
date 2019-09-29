@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     isPublic() {
-      return new Date() > new Date("2019-10-03T00:00:00");
+      return new Date() > new Date("2019-10-02T00:00:00");
     }
   },
   data() {
