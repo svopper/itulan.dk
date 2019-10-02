@@ -7,6 +7,7 @@
     <div class="details" v-show="active">
       <hr />
       <div>
+        <p v-if="isMobile">{{ tournament.description }}</p>
         <iframe width="100%" height="400px" :src="tournament.widgetUrl" frameborder="0"></iframe>
       </div>
       <hr />
@@ -18,10 +19,23 @@
 export default {
   data() {
     return {
-      active: false
+      active: false,
+      windowWidth: null
     };
   },
-  props: ["tournament"]
+  props: ["tournament"],
+  mounted() {
+    this.windowWidth = window.innerWidth;
+
+    window.addEventListener("resize", () => {
+      this.windowWidth = window.innerWidth;
+    });
+  },
+  computed: {
+    isMobile() {
+      return this.windowWidth < 670;
+    }
+  }
 };
 </script>
 
