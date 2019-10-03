@@ -7,8 +7,14 @@
     <div class="details" v-show="active">
       <hr />
       <div>
-        <p v-if="isMobile">{{ tournament.description }}</p>
-        <iframe width="100%" height="400px" :src="tournament.widgetUrl" frameborder="0"></iframe>
+        <p v-if="isMobile || tournament.title === 'Escape Room' ">{{ tournament.description }}</p>
+        <iframe
+          v-if="tournament.widgetUrl"
+          width="100%"
+          height="400px"
+          :src="tournament.widgetUrl"
+          frameborder="0"
+        ></iframe>
       </div>
       <hr />
     </div>

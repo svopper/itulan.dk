@@ -100,7 +100,7 @@ export default {
             '"Stellaris is a 4X grand strategy video game developed and published by Paradox Interactive. Stellaris\'s gameplay revolves around space exploration, managing an empire, diplomacy, and space warfare with other spacefaring civilizations." - Wikipedia. "Stellaris\'s gameplay revolves around optimizing your economy and engaging in a cold-war-esque escalation of fleet size until all hell breaks loose and you bomb each other into the ground." - ITU LAN Crewmember.'
         },
         {
-          title: "Magic: The Gathering Online",
+          title: "Magic: The Gathering Arena",
           widgetUrl:
             "https://widget.toornament.com/tournaments/2811215862838206464/?_locale=en_US",
           platform: "PC",
@@ -114,6 +114,12 @@ export default {
           platform: "Nintendo Switch",
           description:
             "Super Smash Bros are returning for this years LAN, and again we're hosting a tournament!"
+        },
+        {
+          title: "Escape Room",
+          widgetUrl: "",
+          platform: "IRL",
+          description: "Escape Room tournament"
         }
       ]
     }

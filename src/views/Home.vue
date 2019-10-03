@@ -17,6 +17,10 @@
           data-aos-delay="200"
           class="hollow-text"
         >{{ $t("home.date.season") }}</h2>
+        <div>
+          <i>powered by</i>
+        </div>
+        <img height="100vh" src="../assets/img/common/sponsor_logos/kmd.png" alt />
         <div data-aos-once="true" data-aos="fade-left" id="ticket-circle">
           <a href="/tickets">
             <text-circle :message="$t('home.ticketButton')" radius="180px" />
