@@ -4,6 +4,7 @@ export default {
       dayMonth: "25-27 October",
       season: "Fall 2019"
     },
+    poweredBy: "powered by",
     ticketButton: "Buy ticket"
   },
   news: {
@@ -119,7 +120,8 @@ export default {
           title: "Escape Room",
           widgetUrl: "",
           platform: "IRL",
-          description: "Escape Room tournament"
+          description:
+            "ITU LAN and Connect are again hosting the popular escape room event. Sign up <a href='https://doodle.com/poll/9v2md4zy85bh2fz5' target='_blankø rel='noopener'>here</a>, before your enemy."
         }
       ]
     }

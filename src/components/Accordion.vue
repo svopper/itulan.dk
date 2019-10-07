@@ -7,7 +7,7 @@
     <div class="details" v-show="active">
       <hr />
       <div>
-        <p v-if="isMobile || tournament.title === 'Escape Room' ">{{ tournament.description }}</p>
+        <p v-if="isMobile || tournament.title === 'Escape Room'" v-html="tournament.description"></p>
         <iframe
           v-if="tournament.widgetUrl"
           width="100%"

@@ -17,10 +17,10 @@
           data-aos-delay="200"
           class="hollow-text"
         >{{ $t("home.date.season") }}</h2>
-        <div>
-          <i>powered by</i>
-        </div>
-        <img height="100vh" src="../assets/img/common/sponsor_logos/kmd.png" alt />
+        <span class="powered-by">{{ $t('home.poweredBy') }}</span>
+        <a href="https://www.kmd.dk" target="_blank" rel="noopener">
+          <img id="logo" src="../assets/img/common/sponsor_logos/kmd.png" alt />
+        </a>
         <div data-aos-once="true" data-aos="fade-left" id="ticket-circle">
           <a href="/tickets">
             <text-circle :message="$t('home.ticketButton')" radius="180px" />
@@ -51,6 +51,16 @@ a {
 a:hover {
   color: inherit;
   text-decoration: none;
+}
+
+#logo {
+  width: 300px;
+}
+
+.powered-by {
+  display: block;
+  font-style: italic;
+  margin-bottom: 10px;
 }
 
 .v-header {
@@ -143,6 +153,10 @@ a:hover {
 
   .header-content {
     margin-top: -250px;
+  }
+
+  #logo {
+    width: 100%;
   }
 }
 
