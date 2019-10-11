@@ -16,7 +16,7 @@ export default {
 
 <style>
 .router-view:not(.home) {
-  max-width: 600px;
+  max-width: 800px;
   margin: 150px auto;
   text-align: center;
 }

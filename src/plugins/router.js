@@ -5,6 +5,7 @@ import News from "@/views/News.vue";
 import Tournaments from "@/views/Tournaments.vue";
 import Information from "@/views/Information.vue";
 import Tickets from "@/views/Tickets.vue";
+import Partner from "@/views/Partner.vue";
 import NotFound from "@/views/NotFound.vue";
 
 Vue.use(Router);
@@ -47,6 +48,15 @@ const router = new Router({
       meta: {
         title: "ITU LAN - Information",
         id: "information"
+      }
+    },
+    {
+      path: "/partner",
+      name: "partner with us",
+      component: Partner,
+      meta: {
+        title: "ITU LAN - Partner with us",
+        id: "partner"
       }
     },
     {
