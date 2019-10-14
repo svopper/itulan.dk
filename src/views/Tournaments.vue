@@ -8,7 +8,9 @@
       </small>
       <br />
       <img class="hand" width="25px" src="../assets/img/common/finger-down.svg" alt />
-      <accordion v-for="t in tournaments" :key="t.url" :tournament="t" />
+      <div class="accordion-wrapper">
+        <accordion v-for="t in tournaments" :key="t.url" :tournament="t" />
+      </div>
     </div>
     <div v-else>
       <h3 data-aos="fade-up" data-aos-delay="300">{{ $t('tournaments.notPublic') }}</h3>
@@ -53,11 +55,16 @@ export default {
 .tournaments {
   max-width: 800px;
 }
+
 .tournament-wrapper {
   background-color: #444546;
   height: 72px;
   width: 100%;
   margin-bottom: 15px;
+}
+
+.accordion-wrapper {
+  margin-top: 20px;
 }
 
 .tournaments-wrapper {

@@ -1,8 +1,12 @@
 <template>
   <div class="accordion">
     <div @click.prevent="active = !active" class="tab-header">
-      <h3>{{ tournament.title }}</h3>
       <small>{{ tournament.platform }}</small>
+      <h3>{{ tournament.title }}</h3>
+      <div class="sponsor" v-if="tournament.logoPath">
+        <small>by</small>
+        <img :src="getImgUrl" alt />
+      </div>
     </div>
     <div class="details" v-show="active">
       <hr />
@@ -40,6 +44,11 @@ export default {
   computed: {
     isMobile() {
       return this.windowWidth < 670;
+    },
+    getImgUrl() {
+      let path = require(`../assets/img/common/sponsor_logos/${this.tournament.logoPath}`);
+      console.log(path);
+      return path;
     }
   }
 };
@@ -47,7 +56,7 @@ export default {
 
 <style scoped>
 .tab-header {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -65,13 +74,30 @@ export default {
 }
 
 h3 {
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0px;
   letter-spacing: 2px;
   font-size: 3rem;
 }
 hr {
   background-color: #fff;
+}
+
+/* .sponsor small {
+  display: block;
+}
+
+.sponsor-logo {
+  width: 200px;
+} */
+
+.sponsor small {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.sponsor img {
+  width: 200px;
 }
 
 @media only screen and (max-width: 650px) {

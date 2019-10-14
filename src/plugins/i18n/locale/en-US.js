@@ -34,7 +34,8 @@ export default {
             "https://widget.toornament.com/tournaments/2811126039466532864/?_locale=en_US",
           platform: "PC",
           description:
-            "A hearthstone tournament for everyone by only having the classic set."
+            "A hearthstone tournament for everyone by only having the classic set.",
+          logoPath: "epico.svg"
         },
         {
           title: "Rocket League",
@@ -42,7 +43,8 @@ export default {
             "https://widget.toornament.com/tournaments/2811210599123623936/?_locale=en_US",
           platform: "PC",
           description:
-            "Once again we are proud to announce the Rocket League Tournament for ITU LAN Fall'19. Just as the previous tournament, it will have the format of 2v2 Soccar on PC. Choose your partner wisely and demolition, freestyle, and pinch-ball your way to victory. The tournament will be open for a total of 16 participating teams, and will have the structure of an opening group stage followed by double-elimination play-offs."
+            "Once again we are proud to announce the Rocket League Tournament for ITU LAN Fall'19. Just as the previous tournament, it will have the format of 2v2 Soccar on PC. Choose your partner wisely and demolition, freestyle, and pinch-ball your way to victory. The tournament will be open for a total of 16 participating teams, and will have the structure of an opening group stage followed by double-elimination play-offs.",
+          logoPath: "IDA_white.png"
         },
         {
           title: "Overwatch",
@@ -50,7 +52,8 @@ export default {
             "https://widget.toornament.com/tournaments/2811235648987381760/?_locale=en_US",
           platform: "PC",
           description:
-            'Get ready for an amazing ITU Lan Overwatch Tournament. Grab your Doritos and Mountain Dew and join us here at ITU on Saturday the 26th to settle once and for all (at least for this semester) who is the ITU\'s greatest Overwatch Team. "Keep calm and Tracer on!"'
+            'Get ready for an amazing ITU Lan Overwatch Tournament. Grab your Doritos and Mountain Dew and join us here at ITU on Saturday the 26th to settle once and for all (at least for this semester) who is the ITU\'s greatest Overwatch Team. "Keep calm and Tracer on!"',
+          logoPath: "milestone_png.png"
         },
         {
           title: "Mario Kart 8 Deluxe",
@@ -58,7 +61,8 @@ export default {
             "https://widget.toornament.com/tournaments/2811201601864605696/?_locale=en_US",
           platform: "Nintendo Switch",
           description:
-            "Once again, we start our engines for another Mario Kart tournament! The game is the same as last time: Mario Kart 8 Deluxe, random stage cups, all items! Come along, blue shell your way to the top and claim victory! (Disclaimer: We cannot guarantee that your victory will not cost a friendship or two, this is Mario Kart, after all.)"
+            "Once again, we start our engines for another Mario Kart tournament! The game is the same as last time: Mario Kart 8 Deluxe, random stage cups, all items! Come along, blue shell your way to the top and claim victory! (Disclaimer: We cannot guarantee that your victory will not cost a friendship or two, this is Mario Kart, after all.)",
+          logoPath: "KMD_WHITE.png"
         },
         {
           title: "CS:GO Danger Zone",
@@ -66,7 +70,8 @@ export default {
             "https://widget.toornament.com/tournaments/2811222221909147648/?_locale=en_US",
           platform: "PC",
           description:
-            "For the second time ever! - ITU LAN will host a Battle Royale tournament! The platform will be Danger Zone in CS:GO, which is free to play now, so everyone can participate! Have fun!"
+            "For the second time ever! - ITU LAN will host a Battle Royale tournament! The platform will be Danger Zone in CS:GO, which is free to play now, so everyone can participate! Have fun!",
+          logoPath: "sennheiser.svg"
         },
         {
           title: "HearthStone",
@@ -114,7 +119,8 @@ export default {
             "https://widget.toornament.com/tournaments/2811215611487911936/?_locale=en_US",
           platform: "Nintendo Switch",
           description:
-            "Super Smash Bros are returning for this years LAN, and again we're hosting a tournament!"
+            "Super Smash Bros are returning for this years LAN, and again we're hosting a tournament!",
+          logoPath: "KMD_WHITE.png"
         },
         {
           title: "Escape Room",
