@@ -50,6 +50,11 @@ a:hover {
     font-size: 3rem;
     padding-bottom: 0;
   }
+
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 0;
+  }
 }
 
 #app {

@@ -97,7 +97,7 @@
   flex-grow: 1;
   flex-basis: 0;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 0 auto;
 }
 
 .flex.wrapper > div {
