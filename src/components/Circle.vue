@@ -77,18 +77,6 @@ export default {
   transition: all 0.2s;
 }
 
-@keyframes border-pulsate {
-  0% {
-    border-color: #fff;
-  }
-  50% {
-    border-color: #ffffff22;
-  }
-  100% {
-    border-color: #fff;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .circle-outline {
     transform: scale(0.7);

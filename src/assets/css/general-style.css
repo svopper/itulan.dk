@@ -83,3 +83,18 @@ button:hover {
   transition: all 0.2s;
   transform: scale(1.1);
 }
+
+@keyframes border-pulsate {
+  0% {
+    border-color: #fff;
+    outline-color: #fff;
+  }
+  50% {
+    border-color: #ffffff22;
+    outline-color: #ffffff22;
+  }
+  100% {
+    border-color: #fff;
+    outline-color: #fff;
+  }
+}

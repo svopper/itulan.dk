@@ -34,6 +34,12 @@ a:hover {
   color: inherit;
   text-decoration: none;
 }
+
+button {
+  margin: 0.5rem;
+  outline: 2px solid #fff;
+  animation: border-pulsate 2s infinite;
+}
 </style>
 
 
