@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-    <div id="saturday" class="flex">
+    <div id="saturday" class="flex day">
       <div>
         <h3 class="weekday">Saturday</h3>
       </div>
@@ -36,6 +36,7 @@
         <div>
           <span class="time">11.00</span>
           <span>Overwatch</span>
+          <small>by Milestone</small>
         </div>
         <div>
           <span class="time">12.00</span>
@@ -88,11 +89,15 @@
   display: flex;
 }
 
+.flex.day {
+  flex-direction: column;
+}
+
 .flex.wrapper {
   flex-grow: 1;
   flex-basis: 0;
-  max-width: 1000px;
-  margin: 80px auto;
+  max-width: 800px;
+  margin: 40px auto;
 }
 
 .flex.wrapper > div {
@@ -123,14 +128,40 @@ small {
   margin-left: 10px;
 }
 
-.wrapper h3 {
-  margin-top: 0;
+.weekday {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.weekday {
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  display: inline-block;
-  margin-top: 100px;
+@media only screen and (max-width: 995px) {
+  .flex.wrapper {
+    flex-direction: column;
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .flex.wrapper {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .flex.wrapper {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .flex.wrapper {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .flex.schedule span {
+    font-size: 1.2rem;
+    line-height: initial;
+  }
 }
 </style>
