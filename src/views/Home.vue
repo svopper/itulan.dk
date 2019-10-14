@@ -2,17 +2,19 @@
   <div class="home">
     <header class="v-header container">
       <h1>25-27 October</h1>
-      <button>Buy ticket</button>
-      <schedule class="aaa"></schedule>
+      <hyperlink class="button" url="/tickets">Buy ticket</hyperlink>
+      <schedule></schedule>
     </header>
   </div>
 </template>
 
 <script>
 import Schedule from "@/components/Schedule.vue";
+import Hyperlink from "@/components/Hyperlink.vue";
 export default {
   components: {
-    Schedule
+    Schedule,
+    Hyperlink
   }
 };
 </script>
@@ -26,17 +28,7 @@ export default {
   text-align: center;
 }
 
-a {
-  color: inherit;
-}
-
-a:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  margin: 0.5rem;
+.button {
   outline: 2px solid #fff;
   animation: border-pulsate 2s infinite;
 }
