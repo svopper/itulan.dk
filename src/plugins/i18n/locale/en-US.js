@@ -121,7 +121,7 @@ export default {
           widgetUrl: "",
           platform: "IRL",
           description:
-            "ITU LAN and Connect are again hosting the popular escape room event. Sign up will open soon."
+            "In collaboration with Connect, ITULAN is hosting another ESCAPEROOM! This season, we invite you delve into the wondrous and mystical wizard’s lab. Can you gather the clues, solve the puzzles, and cast the spells that’ll secure your escape before he finds out? Find your most magical friends, sign up as a team of 4-6 people <a target='_blank' rel='noopener' href='https://doodle.com/poll/9v2md4zy85bh2fz5'>here<a>, and head to 5A14-16, to find out."
         }
       ]
     }
