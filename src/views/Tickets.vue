@@ -1,12 +1,7 @@
 <template>
   <div class="tickets">
     <h1 class="title" data-aos="fade-up">Buy Ticket</h1>
-    <a
-      id="ticket-link"
-      href="https://itulan.safeticket.dk/itulanfall19"
-      target="_blank"
-      rel="noopener"
-    >
+    <hyperlink id="ticket-link" url="https://itulan.safeticket.dk/itulanfall19">
       <text-circle
         data-aos="fade-left"
         data-aos-delay="400"
@@ -15,7 +10,7 @@
         radius="180px"
         font-size="2rem"
       />
-    </a>
+    </hyperlink>
 
     <div class="steps">
       <span data-aos="fade-left" data-aos-delay="300">
@@ -75,12 +70,10 @@
           <h3>Buy Ticket</h3>
         </span>
         <p>
-          <a
+          <hyperlink
             id="inline-link"
-            href="https://itulan.safeticket.dk/itulanfall19"
-            target="_blank"
-            rel="noopener"
-          >Buy your ticket here</a>
+            url="https://itulan.safeticket.dk/itulanfall19"
+          >Buy your ticket here</hyperlink>
         </p>
       </div>
       <div id="step-three">
@@ -95,10 +88,12 @@
 </template>
 
 <script>
-import TextCircle from "../components/Circle";
+import TextCircle from "@/components/Circle.vue";
+import Hyperlink from "@/components/Hyperlink.vue";
 export default {
   components: {
-    TextCircle
+    TextCircle,
+    Hyperlink
   }
 };
 </script>

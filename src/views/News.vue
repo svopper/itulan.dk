@@ -9,27 +9,27 @@
         </div>
         <div class="some-icon-container" data-aos="fade-up" data-aos-delay="200">
           <div>
-            <a :href="$t('common.socialMedia.discord.url')" target="_blank" rel="noopener">
+            <hyperlink :url="$t('common.socialMedia.discord.url')">
               <img src="../assets/img/common/socialmedia/discord_icon.svg" alt />
-            </a>
+            </hyperlink>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.discord.description') }}</div>
           <div>
-            <a :href="$t('common.socialMedia.facebook.url')" target="_blank" rel="noopener">
+            <hyperlink :url="$t('common.socialMedia.facebook.url')">
               <img src="../assets/img/common/socialmedia/facebook_icon.svg" alt />
-            </a>
+            </hyperlink>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.facebook.description') }}</div>
           <div>
-            <a :href="$t('common.socialMedia.instagram.url')" target="_blank" rel="noopener">
+            <hyperlink :url="$t('common.socialMedia.instagram.url')">
               <img src="../assets/img/common/socialmedia/insta_icon.svg" alt />
-            </a>
+            </hyperlink>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.instagram.description') }}</div>
           <div>
-            <a :href="$t('common.socialMedia.youtube.url')" target="_blank" rel="noopener">
+            <hyperlink :url="$t('common.socialMedia.youtube.url')">
               <img width="40px" src="../assets/img/common/socialmedia/youtube_icon.png" alt />
-            </a>
+            </hyperlink>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.youtube.description') }}</div>
         </div>
@@ -61,11 +61,13 @@
 <script>
 import axios from "axios";
 import Post from "@/components/Post";
+import Hyperlink from "@/components/Hyperlink.vue";
 import { FACEBOOK_ACCESS_TOKEN, FACEBOOK_PAGE_ID } from "../../config/keys";
 export default {
   name: "home",
   components: {
-    Post
+    Post,
+    Hyperlink
   },
   data() {
     return {
