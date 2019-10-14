@@ -47,7 +47,6 @@ export default {
     },
     getImgUrl() {
       let path = require(`../assets/img/common/sponsor_logos/${this.tournament.logoPath}`);
-      console.log(path);
       return path;
     }
   }
