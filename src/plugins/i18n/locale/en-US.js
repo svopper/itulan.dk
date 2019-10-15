@@ -111,7 +111,7 @@ export default {
             "https://widget.toornament.com/tournaments/2811215862838206464/?_locale=en_US",
           platform: "PC",
           description:
-            "Greetings Planeswalkers: It's time to dddddddddddddduel! At LAN this year, the very first ITU LAN Championship in Magic: The Gathering will be held. The tournament will be using MTGA (Magic: The Gathering Arena), the new online client, and the format will be a Standard BO3 tournament. Each player will bring 1 deck. We are lucky enough that a Standard rotation has just happened at the time of the tournament, so we get to play with cards from the newest set: Throne of Eldraine! If we are lucky, the tournament will be streamed, and of course there are going to be amazing prizes for the winner!"
+            "Greetings Planeswalkers: It's time to dddddddddddddduel! At LAN this year, the very first ITU LAN Championship in Magic: The Gathering will be held. The tournament will be using MTGA (Magic: The Gathering Arena), the new online client, and the format will be a Standard BO3 tournament. Each player will bring 1 deck. We are lucky enough that a Standard rotation has just happened at the time of the tournament, so we get to play with cards from the newest set: Throne of Eldraine! If we are lucky, the tournament will be streamed, and of course, there are going to be amazing prizes for the winner!"
         },
         {
           title: "Super Smash Bros Ultimate",
@@ -127,7 +127,7 @@ export default {
           widgetUrl: "",
           platform: "IRL",
           description:
-            "In collaboration with Connect, ITULAN is hosting another ESCAPEROOM! This season, we invite you delve into the wondrous and mystical wizard’s lab. Can you gather the clues, solve the puzzles, and cast the spells that’ll secure your escape before he finds out? Find your most magical friends, sign up as a team of 4-6 people <a target='_blank' rel='noopener' href='https://doodle.com/poll/9v2md4zy85bh2fz5'>here<a>, and head to 5A14-16, to find out."
+            "In collaboration with Connect, ITULAN is hosting another ESCAPEROOM! This season, we invite you to delve into the wondrous and mystical wizard’s lab. Can you gather the clues, solve the puzzles, and cast the spells that’ll secure your escape before he finds out? Find your most magical friends, sign up as a team of 4-6 people <a target='_blank' rel='noopener' href='https://doodle.com/poll/9v2md4zy85bh2fz5'>here<a>, and head to 5A14-16, to find out."
         }
       ]
     }
@@ -144,24 +144,24 @@ export default {
       {
         topic: "How do I get in?",
         paragraphs: [
-          "You can get in through the various entrances in the building. We’ve coordinated with facilities management, that you can get in with either a valid student ID, or with an ITU LAN ticket. Please have it ready upon entry.",
+          "You can get in through the various entrances in the building. We’ve coordinated with facilities management, that you can get in with either a valid student ID or with an ITU LAN ticket. Please have it ready upon entry.",
           "You get your wristband to use for access at the organizer area (4A10 – 4th floor above Analog)"
         ]
       },
       {
         topic: "How do I contact the crew?",
         paragraphs: [
-          "Before LAN, the best way to contact us if you have any questions related to LAN, is through our Facebook page, which you can find <a target='_blank' rel='noopener' href='https://www.facebook.com/itulan'>here<a>.",
+          "Before LAN, the best way to contact us if you have any questions related to LAN is through our Facebook page, which you can find <a target='_blank' rel='noopener' href='https://www.facebook.com/itulan'>here<a>.",
           "The ITU LAN Facebook page will also post status updates throughout the weekend, and we recommend that you follow it for your information needs.",
           "You can also write us an <a target='_blank' rel='noopener' href='mailto:admin@itulan.dk'>e-mail</a>, and we will answer you as fast as possible.",
-          "During the LAN, the primary platform for contact is our Discord server – join it <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>here<a>! Here you can contact us directly, ask game- or event specific questions, and get updates on the different tournaments.",
+          "During the LAN, the primary platform for contact is our Discord server – join it <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>here<a>! Here you can contact us directly, ask game- or event-specific questions, and get updates on the different tournaments.",
           "If you need in-person help during the LAN, swing by the crew area at 4A10 (4th floor in the corner above Analog)."
         ]
       },
       {
         topic: "How do I find my table?",
         paragraphs: [
-          "You have chosen your table and seat during the booking process. The table number from you booking is final. Ignore any other table numbers, than the ones posted on ITU LAN posters on the tables."
+          "You have chosen your table and seat during the booking process. The table number from your booking is final. Ignore any other table numbers, than the ones posted on ITU LAN posters on the tables."
         ]
       },
       {
@@ -182,13 +182,13 @@ export default {
       {
         topic: "Are there any facilities to prepare my own   food?",
         paragraphs: [
-          "Yes - you can bring your own food and heat it up in the kitchen on each floor. There is refrigerators and microwave ovens."
+          "Yes - you can bring your own food and heat it up in the kitchen on each floor. There are refrigerators and microwave ovens."
         ]
       },
       {
         topic: "Can I buy drinks in ScrollBar?",
         paragraphs: [
-          "Yes - ScrollBar is open Friday 15.00-02.00 and is well-stocked with beers, soda, drinks, RedBull, etc. at student friendly prices.",
+          "Yes - ScrollBar is open Friday 15.00-02.00 and is well-stocked with beers, soda, drinks, RedBull, etc. at student-friendly prices.",
           "Please note that alcoholic beverages can only be enjoyed in the ScrollBar area, and you have to be 18 years of age to buy them.",
           "Please drink responsibly."
         ]
