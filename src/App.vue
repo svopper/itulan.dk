@@ -2,14 +2,21 @@
   <div id="app">
     <navbar></navbar>
     <router-view class="router-view" />
+    <cookie-law theme="dark-lime">
+      <div
+        slot="message"
+      >Hey, GAMER! We use cookies, but ONLY to analyze the user traffic generated on our website. By clicking 'Got it!', you consent to the use of cookies on this site.</div>
+    </cookie-law>
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import CookieLaw from "vue-cookie-law";
 export default {
   components: {
-    Navbar
+    Navbar,
+    CookieLaw
   }
 };
 </script>
@@ -26,5 +33,17 @@ export default {
     padding: 15px;
     margin: 80px auto;
   }
+}
+
+.Cookie__button {
+  background: #0800ff !important;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.Cookie__button:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  transform: scale(1.1);
 }
 </style>
