@@ -43,7 +43,7 @@ export default {
             "https://widget.toornament.com/tournaments/2811210599123623936/?_locale=en_US",
           platform: "PC",
           description:
-            "Once again we are proud to announce the Rocket League Tournament for ITU LAN Fall'19. Just as the previous tournament, it will have the format of 2v2 Soccar on PC. Choose your partner wisely and demolition, freestyle, and pinch-ball your way to victory. The tournament will be open for a total of 16 participating teams, and will have the structure of an opening group stage followed by double-elimination play-offs.",
+            "Once again we are proud to announce the Rocket League Tournament for ITU LAN Fall'19. Just as the previous tournament, it will have the format of 2v2 Soccar on PC. Choose your partner wisely and demolition, freestyle, and pinch-ball your way to victory. The tournament will be open for a total of 16 participating teams, and will have the structure of an opening group stage followed by double-elimination playoffs.",
           logoPath: "IDA_white.png"
         },
         {
