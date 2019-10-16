@@ -10,6 +10,7 @@
 
 body {
   background-color: #031d44;
+  letter-spacing: 2px;
 }
 
 h1,
@@ -78,7 +79,7 @@ a:hover {
 
 .button {
   border: none;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 3.5rem;
   text-transform: uppercase;
   background: #0800ff;
   color: #fff;
@@ -87,6 +88,7 @@ a:hover {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   display: inline-block;
+  letter-spacing: 3px;
 }
 
 .button:hover {

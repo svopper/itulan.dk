@@ -90,13 +90,13 @@
 }
 
 .flex.day {
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .flex.wrapper {
   flex-grow: 1;
   flex-basis: 0;
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -126,29 +126,39 @@
 
 small {
   margin-left: 10px;
+  color: #0800ff;
 }
 
 .weekday {
-  text-align: center;
-  font-size: 3rem;
+  writing-mode: vertical-lr;
+  text-orientation: sideways-right;
+  transform: rotate(-180deg);
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .flex.schedule span {
+    font-size: 1rem;
+    line-height: 20px;
+  }
 }
 
 @media only screen and (max-width: 995px) {
   .flex.wrapper {
     flex-direction: column;
-    max-width: 60%;
+    max-width: 70%;
   }
 }
 
 @media only screen and (max-width: 770px) {
   .flex.wrapper {
-    max-width: 80%;
+    max-width: 95%;
   }
 }
 
 @media only screen and (max-width: 475px) {
   .flex.wrapper {
-    max-width: 90%;
+    max-width: 95%;
   }
 }
 

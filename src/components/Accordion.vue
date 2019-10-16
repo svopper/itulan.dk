@@ -82,14 +82,6 @@ hr {
   background-color: #fff;
 }
 
-/* .sponsor small {
-  display: block;
-}
-
-.sponsor-logo {
-  width: 200px;
-} */
-
 .sponsor small {
   display: block;
   margin-bottom: 5px;

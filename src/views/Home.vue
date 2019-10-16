@@ -1,22 +1,16 @@
 <template>
   <div class="home">
     <header class="v-header container">
-      <h1>25-27 October</h1>
-      <h2
-        data-aos-once="true"
-        data-aos="fade-right"
-        data-aos-delay="200"
-        class="hollow-text"
-      >{{ $t("home.date.season") }}</h2>
-      <span class="powered-by">{{ $t('home.poweredBy') }}</span>
+      <h1>25-27 Oct / Fall 2019</h1>
+      <small class="powered-by">{{ $t('home.poweredBy') }}</small>
       <a id="logo-link" href="https://www.kmd.dk" target="_blank" rel="noopener">
         <img id="kmd_logo" src="../assets/img/common/sponsor_logos/KMD_WHITE.png" alt />
       </a>
       <div>
         <hyperlink class="button" url="/tickets">Buy ticket</hyperlink>
       </div>
-
-      <schedule></schedule>
+      <schedule id="schedule"></schedule>
+      <sponsor-bar id="sponsor-bar"></sponsor-bar>
     </header>
   </div>
 </template>
@@ -24,10 +18,12 @@
 <script>
 import Schedule from "@/components/Schedule.vue";
 import Hyperlink from "@/components/Hyperlink.vue";
+import SponsorBar from "@/components/SponsorBar.vue";
 export default {
   components: {
     Schedule,
-    Hyperlink
+    Hyperlink,
+    SponsorBar
   }
 };
 </script>
@@ -36,30 +32,41 @@ export default {
 * {
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 5rem;
+}
+
 .home {
   margin: 150px auto;
   text-align: center;
 }
 
 .button {
-  outline: 2px solid #fff;
-  animation: border-pulsate 2s infinite;
   margin: 20px 0px;
 }
 
 .powered-by {
-  display: block;
   font-style: italic;
   margin-bottom: 10px;
 }
 
 #kmd_logo {
-  width: 300px;
+  width: 140px;
   display: inline-block;
 }
 
 #logo-link {
   margin-bottom: 20px;
+}
+
+#schedule {
+  margin-top: 50px;
+}
+
+#sponsor-bar {
+  width: 100%;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 770px) {
@@ -73,7 +80,6 @@ export default {
   }
 
   #kmd_logo {
-    width: 250px;
     display: inline-block;
   }
 }
