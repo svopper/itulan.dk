@@ -156,21 +156,23 @@ small {
   }
 }
 
-@media only screen and (max-width: 475px) {
-  .flex.wrapper {
-    max-width: 95%;
+@media only screen and (max-width: 505px) {
+  .flex.day {
+    flex-direction: column;
   }
-}
 
-@media only screen and (max-width: 425px) {
-  .flex.wrapper {
-    max-width: 95%;
+  .weekday {
+    writing-mode: initial;
+    text-orientation: initial;
+    transform: initial;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
   }
 }
 
 @media only screen and (max-width: 405px) {
   .flex.schedule span {
-    font-size: 1.2rem;
     line-height: initial;
   }
 }
