@@ -1,5 +1,5 @@
 <template>
-  <a :href="url" target="_blank" rel="noopener">
+  <a :href="url" :target="target" rel="noopener">
     <slot></slot>
   </a>
 </template>
@@ -10,6 +10,19 @@ export default {
     url: {
       type: String,
       required: true
+    },
+    newTab: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    target() {
+      if (this.newTab) {
+        return "_blank";
+      } else {
+        return "_self";
+      }
     }
   }
 };

@@ -24,6 +24,10 @@ export default {
   text-align: left;
 }
 
+p {
+  letter-spacing: initial;
+}
+
 .address > p {
   margin-top: 0;
   margin-bottom: 0;

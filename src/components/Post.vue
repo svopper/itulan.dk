@@ -45,6 +45,7 @@ export default {
   overflow-wrap: break-word;
   text-align: left;
   margin-top: 15px;
+  letter-spacing: initial;
 }
 
 .date {

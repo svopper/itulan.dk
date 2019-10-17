@@ -168,7 +168,7 @@ export default {
         topic: "Where do I find information about tournaments? ",
         paragraphs: [
           "For info or support please contact the tournament responsible, which can be seen on the tournament’s Toornament page, or by writing in the tournament's <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>Discord<a>-channel.",
-          "Deadlines for sign-up for tournaments and events can be found at the Toornament-page for each tournament. See the <a href='tournaments' target='_blank' rel='noopener'>Tournament</a> page for more info."
+          "Deadlines for sign-up for tournaments and events can be found at the Toornament-page for each tournament. See the <a href='/tournaments'>Tournament</a> page for more info."
         ]
       },
       {

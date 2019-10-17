@@ -5,29 +5,28 @@
         <h1 class="title" data-aos="fade-up">{{ $t('news.title') }}</h1>
         <div id="pointer" data-aos="fade-up" data-aos-delay="200">
           <span>{{ $t('news.followUsLabel') }}</span>
-          <!-- <img src="../assets/img/pointer_down.gif" alt /> -->
         </div>
         <div class="some-icon-container" data-aos="fade-up" data-aos-delay="200">
           <div>
-            <hyperlink :url="$t('common.socialMedia.discord.url')">
+            <hyperlink newTab :url="$t('common.socialMedia.discord.url')">
               <img src="../assets/img/common/socialmedia/discord_icon.svg" alt />
             </hyperlink>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.discord.description') }}</div>
           <div>
-            <hyperlink :url="$t('common.socialMedia.facebook.url')">
+            <hyperlink newTab :url="$t('common.socialMedia.facebook.url')">
               <img src="../assets/img/common/socialmedia/facebook_icon.svg" alt />
             </hyperlink>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.facebook.description') }}</div>
           <div>
-            <hyperlink :url="$t('common.socialMedia.instagram.url')">
+            <hyperlink newTab :url="$t('common.socialMedia.instagram.url')">
               <img src="../assets/img/common/socialmedia/insta_icon.svg" alt />
             </hyperlink>
           </div>
           <div class="some-desc">{{ $t('common.socialMedia.instagram.description') }}</div>
           <div>
-            <hyperlink :url="$t('common.socialMedia.youtube.url')">
+            <hyperlink newTab :url="$t('common.socialMedia.youtube.url')">
               <img width="40px" src="../assets/img/common/socialmedia/youtube_icon.png" alt />
             </hyperlink>
           </div>
@@ -134,6 +133,10 @@ export default {
   font-size: 12px;
   display: block;
   margin-top: 15px;
+}
+
+.some-desc {
+  letter-spacing: initial;
 }
 
 .some-icon-container {
