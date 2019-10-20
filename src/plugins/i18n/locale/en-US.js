@@ -123,6 +123,14 @@ export default {
           logoPath: "KMD_WHITE.png"
         },
         {
+          title: "CS:GO 1v1",
+          widgetUrl:
+            "https://widget.toornament.com/tournaments/2929652212503781376/?_locale=en_US",
+          platform: "PC",
+          description:
+            "Do you have what it takes to be the best CS:GO aimer @ ITU LAN? Single elimination 1v1 tournament for all CS players, compete to be the best!"
+        },
+        {
           title: "Escape Room",
           widgetUrl: "",
           platform: "IRL",
