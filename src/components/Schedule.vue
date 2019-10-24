@@ -45,7 +45,7 @@
         </div>
         <div>
           <span class="time">14.00</span>
-          <span>Stellaris + Magic Draft</span>
+          <span>Stellaris</span>
         </div>
         <div>
           <span class="time">15.00</span>
