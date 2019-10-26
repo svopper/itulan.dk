@@ -75,10 +75,6 @@
           <span>CS:GO Finals</span>
           <small>by EPICO NextGen</small>
         </div>
-        <div>
-          <span class="time">22.00</span>
-          <span>MTG: Arena</span>
-        </div>
       </div>
     </div>
   </div>
