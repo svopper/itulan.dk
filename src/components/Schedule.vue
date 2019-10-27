@@ -44,10 +44,6 @@
           <small>by Sennheiser</small>
         </div>
         <div>
-          <span class="time">14.00</span>
-          <span>Stellaris</span>
-        </div>
-        <div>
           <span class="time">15.00</span>
           <span>Rocket League</span>
           <small>by IDA</small>
