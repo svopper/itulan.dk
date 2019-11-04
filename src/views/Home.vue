@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import Schedule from "@/components/Schedule.vue";
-import Hyperlink from "@/components/Hyperlink.vue";
-import SponsorBar from "@/components/SponsorBar.vue";
+import Schedule from "@/components/Schedule";
+import Hyperlink from "@/components/Hyperlink";
+import SponsorBar from "@/components/SponsorBar";
 export default {
   components: {
     Schedule,

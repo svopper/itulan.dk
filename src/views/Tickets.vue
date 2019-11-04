@@ -88,8 +88,8 @@
 </template>
 
 <script>
-import TextCircle from "@/components/Circle.vue";
-import Hyperlink from "@/components/Hyperlink.vue";
+import TextCircle from "@/components/Circle";
+import Hyperlink from "@/components/Hyperlink";
 export default {
   components: {
     TextCircle,

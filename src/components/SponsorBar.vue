@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import Hyperlink from "../components/Hyperlink.vue";
+import Hyperlink from "@/components/Hyperlink.vue";
 export default {
   components: {
     Hyperlink

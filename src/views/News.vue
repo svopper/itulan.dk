@@ -60,7 +60,7 @@
 <script>
 import axios from "axios";
 import Post from "@/components/Post";
-import Hyperlink from "@/components/Hyperlink.vue";
+import Hyperlink from "@/components/Hyperlink";
 import { FACEBOOK_ACCESS_TOKEN, FACEBOOK_PAGE_ID } from "../../config/keys";
 export default {
   name: "home",
