@@ -33,7 +33,7 @@ export default {
     },
     tournaments() {
       let tournaments = this.$t("tournaments.tournamentCards.tournaments");
-
+      // this is comment
       tournaments.sort((a, b) => {
         var textA = a.title.toUpperCase();
         var textB = b.title.toUpperCase();
