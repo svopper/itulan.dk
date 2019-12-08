@@ -1,8 +1,8 @@
 export default {
   home: {
     date: {
-      dayMonth: "25-27 October",
-      season: "Fall 2019"
+      dayMonth: "TBD",
+      season: "Spring 2020"
     },
     poweredBy: "powered by",
     ticketButton: "Buy ticket"

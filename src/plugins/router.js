@@ -2,9 +2,9 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "@/views/Home.vue";
 import News from "@/views/News.vue";
-import Tournaments from "@/views/Tournaments.vue";
+// import Tournaments from "@/views/Tournaments.vue";
 import Information from "@/views/Information.vue";
-import Tickets from "@/views/Tickets.vue";
+// import Tickets from "@/views/Tickets.vue";
 // import Partner from "@/views/Partner.vue";
 import NotFound from "@/views/NotFound.vue";
 
@@ -32,15 +32,15 @@ const router = new Router({
         id: "news"
       }
     },
-    {
-      path: "/tournaments",
-      name: "tournaments",
-      component: Tournaments,
-      meta: {
-        title: "ITU LAN - Tournaments",
-        id: "tournaments"
-      }
-    },
+    // {
+    //   path: "/tournaments",
+    //   name: "tournaments",
+    //   component: Tournaments,
+    //   meta: {
+    //     title: "ITU LAN - Tournaments",
+    //     id: "tournaments"
+    //   }
+    // },
     {
       path: "/information",
       name: "f a q",
@@ -59,15 +59,15 @@ const router = new Router({
     //     id: "partner"
     //   }
     // },
-    {
-      path: "/tickets",
-      name: "buy ticket",
-      component: Tickets,
-      meta: {
-        title: "ITU LAN - Tickets",
-        id: "tickets"
-      }
-    },
+    // {
+    //   path: "/tickets",
+    //   name: "buy ticket",
+    //   component: Tickets,
+    //   meta: {
+    //     title: "ITU LAN - Tickets",
+    //     id: "tickets"
+    //   }
+    // },
     {
       path: "*",
       component: NotFound,
@@ -101,9 +101,9 @@ router.beforeEach((to, from, next) => {
   if (nearestWithTitle) document.title = nearestWithTitle.meta.title;
 
   // Remove any stale meta tags from the document using the key attribute we set below.
-  Array.from(document.querySelectorAll("[data-vue-router-controlled]")).map(
-    el => el.parentNode.removeChild(el)
-  );
+  Array.from(
+    document.querySelectorAll("[data-vue-router-controlled]")
+  ).map(el => el.parentNode.removeChild(el));
 
   // Skip rendering meta tags if there are none.
   if (!nearestWithMeta) return next();
