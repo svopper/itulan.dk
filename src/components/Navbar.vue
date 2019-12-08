@@ -207,7 +207,7 @@ button {
 }
 
 .router-link-active span:not(.router-link-home) {
-  color: #0800ff;
+  color: #808080;
 }
 
 #link-tickets.desktop {

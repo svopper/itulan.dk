@@ -112,13 +112,8 @@
   text-transform: uppercase;
 }
 
-.flex.schedule small {
-  color: #0800ff;
-}
-
 small {
   margin-left: 10px;
-  color: #0800ff;
 }
 
 .weekday {

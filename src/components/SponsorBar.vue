@@ -48,7 +48,6 @@ export default {
 }
 
 small {
-  color: #0800ff;
   font-style: italic;
 }
 
