@@ -4,7 +4,7 @@
       <small>{{ tournament.platform }}</small>
       <h3>{{ tournament.title }}</h3>
       <div class="sponsor" v-if="tournament.logoPath">
-        <small>by</small>
+        <small>{{ $t('tournaments.by') }}</small>
         <img :src="getImgUrl" alt />
       </div>
     </div>
@@ -55,7 +55,7 @@ export default {
 
 <style scoped>
 .tab-header {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   cursor: pointer;

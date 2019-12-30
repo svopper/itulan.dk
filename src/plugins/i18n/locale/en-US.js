@@ -24,6 +24,7 @@ export default {
       "ITU LAN is hosting several tournaments during the weekend, and here you can see an overview over the tournaments. Are you up for the challenge?",
     notPublic: "Tournaments will be announced soon...",
     clickAndRegister: "Click and register",
+    by: "powered by",
     tournamentCards: {
       descriptionTBA: "Description TBA",
       platformLabel: "Platform: ",
@@ -147,7 +148,8 @@ export default {
         topic: "Where and when is the LAN?",
         id: "where",
         paragraphs: [
-          "ITU LAN Fall 2019 takes place from October 25th to October 27th at the IT University of Copenhagen."
+          // "ITU LAN Fall 2019 takes place from October 25th to October 27th at the IT University of Copenhagen."
+          "Stay tuned for announcement of the next LAN."
         ]
       },
       {
@@ -172,7 +174,6 @@ export default {
         paragraphs: [
           "Before LAN, the best way to contact us if you have any questions related to LAN is through our Facebook page, which you can find <a target='_blank' rel='noopener' href='https://www.facebook.com/itulan'>here<a>.",
           "The ITU LAN Facebook page will also post status updates throughout the weekend, and we recommend that you follow it for your information needs.",
-          "You can also write us an <a target='_blank' rel='noopener' href='mailto:admin@itulan.dk'>e-mail</a>, and we will answer you as fast as possible.",
           "During the LAN, the primary platform for contact is our Discord server – join it <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>here<a>! Here you can contact us directly, ask game- or event-specific questions, and get updates on the different tournaments.",
           "If you need in-person help during the LAN, swing by the crew area at 4A10 (4th floor in the corner above Analog)."
         ]

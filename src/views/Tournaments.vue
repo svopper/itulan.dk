@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     isPublic() {
-      return new Date() > new Date("2019-10-02T00:00:00");
+      return false; // TODO Set to proper announcement date when known
     },
     tournaments() {
       let tournaments = this.$t("tournaments.tournamentCards.tournaments");
