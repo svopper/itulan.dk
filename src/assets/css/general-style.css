@@ -10,7 +10,7 @@
 
 body {
   background-color: #031d44;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 h1,
@@ -27,14 +27,14 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 h3 {
   font-size: 2rem;
   letter-spacing: 4px;
   margin-bottom: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 small {
@@ -77,7 +77,7 @@ a:hover {
 
 .hollow-text {
   color: transparent;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
 }
 

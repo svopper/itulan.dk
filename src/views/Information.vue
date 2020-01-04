@@ -24,6 +24,10 @@ export default {
   text-align: left;
 }
 
+.title {
+  margin-bottom: 3rem;
+}
+
 p {
   letter-spacing: initial;
 }

@@ -1,34 +1,86 @@
 <template>
   <div>
-    <h1>{{ $route.name }}</h1>
-    <h2 class="hollow-text">Become a sponsor</h2>
+    <div class="title-wrapper">
+      <h1>{{ $route.name }}</h1>
+      <h2 class="hollow-text">Become a sponsor</h2>
+    </div>
+
     <div class="flex-wrapper">
-      <div>
-        <img src="../assets/img/partner/cover.png" width="400px" alt />
-      </div>
-      <div class="text">
+      <div id="image"></div>
+      <div id="text">
         <h3>About us</h3>
         <p>ITU LAN is a non-profit university organization. We host a biannual LAN party at the IT Unitversity with more than 300 students participating in each event.</p>
         <p>Sponsorships are a key part of making each LAN party a fun event, which is why we are looking for companies or organizations of interest to either sponsor tournament prizes or activities for all ITU LAN participants.</p>
+        <hyperlink
+          url="mailto:pr@itulan.dk"
+        >Interested? Please contact Kenneth Nielsen -> pr@itulan.dk</hyperlink>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Hyperlink from "@/components/Hyperlink";
+export default {
+  components: {
+    Hyperlink
+  }
+};
 </script>
 
 <style scoped>
-.flex-wrapper {
-  display: flex;
+.title-wrapper {
+  margin-bottom: 5rem;
 }
 
-.text {
+h3 {
+  margin-top: 0px;
   text-align: left;
 }
 
+.flex-wrapper {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+#text {
+  text-align: left;
+  letter-spacing: 0px;
+  padding-left: 30px;
+}
+
 .flex-wrapper > div {
-  padding: 0px 10px;
+  padding: 0px 20px;
+}
+
+.flex-wrapper > #image {
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/img/partner/cover.png");
+  width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .title-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .flex-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .flex-wrapper > div {
+    padding: 20px 0px;
+  }
+
+  .flex-wrapper > #image {
+    width: initial;
+    height: 300px;
+  }
+
+  #text {
+    padding-left: initial;
+  }
 }
 </style>
