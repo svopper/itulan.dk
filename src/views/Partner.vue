@@ -9,11 +9,22 @@
       <div id="image"></div>
       <div id="text">
         <h3>About us</h3>
-        <p>ITU LAN is a non-profit university organization. We host a biannual LAN party at the IT Unitversity with more than 300 students participating in each event.</p>
-        <p>Sponsorships are a key part of making each LAN party a fun event, which is why we are looking for companies or organizations of interest to either sponsor tournament prizes or activities for all ITU LAN participants.</p>
-        <hyperlink
-          url="mailto:pr@itulan.dk"
-        >Interested? Please contact Kenneth Nielsen -> pr@itulan.dk</hyperlink>
+        <p>
+          ITU LAN is a non-profit university organization. We host a biannual
+          LAN party at the IT Unitversity with more than 300 students
+          participating in each event.
+        </p>
+        <p>
+          Sponsorships are a key part of making each LAN party a fun event,
+          which is why we are looking for companies or organizations of interest
+          to either sponsor tournament prizes or activities for all ITU LAN
+          participants. <a target="_blank" :href="pdf">Read more (PDF).</a>
+        </p>
+
+        <br />
+        <hyperlink url="mailto:pr@itulan.dk"
+          >Interested? Please contact Kenneth Nielsen -> pr@itulan.dk</hyperlink
+        >
       </div>
     </div>
   </div>
@@ -22,6 +33,11 @@
 <script>
 import Hyperlink from "@/components/Hyperlink";
 export default {
+  data() {
+    return {
+      pdf: require("../assets/docs/ITU-LAN-sponsor-folder-S20.pdf")
+    };
+  },
   components: {
     Hyperlink
   }

@@ -5,7 +5,7 @@
     <cookie-law theme="dark-lime">
       <div
         slot="message"
-      >Hey, GAMER! We use cookies, but ONLY to analyze the user traffic generated on our website. By clicking 'Got it!' or using our site, you consent to the use of cookies unless you have disabled them.</div>
+      >Hey, GAMER! We use cookies, but ONLY to level up the user experience. By clicking 'Got it!' or using our site, you consent to the use of cookies unless you have disabled them.</div>
     </cookie-law>
   </div>
 </template>

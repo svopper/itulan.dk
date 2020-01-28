@@ -6,13 +6,17 @@
       </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
-        <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">ITU LAN</h1>
+        <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">
+          ITU LAN
+        </h1>
         <h2
           data-aos-once="true"
           data-aos="fade-right"
           data-aos-delay="200"
           class="hollow-text"
-        >{{ $t("home.date.season") }}</h2>
+        >
+          {{ $t("home.date.season") }}
+        </h2>
         <span>
           <i>STAY TUNED</i>
         </span>
@@ -20,10 +24,6 @@
     </header>
   </div>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 * {
@@ -174,5 +174,3 @@ a:hover {
   }
 }
 </style>
-
-
