@@ -127,6 +127,7 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
+// Google Analytics, to export which pages have been visited
 router.afterEach(to => {
   // eslint-disable-next-line
   gtag("config", "UA-150089193-1", {
