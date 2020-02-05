@@ -5,7 +5,7 @@
     <cookie-law theme="dark-lime">
       <div
         slot="message"
-      >Hey, GAMER! We use cookies, but ONLY to level up the user experience. By clicking 'Got it!' or using our site, you consent to the use of cookies unless you have disabled them.</div>
+      >{{ $t('common.cookieNotice') }}</div>
     </cookie-law>
   </div>
 </template>

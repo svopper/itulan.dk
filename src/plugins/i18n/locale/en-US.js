@@ -256,6 +256,7 @@ export default {
         description:
           "YouTube is our new streaming platform, where videos related to LAN will reside."
       }
-    }
+    },
+    cookieNotice: "Hey, GAMER! We use cookies, but ONLY to level up the user experience. By clicking 'Got it!' or using our site, you consent to the use of cookies unless you have disabled them.",
   }
 };
