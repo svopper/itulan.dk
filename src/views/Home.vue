@@ -21,9 +21,37 @@
           <i>STAY TUNED</i>
         </span>
       </div>
+      <div class="button-container">
+        <a
+          class="button"
+          href="mailto:simon@itulan.dk?Subject=ITU%20LAN%20Application"
+          target="_blank"
+          >Join the crew?</a
+        >
+        <a class="button" href="/partner">Partner with us?</a>
+      </div>
+
+      <!-- <div id="circle-container">
+        <lan-circle class="circsle" radius="150px" font-size="1.5rem"
+          ><a
+            href="mailto:simon@itulan.dk?Subject=ITU%20LAN%20Application"
+            target="_blank"
+            >Join the crew?</a
+          ></lan-circle
+        >
+        <lan-circle class="circsle" radius="150px" font-size="1.5rem"
+          ><a href="/partner">Partner with us?</a></lan-circle
+        >
+      </div> -->
     </header>
   </div>
 </template>
+
+<script>
+export default {
+  components: {}
+};
+</script>
 
 <style scoped>
 * {
@@ -33,6 +61,28 @@
 a {
   color: inherit;
 }
+
+.button-container {
+  margin-top: 40px;
+}
+
+.button-container > button,
+.button-container > a {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+}
+
+#circle-container {
+  display: flex;
+  flex-direction: row;
+  z-index: 9;
+}
+
+.circsle {
+  margin: 10px;
+}
+
 a:hover {
   color: inherit;
   text-decoration: none;
@@ -55,6 +105,8 @@ a:hover {
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: #fff;
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="circle-outline">
     <div :style="styleCircle" class="circle">
-      <span :style="styleMessage" class="message">{{ message }}</span>
+      <span :style="styleMessage" class="message"><slot></slot></span>
     </div>
   </div>
 </template>
@@ -11,16 +11,11 @@ export default {
   props: {
     radius: {
       type: String,
-      required: true,
       default: "200px"
     },
     fontSize: {
       type: String,
       default: "2rem"
-    },
-    message: {
-      type: String,
-      required: true
     }
   },
   computed: {
@@ -60,7 +55,7 @@ export default {
   border: 2px solid #fff;
   padding: 1.5rem;
   border-radius: 50%;
-  display: inline-block;
+  display: block;
   animation: border-pulsate 2s infinite;
 }
 
