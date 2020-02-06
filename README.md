@@ -23,17 +23,8 @@ npm run serve
 
 ## Deployment
 
-The Firebase CLI tool is needed, to deploy.
-
-```sh
-npm install -g firebase-tools
-```
-
-When you have logged into Firebase with the CLI, run the following command to deploy:
-
-```sh
-npm run deploy
-```
+Deployments happens through Github Actions CI/CD. When a version is ready for deployment, create a pull request for the release branch.
+When the build is accepted, the deployment will automatically happen.
 
 The website is currently hosted at Google Firebase on the Spark free tier plan.
 
