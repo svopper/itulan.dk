@@ -2,7 +2,7 @@ export default {
   home: {
     date: {
       dayMonth: "TBD",
-      season: "Spring TEST 2020"
+      season: "Spring 2020"
     },
     poweredBy: "powered by",
     ticketButton: "Buy ticket"
