@@ -1,11 +1,10 @@
 <h1 align="center">Welcome to itulan.dk 👋</h1>
-<p>
-  <img src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
-</p>
+
+![Version](https://img.shields.io/badge/version-2.0.1-blue.svg?cacheSeconds=2592000)
+![Build and Deploy](https://github.com/svopper/itulan.dk/workflows/Build%20and%20Deploy/badge.svg?branch=release)
+[![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 
 > Website for ITU LAN written in Vue.js
-
-[![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 
 ### 🏠 [Homepage](https://itulan.dk/)
 
