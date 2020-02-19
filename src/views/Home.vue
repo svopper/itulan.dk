@@ -6,28 +6,25 @@
       </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
-        <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">
-          ITU LAN
-        </h1>
+        <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">ITU LAN</h1>
         <h2
           data-aos-once="true"
           data-aos="fade-right"
           data-aos-delay="200"
           class="hollow-text"
-        >
-          {{ $t("home.date.season") }}
-        </h2>
-        <span>
-          <i>STAY TUNED</i>
-        </span>
+        >{{ $t("home.date.season") }}</h2>
+        <h2
+          data-aos-once="true"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >{{ $t("home.date.dayMonth") }}</h2>
       </div>
       <div class="button-container">
         <a
           class="button"
           href="mailto:simon@itulan.dk?Subject=ITU%20LAN%20Application"
           target="_blank"
-          >Join the crew?</a
-        >
+        >Join the crew?</a>
         <a class="button" href="/partner">Partner with us?</a>
       </div>
 
@@ -42,7 +39,7 @@
         <lan-circle class="circsle" radius="150px" font-size="1.5rem"
           ><a href="/partner">Partner with us?</a></lan-circle
         >
-      </div> -->
+      </div>-->
     </header>
   </div>
 </template>
