@@ -59,15 +59,15 @@ const router = new Router({
         id: "partner"
       }
     },
-    // {
-    //   path: "/tickets",
-    //   name: "buy ticket",
-    //   component: Tickets,
-    //   meta: {
-    //     title: "ITU LAN - Tickets",
-    //     id: "tickets"
-    //   }
-    // },
+    {
+      path: "/tickets",
+      name: "buy ticket",
+      component: Tickets,
+      meta: {
+        title: "ITU LAN - Tickets",
+        id: "tickets"
+      }
+    },
     {
       path: "*",
       component: NotFound,
