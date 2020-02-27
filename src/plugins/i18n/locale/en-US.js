@@ -141,6 +141,10 @@ export default {
       ]
     }
   },
+  partner: {
+    subtitle: "Become a sponsor",
+    aboutUs: "About us"
+  },
   information: {
     title: "FAQ",
     subjects: [
@@ -148,8 +152,8 @@ export default {
         topic: "Where and when is the LAN?",
         id: "where",
         paragraphs: [
-          // "ITU LAN Fall 2019 takes place from October 25th to October 27th at the IT University of Copenhagen."
-          "Stay tuned for announcement of the next LAN."
+          "ITU LAN Spring 2020 takes place from April 3rd to April 5th at the IT University of Copenhagen."
+          // "Stay tuned for announcement of the next LAN."
         ]
       },
       {
@@ -235,7 +239,30 @@ export default {
       }
     ]
   },
+  tickets: {
+    title: "Buy Ticket",
+    steps: {
+      findSeat: {
+        title: "Find seat",
+        stepNumber: "1.",
+        text:
+          "Choose your table and seat number during the booking process. The table number from your booking is final. Ignore any other table numbers than the ones posted on ITU LAN posters on the tables."
+      },
+      buyTicket: {
+        title: "Buy Ticket",
+        stepNumber: "2.",
+        text: "Buy your ticket here"
+      },
+      checkin: {
+        title: "Check-in",
+        stepNumber: "3.",
+        text:
+          "When you arrive, please check-in at 4A10. Here you will also receive your exclusive ITU LAN wristband."
+      }
+    }
+  },
   common: {
+    ticketUrl: "https://itulan.safeticket.dk/itulanspring20",
     socialMedia: {
       discord: {
         url: "https://discord.gg/nSFXWQN",

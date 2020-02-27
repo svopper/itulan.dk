@@ -2,7 +2,7 @@
   <div class="home">
     <header class="v-header container">
       <div class="fullscreen-background-wrap">
-        <img src="../assets/img/home/home_background.jpg" alt />
+        <img alt="ITU LAN background" src="../assets/img/home/home_background.jpg" />
       </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
@@ -18,6 +18,17 @@
           data-aos="fade-right"
           data-aos-delay="200"
         >{{ $t("home.date.dayMonth") }}</h2>
+        <span>
+          <i>powered by</i>
+        </span>
+        <br />
+        <hyperlink newTab url="https://orsted.com/en/Careers">
+          <img
+            alt="Ørsted logo"
+            id="logo"
+            src="../assets/img/common/sponsor_logos/Orsted_RGB_White.png"
+          />
+        </hyperlink>
       </div>
       <div class="button-container">
         <a
@@ -45,8 +56,11 @@
 </template>
 
 <script>
+import Hyperlink from "@/components/Hyperlink";
 export default {
-  components: {}
+  components: {
+    Hyperlink
+  }
 };
 </script>
 
@@ -86,7 +100,7 @@ a:hover {
 }
 
 #logo {
-  width: 300px;
+  width: 400px;
 }
 
 .powered-by {
@@ -185,9 +199,9 @@ a:hover {
     right: 100%;
   }
 
-  .header-content {
+  /* .header-content {
     margin-top: -250px;
-  }
+  } */
 
   #logo {
     width: 100%;

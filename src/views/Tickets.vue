@@ -1,7 +1,7 @@
 <template>
   <div class="tickets">
-    <h1 class="title" data-aos="fade-up">Buy Ticket</h1>
-    <hyperlink id="ticket-link" url="https://itulan.safeticket.dk/itulanfall19">
+    <h1 class="title" data-aos="fade-up">{{ $t('tickets.title') }}</h1>
+    <hyperlink id="ticket-link" newTab :url="$t('common.ticketUrl')">
       <text-circle
         data-aos="fade-left"
         data-aos-delay="400"
@@ -9,30 +9,30 @@
         message="Buy ticket"
         radius="180px"
         font-size="2rem"
-      />
+      >{{$t('tickets.title')}}</text-circle>
     </hyperlink>
 
     <div class="steps">
       <span data-aos="fade-left" data-aos-delay="300">
         <h3 class="hollow-text">1.</h3>
-        <h3>Find seat</h3>
+        <h3>{{$t("tickets.steps.findSeat.title")}}</h3>
       </span>
       <span data-aos="fade-left" data-aos-delay="600">
         <h3 class="hollow-text">2.</h3>
-        <h3>Buy ticket</h3>
+        <h3>{{$t("tickets.steps.buyTicket.title")}}</h3>
       </span>
       <span data-aos="fade-left" data-aos-delay="900">
         <h3 class="hollow-text">3.</h3>
-        <h3>Check-in</h3>
+        <h3>{{$t("tickets.steps.checkin.title")}}</h3>
       </span>
     </div>
 
     <div id="step-one" data-aos="fade-up" data-aos-delay="200">
       <span class="step-header">
-        <h3 class="hollow-text">1.</h3>
-        <h3>Find seat</h3>
+        <h3 class="hollow-text">{{$t("tickets.steps.findSeat.stepNumber")}}</h3>
+        <h3>{{$t("tickets.steps.findSeat.title")}}</h3>
       </span>
-      <p>Choose your table and seat number during the booking process. The table number from your booking is final. Ignore any other table numbers than the ones posted on ITU LAN posters on the tables.</p>
+      <p>{{$t("tickets.steps.findSeat.text")}}</p>
       <div class="floor-wrapper">
         <img
           width="100%"
@@ -66,22 +66,22 @@
     <div class="flex-wrapper">
       <div id="step-two">
         <span class="step-header">
-          <h3 class="hollow-text">2.</h3>
-          <h3>Buy Ticket</h3>
+          <h3 class="hollow-text">{{$t("tickets.steps.buyTicket.stepNumber")}}</h3>
+          <h3>{{$t("tickets.steps.buyTicket.title")}}</h3>
         </span>
         <p>
           <hyperlink
             id="inline-link"
-            url="https://itulan.safeticket.dk/itulanfall19"
-          >Buy your ticket here</hyperlink>
+            :url="$t('common.ticketUrl')"
+          >{{$t("tickets.steps.buyTicket.text")}}</hyperlink>
         </p>
       </div>
       <div id="step-three">
         <span class="step-header">
-          <h3 class="hollow-text">3.</h3>
-          <h3>Check-in</h3>
+          <h3 class="hollow-text">{{$t("tickets.steps.checkin.stepNumber")}}</h3>
+          <h3>{{$t("tickets.steps.checkin.title")}}</h3>
         </span>
-        <p>When you arrive, please check-in at 4A10. Here you will also receive your exclusive ITU LAN wristband.</p>
+        <p>{{$t("tickets.steps.checkin.text")}}</p>
       </div>
     </div>
   </div>

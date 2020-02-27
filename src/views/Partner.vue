@@ -2,13 +2,13 @@
   <div>
     <div class="title-wrapper">
       <h1>{{ $route.name }}</h1>
-      <h2 class="hollow-text">Become a sponsor</h2>
+      <h2 class="hollow-text">{{ $t('partner.subtitle') }}</h2>
     </div>
 
     <div class="flex-wrapper">
       <div id="image"></div>
       <div id="text">
-        <h3>About us</h3>
+        <h3>{{ $t('partner.aboutUs') }}</h3>
         <p>
           ITU LAN is a non-profit university organization. We host a biannual
           LAN party at the IT Unitversity with more than 300 students
@@ -18,13 +18,14 @@
           Sponsorships are a key part of making each LAN party a fun event,
           which is why we are looking for companies or organizations of interest
           to either sponsor tournament prizes or activities for all ITU LAN
-          participants. <a target="_blank" :href="pdf">Read more (PDF).</a>
+          participants.
+          <a target="_blank" :href="pdf">Read more (PDF).</a>
         </p>
 
         <br />
-        <hyperlink url="mailto:pr@itulan.dk"
-          >Interested? Please contact Kenneth Nielsen -> pr@itulan.dk</hyperlink
-        >
+        <hyperlink
+          url="mailto:pr@itulan.dk"
+        >Interested? Please contact Kenneth Nielsen -> pr@itulan.dk</hyperlink>
       </div>
     </div>
   </div>

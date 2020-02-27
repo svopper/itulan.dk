@@ -4,7 +4,7 @@ import Home from "@/views/Home.vue";
 import News from "@/views/News.vue";
 import Tournaments from "@/views/Tournaments.vue";
 import Information from "@/views/Information.vue";
-// import Tickets from "@/views/Tickets.vue";
+import Tickets from "@/views/Tickets.vue";
 import Partner from "@/views/Partner.vue";
 import NotFound from "@/views/NotFound.vue";
 
