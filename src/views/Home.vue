@@ -18,7 +18,7 @@
           data-aos="fade-right"
           data-aos-delay="200"
         >{{ $t("home.date.dayMonth") }}</h2>
-        <span>
+        <!-- <span>
           <i>powered by</i>
         </span>
         <br />
@@ -28,7 +28,7 @@
             id="logo"
             src="../assets/img/common/sponsor_logos/Orsted_RGB_White.png"
           />
-        </hyperlink>
+        </hyperlink>-->
       </div>
       <div class="button-container">
         <a
@@ -56,10 +56,10 @@
 </template>
 
 <script>
-import Hyperlink from "@/components/Hyperlink";
+// import Hyperlink from "@/components/Hyperlink";
 export default {
   components: {
-    Hyperlink
+    // Hyperlink
   }
 };
 </script>
