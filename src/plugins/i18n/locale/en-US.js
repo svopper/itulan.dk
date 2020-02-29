@@ -286,5 +286,17 @@ export default {
     },
     cookieNotice:
       "Hey, GAMER! We use cookies, but ONLY to level up the user experience. By clicking 'Got it!' or using our site, you consent to the use of cookies unless you have disabled them."
+  },
+  footer: {
+    address: {
+      title: "CONTACT",
+      name: "ITU LAN",
+      partOf: "part of",
+      studentCouncil: "Student Council of IT University of Copenhagen",
+      location: "Rued Langgaardsvej 7",
+      zipCode: "2300 København S"
+    },
+    cvr: "CVR NR: 32481809",
+    email: "info@itulan.dk"
   }
 };
