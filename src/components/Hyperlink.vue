@@ -2,7 +2,7 @@
   <a :href="url" :target="target" rel="noopener">
     <slot></slot>
   </a>
-</template>
+</template> 
 
 <script>
 export default {

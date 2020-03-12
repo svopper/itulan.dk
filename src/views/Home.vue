@@ -18,25 +18,18 @@
           data-aos="fade-right"
           data-aos-delay="200"
         >{{ $t("home.date.dayMonth") }}</h2>
-        <!-- <span>
-          <i>powered by</i>
-        </span>
-        <br />
-        <hyperlink newTab url="https://orsted.com/en/Careers">
-          <img
-            alt="Ørsted logo"
-            id="logo"
-            src="../assets/img/common/sponsor_logos/Orsted_RGB_White.png"
-          />
-        </hyperlink>-->
-      </div>
-      <div class="button-container">
-        <a
-          class="button"
-          href="mailto:simon@itulan.dk?Subject=ITU%20LAN%20Application"
-          target="_blank"
-        >Join the crew?</a>
-        <a class="button" href="/partner">Partner with us?</a>
+        <hyperlink
+          new-tab
+          url="https://www.facebook.com/itulan/photos/a.611330368949598/2823295874419692/?type=3&theater"
+        >Read more</hyperlink>
+        <div class="button-container">
+          <a
+            class="button"
+            href="mailto:simon@itulan.dk?Subject=ITU%20LAN%20Application"
+            target="_blank"
+          >Join the crew?</a>
+          <a class="button" href="/partner">Partner with us?</a>
+        </div>
       </div>
 
       <!-- <div id="circle-container">
@@ -56,10 +49,10 @@
 </template>
 
 <script>
-// import Hyperlink from "@/components/Hyperlink";
+import Hyperlink from "@/components/Hyperlink";
 export default {
   components: {
-    // Hyperlink
+    Hyperlink
   }
 };
 </script>
@@ -67,10 +60,6 @@ export default {
 <style scoped>
 * {
   box-sizing: border-box;
-}
-
-a {
-  color: inherit;
 }
 
 .button-container {

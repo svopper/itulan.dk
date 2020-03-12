@@ -183,6 +183,10 @@ button {
   transform: scale(1.4);
 }
 
+.navbar-brand {
+  text-decoration: none !important;
+}
+
 .router-link {
   margin: 0 2rem;
   color: #fff;

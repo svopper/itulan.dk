@@ -1,7 +1,7 @@
 export default {
   home: {
     date: {
-      dayMonth: "03-05 April",
+      dayMonth: "Cancelled",
       season: "Spring 2020"
     },
     poweredBy: "powered by",
