@@ -31,19 +31,6 @@
           <a class="button" href="/partner">Partner with us?</a>
         </div>
       </div>
-
-      <!-- <div id="circle-container">
-        <lan-circle class="circsle" radius="150px" font-size="1.5rem"
-          ><a
-            href="mailto:simon@itulan.dk?Subject=ITU%20LAN%20Application"
-            target="_blank"
-            >Join the crew?</a
-          ></lan-circle
-        >
-        <lan-circle class="circsle" radius="150px" font-size="1.5rem"
-          ><a href="/partner">Partner with us?</a></lan-circle
-        >
-      </div>-->
     </header>
   </div>
 </template>
