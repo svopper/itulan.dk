@@ -11,7 +11,7 @@
         <h3>{{ $t('partner.aboutUs') }}</h3>
         <p>
           ITU LAN is a non-profit university organization. We host a biannual
-          LAN party at the IT Unitversity with more than 300 students
+          LAN party at the IT University with more than 300 students
           participating in each event.
         </p>
         <p>
@@ -19,7 +19,10 @@
           which is why we are looking for companies or organizations of interest
           to either sponsor tournament prizes or activities for all ITU LAN
           participants.
-          <a target="_blank" :href="pdf">Read more (PDF).</a>
+          <a
+            target="_blank"
+            :href="pdf"
+          >Read more (PDF).</a>
         </p>
 
         <br />
