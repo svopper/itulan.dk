@@ -1,8 +1,8 @@
 export default {
   home: {
     date: {
-      dayMonth: "Cancelled",
-      season: "Spring 2020"
+      dayMonth: "Stay tuned",
+      season: "Fall 2020"
     },
     poweredBy: "powered by",
     ticketButton: "Buy ticket"
@@ -141,12 +141,17 @@ export default {
       ]
     }
   },
+  joinUs: {
+    title: "Join Us",
+    subtitle: "Become part of the crew"
+  },
   partner: {
     subtitle: "Become a sponsor",
     aboutUs: "About us"
   },
   information: {
     title: "FAQ",
+    disclaimer: "N.B.: The information on this page are subject to change.",
     subjects: [
       {
         topic: "Where and when is the LAN?",
@@ -161,7 +166,7 @@ export default {
         id: "getting-in",
         paragraphs: [
           "You can get in through the various entrances in the building. We’ve coordinated with facilities management, that you can get in with either a valid student ID or with an ITU LAN ticket. Please have it ready upon entry.",
-          "You get your wristband to use for access at the organizer area (4A10 – 4th floor above Analog)"
+          "You get your wristband to use for access at the crew area (4A10 – 4th floor above Analog)"
         ]
       },
       {
@@ -193,7 +198,7 @@ export default {
         topic: "Where do I find information about tournaments? ",
         id: "tournaments",
         paragraphs: [
-          "For info or support please contact the tournament responsible, which can be seen on the tournament’s Toornament page, or by writing in the tournament's <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>Discord<a>-channel.",
+          "For info or support please contact the tournament responsible, which can be seen on the tournament’s Toornament page, or by writing in the tournament's <a target='_blank' rel='noopener' href='https://discord.gg/nSFXWQN'>Discord-channel</a>.",
           "Deadlines for sign-up for tournaments and events can be found at the Toornament-page for each tournament. See the <a href='/tournaments'>Tournament</a> page for more info."
         ]
       },

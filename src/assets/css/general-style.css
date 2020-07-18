@@ -166,7 +166,7 @@ button:before {
   content: "";
   display: block;
   padding: 15px 2.5rem;
-  background: #031d44;
+  background: #5c5c5c;
   transform: scaleY(0);
   transform-origin: center top;
   transition: transform 0.2s ease-in;

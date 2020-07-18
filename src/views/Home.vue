@@ -2,47 +2,35 @@
   <div class="home">
     <header class="v-header container">
       <div class="fullscreen-background-wrap">
-        <img alt="ITU LAN background" src="../assets/img/home/home_background.jpg" />
+        <img
+          alt="ITU LAN background"
+          src="../assets/img/home/home_background.jpg"
+        />
       </div>
       <div class="header-overlay"></div>
       <div class="header-content text-md-center">
-        <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">ITU LAN</h1>
+        <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">
+          ITU LAN
+        </h1>
         <h2
           data-aos-once="true"
           data-aos="fade-right"
           data-aos-delay="200"
           class="hollow-text"
-        >{{ $t("home.date.season") }}</h2>
-        <h2
-          data-aos-once="true"
-          data-aos="fade-right"
-          data-aos-delay="200"
-        >{{ $t("home.date.dayMonth") }}</h2>
-        <hyperlink
-          new-tab
-          url="https://www.facebook.com/itulan/photos/a.611330368949598/2823295874419692/?type=3&theater"
-        >Read more</hyperlink>
+        >
+          {{ $t("home.date.season") }}
+        </h2>
+        <h2 data-aos-once="true" data-aos="fade-right" data-aos-delay="200">
+          {{ $t("home.date.dayMonth") }}
+        </h2>
         <div class="button-container">
-          <a
-            class="button"
-            href="mailto:simon@itulan.dk?Subject=ITU%20LAN%20Application"
-            target="_blank"
-          >Join the crew?</a>
+          <a class="button" href="/join">Join the crew?</a>
           <a class="button" href="/partner">Partner with us?</a>
         </div>
       </div>
     </header>
   </div>
 </template>
-
-<script>
-import Hyperlink from "@/components/Hyperlink";
-export default {
-  components: {
-    Hyperlink
-  }
-};
-</script>
 
 <style scoped>
 * {
