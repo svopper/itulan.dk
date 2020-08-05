@@ -18,10 +18,6 @@
           data-aos="fade-right"
           data-aos-delay="200"
         >{{ $t("home.date.dayMonth") }}</h2>
-        <hyperlink
-          new-tab
-          url="https://www.facebook.com/itulan/photos/a.611330368949598/2823295874419692/?type=3&theater"
-        >Read more</hyperlink>
         <div class="button-container">
           <a
             class="button"
@@ -35,14 +31,6 @@
   </div>
 </template>
 
-<script>
-import Hyperlink from "@/components/Hyperlink";
-export default {
-  components: {
-    Hyperlink
-  }
-};
-</script>
 
 <style scoped>
 * {
