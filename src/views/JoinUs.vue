@@ -3,9 +3,7 @@
     <h1 class="title" data-aos="fade-up">{{ $t("joinUs.title") }}</h1>
 
     <div v-if="!hasSuccessfullySubmitted">
-      <h2 class="hollow-text" data-aos="fade-up">
-        {{ $t("joinUs.subtitle") }}
-      </h2>
+      <h2 class="hollow-text" data-aos="fade-up">{{ $t("joinUs.subtitle") }}</h2>
       <p>
         It is not necessary to like games to join the ITU LAN crew! Whether
         you're interested in hosting tournaments, designing graphics stuff for
@@ -24,6 +22,7 @@
             name="name"
             placeholder="Your name..."
             v-model="form.name"
+            :disabled="isSubmitting"
           />
         </div>
 
@@ -36,6 +35,7 @@
             name="email"
             placeholder="Your e-mail address..."
             v-model="form.emailAddress"
+            :disabled="isSubmitting"
           />
         </div>
 
@@ -48,15 +48,26 @@
             placeholder="Please write a couple of sentences on why you wan't to join the crew."
             style="height:200px"
             v-model="form.motivation"
+            :disabled="isSubmitting"
           ></textarea>
         </div>
-        <button @click="submitForm">Submit</button>
+        <div id="submit-button">
+          <button :disabled="isSubmitting" @click="submitForm">
+            <span v-if="!isSubmitting">Submit</span>
+            <span v-else>
+              Submitting
+              <span class="loader__dot">.</span>
+              <span class="loader__dot">.</span>
+              <span class="loader__dot">.</span>
+            </span>
+          </button>
+          <br />
+          <div class="loader"></div>
+        </div>
       </form>
     </div>
     <div v-else>
-      <h2 class="hollow-text" data-aos="fade-up">
-        Thank you!
-      </h2>
+      <h2 class="hollow-text" data-aos="fade-up">Thank you!</h2>
       <p id="thank-you-message">
         We will take a look at your application and contact you as soon as
         possible.
@@ -76,11 +87,13 @@ export default {
         motivation: "",
       },
       hasSuccessfullySubmitted: false,
+      isSubmitting: false,
     };
   },
   methods: {
-    submitForm() {
-      axios
+    async submitForm() {
+      this.isSubmitting = true;
+      await axios
         .get(
           "https://europe-west1-itulan-dk-mailservice.cloudfunctions.net/sendMail",
           {
@@ -95,6 +108,7 @@ export default {
           console.log(res);
           this.hasSuccessfullySubmitted = true;
         });
+      this.isSubmitting = false;
     },
   },
 };
@@ -109,7 +123,7 @@ export default {
   margin-left: 10px;
 }
 
-#contact-form button {
+#submit-button {
   float: right;
 }
 
@@ -121,17 +135,18 @@ export default {
   margin-bottom: 1.3rem;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  color: #000;
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+.loader__dot {
+  animation: 1s blink infinite;
+}
+.loader__dot:nth-child(2) {
+  animation-delay: 250ms;
+}
+.loader__dot:nth-child(3) {
+  animation-delay: 500ms;
 }
 </style>

@@ -184,6 +184,12 @@ input[type="button"]:hover {
   background: #031d44;
 }
 
+button:disabled {
+  background-color: #444;
+  color: #666;
+  cursor: not-allowed;
+}
+
 button.text-style {
   border: none;
   color: #031d44;
@@ -204,4 +210,24 @@ button.text-style:hover {
 
 button.text-style:before {
   display: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  color: #000;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="text"]:disabled,
+input[type="email"]:disabled,
+textarea:disabled {
+  opacity: 0.5;
 }
