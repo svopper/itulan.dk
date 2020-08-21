@@ -88,6 +88,7 @@ export default {
       },
       hasSuccessfullySubmitted: false,
       isSubmitting: false,
+      res: null,
     };
   },
   methods: {
@@ -105,7 +106,7 @@ export default {
           }
         )
         .then((res) => {
-          console.log(res);
+          this.res = res;
           this.hasSuccessfullySubmitted = true;
         });
       this.isSubmitting = false;
