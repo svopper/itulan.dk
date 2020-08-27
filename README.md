@@ -1,6 +1,6 @@
 # ITU LAN Services
 
-> ITU LAN is an student driven organization at the [IT University of Copenhagen](https://en.itu.dk/). ITU LAN is responsible for organizing and hosting the biannual LAN event at the IT University.
+> ITU LAN is a student driven organization at the [IT University of Copenhagen](https://en.itu.dk/). ITU LAN is responsible for organizing and hosting the biannual LAN event at the IT University.
 
 This repository contains the source code for ITU LAN's different web services. The current services include:
 
