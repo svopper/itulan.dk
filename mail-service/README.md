@@ -12,7 +12,7 @@ The developer should have installed the [Firebase CLI](https://firebase.google.c
 
 ### 🔏 Environment variables
 
-This project uses environment variables to store sensitive data about authentication and mail recipiants. The environment variables has the follwing structure:
+This project uses environment variables to store sensitive data about authentication and mail recipients. The environment variables has the follwing structure:
 
 ```json 
 {
