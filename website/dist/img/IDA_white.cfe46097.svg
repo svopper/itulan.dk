@@ -1,0 +1,15 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" width="139" height="73.48" viewBox="0 0 139 73.48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>_IDA_logo_white</title>
+  <g>
+    <polygon class="cls-1" points="104.35 50.58 89.6 22.03 74.87 50.58 77.98 50.58 89.61 27.91 101.24 50.58 104.35 50.58"/>
+    <rect class="cls-1" x="34.35" y="22.9" width="11.45" height="27.68"/>
+    <path class="cls-1" d="M55.9,28.62l1.51,0c5.33,0,8.9,3.54,8.9,8.13s-3.57,8.15-8.85,8.15H55.9v5.69H58c8.5,0,14.42-6.19,14.42-13.83s-6-13.83-14.51-13.83h-2Z"/>
+  </g>
+</svg>
