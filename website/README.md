@@ -1,5 +1,6 @@
 # 🌍 ITU LAN Website
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 
 > Website for ITU LAN written in Vue.js
@@ -60,17 +61,13 @@ $ npm run deploy
 
 - [Vue.js](https://vuejs.org/) - The Progressive JavaScript Framework
 
-## 🤝 Contributing
-
-Pull requests are welcome, but feel free to contact me on _kasper@itulan.dk_, if you want to be a collaborator.
-
 ## 🖋 Authors
 
-- **Kasper Olsen** - _Initial work_ - [svopper](https://github.com/svopper)
+- **Kasper Olsen** - _Initial work_ - [GitHub](https://github.com/svopper) | [LinkedIn](https://www.linkedin.com/in/olsenkasper/)
 - **Simon Green** - _Maintenance_ - [Duckapple](https://github.com/Duckapple)
 
 See also the list of [contributors](https://github.com/svopper/itulan.dk_mailservice/contributors) who participated in this project.
 
 ## 📝 License
 
-This project is licensed under the public domain. Feel free to steal the code, modify the code, redistribute the code, or whatever you can come up with. No need to credit anyone.
+MIT License

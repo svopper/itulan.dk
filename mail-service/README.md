@@ -14,7 +14,7 @@ The developer should have installed the [Firebase CLI](https://firebase.google.c
 
 This project uses environment variables to store sensitive data about authentication and mail recipients. The environment variables has the follwing structure:
 
-```json 
+```json
 {
   "mail": {
     "dest": "string"
@@ -31,11 +31,13 @@ The `auth` object refers to a user's @itulan.dk credentials.
 The `mail` object refers to whom the applications should be sent to.
 
 To get the current environment, use the following command:
+
 ```bash
 $ firebase functions:config:get
 ```
 
 To set a variable, use the following syntax:
+
 ```bash
 $ firebase functions:config:set mail.dest="your@email.dk"
 ```
@@ -43,21 +45,18 @@ $ firebase functions:config:set mail.dest="your@email.dk"
 ## 🔥 Deployment
 
 Deployment happens through the Firebase CLI from the root folder:
+
 ```bash
 firebase deploy
 ```
 
 ## 🛠 Built With
 
-* [Firebase Functions](https://firebase.google.com/) - Google Firebase Functions
-
-## 🤝 Contributing
-
-Pull requests are welcome, but feel free to contact me on *kasper@itulan.dk*, if you want to be a collaborator.
+- [Firebase Functions](https://firebase.google.com/) - Google Firebase Functions
 
 ## 🖋 Authors
 
-* **Kasper Olsen** - *Initial work* - [svopper](https://github.com/svopper)
+- **Kasper Olsen** - _Initial work_ - [svopper](https://github.com/svopper)
 
 See also the list of [contributors](https://github.com/svopper/itulan.dk_mailservice/contributors) who participated in this project.
 
