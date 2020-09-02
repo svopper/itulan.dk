@@ -51,8 +51,15 @@
             :disabled="isSubmitting"
           ></textarea>
         </div>
+
+        <!-- <vue-recaptcha
+          sitekey="6LfuY8YZAAAAAEIv1wQkWXGpfJSeRhJwed-ugVhA"
+          :loadRecaptchaScript="true"
+        ></vue-recaptcha>
+        <button>Click</button>-->
+
         <div id="submit-button">
-          <button :disabled="isSubmitting" @click="submitForm">
+          <button :disabled="isSubmitting || !formValid" @click="submitForm">
             <span v-if="!isSubmitting">Submit</span>
             <span v-else>
               Submitting
@@ -61,8 +68,11 @@
               <span class="loader__dot">.</span>
             </span>
           </button>
-          <br />
           <div class="loader"></div>
+        </div>
+        <br />
+        <div class="recap-wrapper">
+          <vue-recaptcha sitekey="6LcqasYZAAAAAA8ZXtn5gYEk0pEVhzzvBjzMc4k3" size="invisible"></vue-recaptcha>
         </div>
       </form>
     </div>
@@ -78,7 +88,11 @@
 
 <script>
 import axios from "axios";
+import VueRecaptcha from "vue-recaptcha";
 export default {
+  components: {
+    VueRecaptcha,
+  },
   data() {
     return {
       form: {
@@ -91,25 +105,36 @@ export default {
       res: null,
     };
   },
+  computed: {
+    formValid() {
+      return (
+        this.form.name.trim() !== "" &&
+        this.form.emailAddress.trim() !== "" &&
+        this.form.motivation.trim() !== ""
+      );
+    },
+  },
   methods: {
     async submitForm() {
-      this.isSubmitting = true;
-      await axios
-        .get(
-          "https://europe-west1-itulan-dk-mailservice.cloudfunctions.net/sendMail",
-          {
-            params: {
-              name: this.form.name,
-              email: this.form.emailAddress,
-              motivation: this.form.motivation,
-            },
-          }
-        )
-        .then((res) => {
-          this.res = res;
-          this.hasSuccessfullySubmitted = true;
-        });
-      this.isSubmitting = false;
+      if (this.formValid) {
+        this.isSubmitting = true;
+        await axios
+          .get(
+            "https://europe-west1-itulan-dk-mailservice.cloudfunctions.net/sendMail",
+            {
+              params: {
+                name: this.form.name,
+                email: this.form.emailAddress,
+                motivation: this.form.motivation,
+              },
+            }
+          )
+          .then((res) => {
+            this.res = res;
+            this.hasSuccessfullySubmitted = true;
+          });
+        this.isSubmitting = false;
+      }
     },
   },
 };

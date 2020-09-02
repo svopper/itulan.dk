@@ -14,11 +14,12 @@ import Navbar from "./components/Navbar";
 import FooterCustom from "@/components/FooterCustom";
 import CookieLaw from "vue-cookie-law";
 export default {
+  created() {},
   components: {
     Navbar,
     FooterCustom,
-    CookieLaw
-  }
+    CookieLaw,
+  },
 };
 </script>
 
