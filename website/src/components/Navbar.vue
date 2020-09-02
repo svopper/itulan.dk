@@ -1,41 +1,33 @@
 <template>
-  <b-navbar
-    class="navbar"
-    v-bind:class="{open: isMobile && mobileNavOpen}"
-    toggleable="lg"
-    type="dark"
-    variant="info"
-  >
+  <b-navbar class="navbar" v-bind:class="{open: navOpen}" toggleable type="dark" variant="info">
     <b-navbar-brand href="/">
       <router-link class="router-link" to="/">
         <span @click="closeMenu" class="router-link-home">ITU LAN</span>
       </router-link>
     </b-navbar-brand>
-
-    <button
-      v-show="isMobile"
-      @click="toggleOpen"
-      target="nav-collapse"
-      aria-label="Toggle navigation"
-      aria-controls="nav-collapse"
-      aria-expanded="false"
-      v-bind:class="{'is-active': mobileNavOpen}"
-      class="hamburger hamburger--collapse"
-      type="button"
-    >
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
+    <div>
+      <span v-show="!navOpen">
+        Click!
+        <img id="menu-finger" width="25px" src="../assets/img/common/finger-right.svg" alt />
       </span>
-    </button>
-
-    <b-collapse v-model="mobileNavOpen" id="nav-collapse" is-nav>
+      <button
+        @click="toggleOpen"
+        target="nav-collapse"
+        aria-label="Toggle navigation"
+        aria-controls="nav-collapse"
+        aria-expanded="false"
+        v-bind:class="{'is-active': navOpen}"
+        class="hamburger hamburger--collapse"
+        type="button"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <b-collapse v-model="navOpen" id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <span
-          v-for="route in routes"
-          :key="route.name"
-          v-bind:class="{desktop: !isMobile}"
-          :id="`link-${route.meta.id}`"
-        >
+        <span v-for="route in routes" :key="route.name" :id="`link-${route.meta.id}`">
           <router-link class="router-link" :to="route.path">
             <span @click="toggleOpen" class="router-link-text">{{ route.name }}</span>
           </router-link>
@@ -88,7 +80,7 @@ import {
   BCollapse,
   BNavbarNav,
   BNavItem,
-  BNavbarBrand
+  BNavbarBrand,
 } from "bootstrap-vue";
 
 export default {
@@ -97,23 +89,21 @@ export default {
     BCollapse,
     BNavbarNav,
     BNavItem,
-    BNavbarBrand
+    BNavbarBrand,
   },
   data() {
     return {
       windowWidth: null,
-      mobileNavOpen: false
+      navOpen: false,
     };
   },
   methods: {
     toggleOpen() {
-      if (this.isMobile) {
-        this.mobileNavOpen = !this.mobileNavOpen;
-      }
+      this.navOpen = !this.navOpen;
     },
     closeMenu() {
-      this.mobileNavOpen = false;
-    }
+      this.navOpen = false;
+    },
   },
   mounted() {
     this.windowWidth = window.innerWidth;
@@ -124,16 +114,16 @@ export default {
   },
   computed: {
     isMobile() {
-      return this.windowWidth < 992;
+      return this.windowWidth < 1260;
     },
     routes() {
       let allRoutes = this.$router.options.routes;
-      let relevantRoutes = allRoutes.filter(r => {
+      let relevantRoutes = allRoutes.filter((r) => {
         return r.name !== "home" && r.name !== undefined;
       });
       return relevantRoutes;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -145,6 +135,27 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+#menu-finger {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+@-webkit-keyframes action {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
 }
 
 button {
@@ -171,10 +182,15 @@ button {
   background-color: #031d44 !important;
 }
 
+.some-buttons {
+  flex-direction: initial;
+  justify-content: center;
+}
+
 .some-button {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  margin: 0 5px;
+  margin: 1rem 20px;
 }
 
 .some-button:hover {
@@ -194,15 +210,25 @@ button {
 }
 
 .router-link :not(.router-link-home) {
-  font-size: 14px;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.router-link:hover :not(.router-link-home) {
+  color: #fff;
 }
 
 .router-link-text {
-  text-transform: uppercase;
-}
-
-.desktop span {
   text-transform: capitalize;
+  font-family: "Anton", Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 0.5;
 }
 
 .router-link-home {
@@ -211,71 +237,10 @@ button {
 }
 
 .router-link-active span:not(.router-link-home) {
-  color: #808080;
+  color: inherit;
 }
 
-#link-tickets.desktop {
-  margin-left: 80px;
-}
-
-#link-tickets.desktop::after {
-  content: "<";
-}
-
-#link-tickets.desktop::before {
-  content: ">";
-}
-
-@media only screen and (max-width: 1126px) {
-  .router-link {
-    margin: 0 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 1030px) {
-  .router-link {
-    margin: 0 1.3rem;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .some-buttons {
-    flex-direction: initial;
-    justify-content: center;
-  }
-
-  .router-link-text {
-    font-family: "Anton", Arial, Helvetica, sans-serif;
-    text-align: center;
-    line-height: 0.5;
-  }
-
-  .router-link-active span {
-    color: inherit !important;
-  }
-
-  .router-link :not(.router-link-home) {
-    margin: 0 auto;
-    font-size: 2.5rem;
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    display: block;
-  }
-
-  .router-link-active :not(.router-link-home) {
-    color: initial;
-    -webkit-text-stroke-width: initial;
-    -webkit-text-stroke-color: initial;
-  }
-
-  .some-button {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+#nav-collapse {
+  border-bottom: 1px solid white;
 }
 </style>

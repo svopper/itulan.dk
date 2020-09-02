@@ -1,28 +1,19 @@
 <template>
   <div class="tournaments">
     <h1 class="title" data-aos="fade-up">{{ $t("tournaments.title") }}</h1>
-    <p data-aos="fade-up" data-aos-delay="200">
-      {{ $t("tournaments.description") }}
-    </p>
+    <p data-aos="fade-up" data-aos-delay="200">{{ $t("tournaments.description") }}</p>
     <div v-if="isPublic || test" class="tournaments-wrapper">
       <small>
         <i>{{ $t("tournaments.clickAndRegister") }}</i>
       </small>
       <br />
-      <img
-        class="hand"
-        width="25px"
-        src="../assets/img/common/finger-down.svg"
-        alt
-      />
+      <img class="hand" width="25px" src="../assets/img/common/finger-down.svg" alt />
       <div class="accordion-wrapper">
         <accordion v-for="t in tournaments" :key="t.url" :tournament="t" />
       </div>
     </div>
     <div v-else>
-      <h3 data-aos="fade-up" data-aos-delay="300">
-        {{ $t("tournaments.notPublic") }}
-      </h3>
+      <h3 data-aos="fade-up" data-aos-delay="300">{{ $t("tournaments.notPublic") }}</h3>
     </div>
   </div>
 </template>
@@ -31,7 +22,7 @@
 import Accordion from "@/components/Accordion";
 export default {
   components: {
-    Accordion
+    Accordion,
   },
   mounted() {
     this.test = Boolean(this.$route.query.test);
@@ -50,13 +41,13 @@ export default {
       });
 
       return tournaments;
-    }
+    },
   },
   data() {
     return {
-      test: false
+      test: false,
     };
-  }
+  },
 };
 </script>
 

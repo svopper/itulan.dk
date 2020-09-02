@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "@/views/Home.vue";
+import Corona from "@/views/Corona.vue";
 import News from "@/views/News.vue";
 import Tournaments from "@/views/Tournaments.vue";
 import Information from "@/views/Information.vue";
@@ -21,8 +22,17 @@ const router = new Router({
       component: Home,
       meta: {
         title: "ITU LAN",
-        id: "home"
-      }
+        id: "home",
+      },
+    },
+    {
+      path: "/corona",
+      name: "COVID-19",
+      component: Corona,
+      meta: {
+        title: "ITU LAN - COVID-19",
+        id: "corona",
+      },
     },
     {
       path: "/news",
@@ -30,8 +40,8 @@ const router = new Router({
       component: News,
       meta: {
         title: "ITU LAN - News",
-        id: "news"
-      }
+        id: "news",
+      },
     },
     {
       path: "/tournaments",
@@ -39,8 +49,8 @@ const router = new Router({
       component: Tournaments,
       meta: {
         title: "ITU LAN - Tournaments",
-        id: "tournaments"
-      }
+        id: "tournaments",
+      },
     },
     {
       path: "/information",
@@ -48,8 +58,8 @@ const router = new Router({
       component: Information,
       meta: {
         title: "ITU LAN - Information",
-        id: "information"
-      }
+        id: "information",
+      },
     },
     {
       path: "/join",
@@ -57,8 +67,8 @@ const router = new Router({
       component: JoinUs,
       meta: {
         title: "ITU LAN - Join Us",
-        id: "join"
-      }
+        id: "join",
+      },
     },
     {
       path: "/partner",
@@ -66,8 +76,8 @@ const router = new Router({
       component: Partner,
       meta: {
         title: "ITU LAN - Partner with us",
-        id: "partner"
-      }
+        id: "partner",
+      },
     },
     // {
     //   path: "/tickets",
@@ -82,10 +92,10 @@ const router = new Router({
       path: "*",
       component: NotFound,
       meta: {
-        title: "ITU LAN - 404"
-      }
-    }
-  ]
+        title: "ITU LAN - 404",
+      },
+    },
+  ],
 });
 
 // This callback runs before every route change, including on page load.
@@ -95,13 +105,13 @@ router.beforeEach((to, from, next) => {
   const nearestWithTitle = to.matched
     .slice()
     .reverse()
-    .find(r => r.meta && r.meta.title);
+    .find((r) => r.meta && r.meta.title);
 
   // Find the nearest route element with meta tags.
   const nearestWithMeta = to.matched
     .slice()
     .reverse()
-    .find(r => r.meta && r.meta.metaTags);
+    .find((r) => r.meta && r.meta.metaTags);
   // const previousNearestWithMeta = from.matched
   //   .slice()
   //   .reverse()
@@ -111,19 +121,19 @@ router.beforeEach((to, from, next) => {
   if (nearestWithTitle) document.title = nearestWithTitle.meta.title;
 
   // Remove any stale meta tags from the document using the key attribute we set below.
-  Array.from(
-    document.querySelectorAll("[data-vue-router-controlled]")
-  ).map(el => el.parentNode.removeChild(el));
+  Array.from(document.querySelectorAll("[data-vue-router-controlled]")).map((el) =>
+    el.parentNode.removeChild(el)
+  );
 
   // Skip rendering meta tags if there are none.
   if (!nearestWithMeta) return next();
 
   // Turn the meta tag definitions into actual elements in the head.
   nearestWithMeta.meta.metaTags
-    .map(tagDef => {
+    .map((tagDef) => {
       const tag = document.createElement("meta");
 
-      Object.keys(tagDef).forEach(key => {
+      Object.keys(tagDef).forEach((key) => {
         tag.setAttribute(key, tagDef[key]);
       });
 
@@ -132,18 +142,18 @@ router.beforeEach((to, from, next) => {
       return tag;
     })
     // Add the meta tags to the document head.
-    .forEach(tag => document.head.appendChild(tag));
+    .forEach((tag) => document.head.appendChild(tag));
 
   next();
 });
 
 // Google Analytics, to export which pages have been visited
-router.afterEach(to => {
+router.afterEach((to) => {
   // eslint-disable-next-line
   gtag("config", "UA-150089193-1", {
     page_path: to.fullPath,
     app_name: "itulan.dk",
-    send_page_view: true
+    send_page_view: true,
   });
 });
 
