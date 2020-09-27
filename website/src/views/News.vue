@@ -2,40 +2,62 @@
   <div class="news">
     <div class="flex-wrapper">
       <div>
-        <h1 class="title" data-aos="fade-up">{{ $t('news.title') }}</h1>
+        <h1 class="title" data-aos="fade-up">{{ $t("news.title") }}</h1>
         <div id="pointer" data-aos="fade-up" data-aos-delay="200">
-          <span>{{ $t('news.followUsLabel') }}</span>
+          <span>{{ $t("news.followUsLabel") }}</span>
         </div>
-        <div class="some-icon-container" data-aos="fade-up" data-aos-delay="200">
+        <div
+          class="some-icon-container"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div>
             <hyperlink newTab :url="$t('common.socialMedia.discord.url')">
-              <img src="../assets/img/common/socialmedia/discord_icon.svg" alt />
+              <img
+                src="../assets/img/common/socialmedia/discord_icon.svg"
+                alt
+              />
             </hyperlink>
           </div>
-          <div class="some-desc">{{ $t('common.socialMedia.discord.description') }}</div>
+          <div class="some-desc">
+            {{ $t("common.socialMedia.discord.description") }}
+          </div>
           <div>
             <hyperlink newTab :url="$t('common.socialMedia.facebook.url')">
-              <img src="../assets/img/common/socialmedia/facebook_icon.svg" alt />
+              <img
+                src="../assets/img/common/socialmedia/facebook_icon.svg"
+                alt
+              />
             </hyperlink>
           </div>
-          <div class="some-desc">{{ $t('common.socialMedia.facebook.description') }}</div>
+          <div class="some-desc">
+            {{ $t("common.socialMedia.facebook.description") }}
+          </div>
           <div>
             <hyperlink newTab :url="$t('common.socialMedia.instagram.url')">
               <img src="../assets/img/common/socialmedia/insta_icon.svg" alt />
             </hyperlink>
           </div>
-          <div class="some-desc">{{ $t('common.socialMedia.instagram.description') }}</div>
+          <div class="some-desc">
+            {{ $t("common.socialMedia.instagram.description") }}
+          </div>
           <div>
             <hyperlink newTab :url="$t('common.socialMedia.youtube.url')">
-              <img width="40px" src="../assets/img/common/socialmedia/youtube_icon.png" alt />
+              <img
+                width="40px"
+                src="../assets/img/common/socialmedia/youtube_icon.png"
+                alt
+              />
             </hyperlink>
           </div>
-          <div class="some-desc">{{ $t('common.socialMedia.youtube.description') }}</div>
+          <div class="some-desc">
+            {{ $t("common.socialMedia.youtube.description") }}
+          </div>
         </div>
       </div>
       <div data-aos="fade-left" data-aos-delay="150" id="mobile-wrapper">
         <div id="mobile">
-          <div v-if="isLoading">{{ $t('news.loadingLabel') }}</div>
+          <div v-if="isLoading">{{ $t("news.loadingLabel") }}</div>
           <div v-else>
             <post
               v-for="post in posts"
@@ -51,7 +73,7 @@
             <img class="arrow" src="../assets/img/news/arrow-down.svg" alt />
           </div>
         </div>
-        <span id="scroll-for-more">{{ $t('news.scrollMoreLabel') }}</span>
+        <span id="scroll-for-more">{{ $t("news.scrollMoreLabel") }}</span>
       </div>
     </div>
   </div>
@@ -66,26 +88,26 @@ export default {
   name: "home",
   components: {
     Post,
-    Hyperlink
+    Hyperlink,
   },
   data() {
     return {
       posts: [],
-      isLoading: false
+      isLoading: false,
     };
   },
   async mounted() {
     this.isLoading = true;
     let posts = await axios
       .get(
-        `https://graph.facebook.com/v4.0/${FACEBOOK_PAGE_ID}/posts?access_token=${FACEBOOK_ACCESS_TOKEN}`
+        `https://graph.facebook.com/v8.0/${FACEBOOK_PAGE_ID}/posts?access_token=${FACEBOOK_ACCESS_TOKEN}`
       )
-      .then(res => {
+      .then((res) => {
         return res.data.data;
       });
-    this.posts = posts.filter(post => post.message !== undefined);
+    this.posts = posts.filter((post) => post.message !== undefined);
     this.isLoading = false;
-  }
+  },
 };
 </script>
 
