@@ -19,7 +19,7 @@
     "nodemailer": "^6.4.14"
   },
   "devDependencies": {
-    "firebase-functions-test": "^0.2.2"
+    "firebase-functions-test": "^0.2.3"
   },
   "private": true
 }
