@@ -1,7 +1,7 @@
 <template>
   <div>
     <span>
-      <i>powered by</i>
+      <em>powered by</em>
     </span>
     <br />
     <hyperlink newTab url="https://orsted.com/en/Careers">

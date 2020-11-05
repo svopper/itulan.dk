@@ -6,7 +6,7 @@
     </p>
     <div v-if="isPublic || test" class="tournaments-wrapper">
       <small>
-        <i>{{ $t("tournaments.clickAndRegister") }}</i>
+        <em>{{ $t("tournaments.clickAndRegister") }}</em>
       </small>
       <br />
       <img
@@ -20,9 +20,9 @@
       </div>
     </div>
     <div v-else>
-      <h3 data-aos="fade-up" data-aos-delay="300">
+      <em><h3 data-aos="fade-up" data-aos-delay="300">
         {{ $t("tournaments.notPublic") }}
-      </h3>
+      </h3></em>
     </div>
   </div>
 </template>

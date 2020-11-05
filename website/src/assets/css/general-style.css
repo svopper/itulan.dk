@@ -65,7 +65,7 @@ a:hover {
 }
 
 #app {
-  font-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Mono", System-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;

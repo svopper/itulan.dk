@@ -42,6 +42,7 @@
           data-aos-delay="300"
           data-aos-anchor="#step-one"
           data-aos-once="true"
+          alt="ITU 4th floor"
         />
         <img
           width="100%"
@@ -51,6 +52,7 @@
           data-aos-delay="1000"
           data-aos-anchor="#step-one"
           data-aos-once="true"
+          alt="ITU 3rd floor"
         />
         <img
           width="100%"
@@ -60,6 +62,7 @@
           data-aos-delay="1700"
           data-aos-anchor="#step-one"
           data-aos-once="true"
+          alt="ITU 2nd floor"
         />
       </div>
     </div>

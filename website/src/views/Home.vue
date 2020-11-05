@@ -12,7 +12,7 @@
         <h1 data-aos-once="true" data-aos="fade-right" data-aos-delay="100">
           ITU LAN
         </h1>
-        <h2
+        <!-- <h2
           data-aos-once="true"
           data-aos="fade-right"
           data-aos-delay="200"
@@ -22,7 +22,8 @@
         </h2>
         <h2 data-aos-once="true" data-aos="fade-right" data-aos-delay="200">
           {{ $t("home.date.dayMonth") }}
-        </h2>
+        </h2> -->
+        <p>Due to Covid-19, we can't host any LAN's at the moment. Hope we can see you all again soon.</p>
         <div class="button-container">
           <a class="button" href="/join">Join the crew?</a>
           <a class="button" href="/partner">Partner with us?</a>
@@ -121,6 +122,7 @@ a:hover {
 .header-content {
   z-index: 2;
   margin: 0 auto;
+  max-width: 310px;
 }
 
 .header-content h1,
@@ -162,10 +164,6 @@ a:hover {
   #ticket-circle {
     right: 100%;
   }
-
-  /* .header-content {
-    margin-top: -250px;
-  } */
 
   #logo {
     width: 100%;

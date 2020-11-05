@@ -17,7 +17,7 @@
           width="100%"
           height="400px"
           :src="tournament.widgetUrl"
-          frameborder="0"
+          :title="'tournamet-wdiget-' + tournament.title"
         ></iframe>
       </div>
       <hr />

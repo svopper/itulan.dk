@@ -22,7 +22,7 @@ export default {
     title: "Tournaments",
     description:
       "ITU LAN is hosting several tournaments during the weekend, and here you can see an overview over the tournaments. Are you up for the challenge?",
-    notPublic: "Tournaments will be announced soon...",
+    notPublic: "Tournaments to be announced...",
     clickAndRegister: "Click and register",
     by: "powered by",
     tournamentCards: {
