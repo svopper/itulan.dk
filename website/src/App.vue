@@ -3,21 +3,21 @@
     <navbar></navbar>
     <router-view class="router-view" />
     <footer-custom />
-    <cookie-law theme="dark-lime">
+    <!-- <cookie-law theme="dark-lime">
       <div slot="message">{{ $t('common.cookieNotice') }}</div>
-    </cookie-law>
+    </cookie-law> -->
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar";
 import FooterCustom from "@/components/FooterCustom";
-import CookieLaw from "vue-cookie-law";
+// import CookieLaw from "vue-cookie-law";
 export default {
   components: {
     Navbar,
     FooterCustom,
-    CookieLaw
+    // CookieLaw
   }
 };
 </script>

@@ -23,8 +23,9 @@
         <h2 data-aos-once="true" data-aos="fade-right" data-aos-delay="200">
           {{ $t("home.date.dayMonth") }}
         </h2> -->
-        <p>Due to Covid-19, we can't host any LAN's at the moment. Hope we can see you all again soon.</p>
+        <p>Due to Covid-19, we can't host any LAN's at the moment. Stay tuned for announcements.</p>
         <div class="button-container">
+          <a class="button" rel="noopener noreferrer" target="_blank" href="https://www.sst.dk/en/english/corona-eng">ABOUT COVID-19</a>
           <a class="button" href="/join">Join the crew?</a>
           <a class="button" href="/partner">Partner with us?</a>
         </div>
@@ -32,6 +33,7 @@
     </header>
   </div>
 </template>
+
 
 <style scoped>
 * {
@@ -121,8 +123,9 @@ a:hover {
 
 .header-content {
   z-index: 2;
-  margin: 0 auto;
-  max-width: 310px;
+  padding: 3rem;
+  max-width: 410px;
+  background: #031d44dd;
 }
 
 .header-content h1,
@@ -139,12 +142,6 @@ a:hover {
   right: 10%;
 }
 
-@media only screen and (max-width: 991px) {
-  .container {
-    padding-right: 3rem;
-    padding-left: 3rem;
-  }
-}
 
 @media screen and (max-height: 800px) {
   #ticket-circle {
@@ -159,6 +156,9 @@ a:hover {
 
   .header-content h2 {
     font-size: 3rem;
+  }
+  .header-content {
+    padding: 1.5rem;
   }
 
   #ticket-circle {
