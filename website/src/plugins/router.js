@@ -44,7 +44,7 @@ const router = new Router({
     },
     {
       path: "/information",
-      name: "f a q",
+      name: "faq",
       component: Information,
       meta: {
         title: "ITU LAN - Information",

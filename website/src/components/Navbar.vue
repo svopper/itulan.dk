@@ -201,10 +201,6 @@ button {
   text-transform: uppercase;
 }
 
-.desktop span {
-  text-transform: capitalize;
-}
-
 .router-link-home {
   font-family: Anton, Arial, Helvetica, sans-serif;
   letter-spacing: 0.2rem;
