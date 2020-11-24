@@ -96,7 +96,7 @@ export default {
       this.isSubmitting = true;
       await axios
         .get(
-          "https://europe-west1-itulan-dk-mailservice.cloudfunctions.net/sendMail",
+          "https://europe-west1-itulan.cloudfunctions.net/sendMail",
           {
             params: {
               name: this.form.name,
