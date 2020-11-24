@@ -11,6 +11,8 @@ import "./assets/css/general-style.css";
 import "./assets/css/hamburgers.css";
 import "aos/dist/aos.css";
 
+import "tailwindcss/tailwind.css"
+
 Vue.config.productionTip = false;
 
 AOS.init();

@@ -1,104 +1,81 @@
 <template>
-  <b-navbar
-    class="navbar"
-    v-bind:class="{open: isMobile && mobileNavOpen}"
-    toggleable="lg"
-    type="dark"
-    variant="info"
-  >
-    <b-navbar-brand href="/">
-      <router-link class="router-link" to="/">
-        <span @click="closeMenu" class="router-link-home">ITU LAN</span>
-      </router-link>
-    </b-navbar-brand>
+  <nav class="bg-transparent">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <!-- Icon when menu is closed. -->
+          <!--
+            Heroicon name: menu
 
-    <button
-      v-show="isMobile"
-      @click="toggleOpen"
-      target="nav-collapse"
-      aria-label="Toggle navigation"
-      aria-controls="nav-collapse"
-      aria-expanded="false"
-      v-bind:class="{'is-active': mobileNavOpen}"
-      class="hamburger hamburger--collapse"
-      type="button"
-    >
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
+            Menu open: "hidden", Menu closed: "block"
+          -->
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- Icon when menu is open. -->
+          <!--
+            Heroicon name: x
 
-    <b-collapse v-model="mobileNavOpen" id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <span
-          v-for="route in routes"
-          :key="route.name"
-          v-bind:class="{desktop: !isMobile}"
-          :id="`link-${route.meta.id}`"
-        >
-          <router-link class="router-link" :to="route.path">
-            <span @click="toggleOpen" class="router-link-text">{{ route.name }}</span>
-          </router-link>
-        </span>
-      </b-navbar-nav>
+            Menu open: "block", Menu closed: "hidden"
+          -->
+          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex-shrink-0 flex items-center">
+          <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
+          <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow">
+        </div>
+        <div class="hidden sm:block sm:ml-6">
+          <div class="flex space-x-4">
+            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900">Dashboard</a>
+            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Team</a>
+            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Projects</a>
+            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Calendar</a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <button class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+          <span class="sr-only">View notifications</span>
+        </button>
 
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="some-buttons ml-auto">
-        <b-nav-item
-          class="some-button"
-          href="https://discord.gg/nSFXWQN"
-          target="_blank"
-          rel="noopener"
-        >
-          <img src="../assets/img/common/socialmedia/discord_icon.svg" height="25px" />
-        </b-nav-item>
-        <b-nav-item
-          class="some-button"
-          href="https://www.facebook.com/itulan"
-          target="_blank"
-          rel="noopener"
-        >
-          <img src="../assets/img/common/socialmedia/facebook_icon.svg" height="25px" />
-        </b-nav-item>
-        <b-nav-item
-          class="some-button"
-          href="https://www.instagram.com/itulan/"
-          target="_blank"
-          rel="noopener"
-        >
-          <img src="../assets/img/common/socialmedia/insta_icon.svg" height="25px" />
-        </b-nav-item>
-        <b-nav-item
-          class="some-button"
-          href="https://www.youtube.com/channel/UCa8UEVBGtOfykw6N9G6db8g"
-          target="_blank"
-          rel="noopener"
-        >
-          <img src="../assets/img/common/socialmedia/youtube_icon.png" height="20px" />
-        </b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+        <!-- Profile dropdown -->
+        <div class="ml-3 relative">
+          <div>
+            <button class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-haspopup="true">
+              <span class="sr-only">Open user menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    Mobile menu, toggle classes based on menu state.
+
+    Menu open: "block", Menu closed: "hidden"
+  -->
+  <div class="hidden sm:hidden">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900">Dashboard</a>
+      <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Team</a>
+      <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Projects</a>
+      <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Calendar</a>
+    </div>
+  </div>
+</nav>
 </template>
 
 
 <script>
-import {
-  BNavbar,
-  BCollapse,
-  BNavbarNav,
-  BNavItem,
-  BNavbarBrand
-} from "bootstrap-vue";
-
 export default {
-  components: {
-    BNavbar,
-    BCollapse,
-    BNavbarNav,
-    BNavItem,
-    BNavbarBrand
-  },
   data() {
     return {
       windowWidth: null,
