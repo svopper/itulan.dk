@@ -58,7 +58,7 @@ firebase deploy
 
 - **Kasper Olsen** - _Initial work_ - [svopper](https://github.com/svopper)
 
-See also the list of [contributors](https://github.com/svopper/itulan.dk_mailservice/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/svopper/itulan.dk/contributors) who participated in this project.
 
 ## 📝 License
 

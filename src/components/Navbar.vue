@@ -226,6 +226,10 @@ button {
   .router-link {
     margin: 0 1.5rem;
   }
+
+  .router-link-text {
+    color: red;
+  }
 }
 
 @media only screen and (max-width: 1030px) {
@@ -259,6 +263,9 @@ button {
     letter-spacing: 4px;
     text-transform: uppercase;
     display: block;
+  }
+  .router-link:hover :not(.router-link-home) {
+    color: #fff;
   }
 
   .router-link-active :not(.router-link-home) {
