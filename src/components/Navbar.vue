@@ -226,10 +226,6 @@ button {
   .router-link {
     margin: 0 1.5rem;
   }
-
-  .router-link-text {
-    color: red;
-  }
 }
 
 @media only screen and (max-width: 1030px) {
