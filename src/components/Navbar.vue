@@ -8,7 +8,9 @@
   >
     <b-navbar-brand href="/">
       <router-link class="router-link" to="/">
-        <span @click="closeMenu" class="router-link-home">ITU LAN</span>
+        <span @click="closeMenu" class="router-link-home">
+          <img src="../assets/img/common/navbar_logo.png" alt="ITU LAN logo" height="40px" width="auto">
+        </span>
       </router-link>
     </b-navbar-brand>
 
@@ -262,6 +264,9 @@ button {
   }
   .router-link:hover :not(.router-link-home) {
     color: #fff;
+    -webkit-text-stroke-width: initial;
+    -webkit-text-stroke-color: initial;
+
   }
 
   .router-link-active :not(.router-link-home) {
