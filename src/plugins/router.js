@@ -8,6 +8,7 @@ import Information from "@/views/Information.vue";
 import JoinUs from "@/views/JoinUs.vue";
 import Partner from "@/views/Partner.vue";
 import NotFound from "@/views/NotFound.vue";
+// import Servers from "@/views/Servers.vue";
 
 Vue.use(Router);
 
@@ -69,6 +70,15 @@ const router = new Router({
         id: "partner"
       }
     },
+    // {
+    //   path: "/servers",
+    //   name: "servers",
+    //   component: Servers,
+    //   meta: {
+    //     title: "ITU LAN - Servers",
+    //     id: "server"
+    //   }
+    // },
     // {
     //   path: "/tickets",
     //   name: "buy ticket",

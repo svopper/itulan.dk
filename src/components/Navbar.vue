@@ -6,13 +6,11 @@
     type="dark"
     variant="info"
   >
-    <b-navbar-brand href="/">
-      <router-link class="router-link" to="/">
-        <span @click="closeMenu" class="router-link-home">
-          <img src="../assets/img/common/navbar_logo.png" alt="ITU LAN logo" height="40px" width="auto">
-        </span>
-      </router-link>
-    </b-navbar-brand>
+    <router-link class="router-link" to="/">
+      <span @click="closeMenu" class="router-link-home">
+        <img src="../assets/img/common/navbar_logo2.png" alt="ITU LAN logo" height="30px" width="auto">
+      </span>
+    </router-link>
 
     <button
       v-show="isMobile"
@@ -90,7 +88,6 @@ import {
   BCollapse,
   BNavbarNav,
   BNavItem,
-  BNavbarBrand
 } from "bootstrap-vue";
 
 export default {
@@ -99,7 +96,6 @@ export default {
     BCollapse,
     BNavbarNav,
     BNavItem,
-    BNavbarBrand
   },
   data() {
     return {
