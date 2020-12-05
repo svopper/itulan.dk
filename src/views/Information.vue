@@ -33,6 +33,7 @@ export default {
 
 .title {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 p {
