@@ -1,7 +1,11 @@
 <template>
   <div id="minecraft-container">
     <h3 class="title">
-      Minecraft<img :src="serverData.icon" alt="Minecraft Server Icon" />
+      Minecraft<img
+        v-if="doneFetching"
+        :src="serverData.icon"
+        alt="Minecraft Server Icon"
+      />
     </h3>
     <div v-if="fetching">
       <LoadingSpinner />
@@ -9,7 +13,16 @@
     <div v-else class="server-info-container">
       <div class="server-info">
         <p class="label">{{ $t("servers.games.minecraft.ipLabel") }}</p>
-        <p class="info">{{ serverData.hostname }}</p>
+        <p class="info">
+          {{ serverData.hostname
+          }}<img
+            id="copy-to-clipboard-icon"
+            src="@/assets/img/common/copy.png"
+            alt="Copy to clipboard image"
+            height="20px"
+            @click="copyHostnameToClipboard"
+          />
+        </p>
       </div>
       <div class="server-info">
         <p class="label">
@@ -17,7 +30,10 @@
         </p>
         <p class="info">
           {{ serverData.players.online }}/{{ serverData.players.max }}
-          <a v-if="serverData.players.online" @click="showModal = true"
+          <a
+            id="show-players-button"
+            v-if="serverData.players.online"
+            @click="showModal = true"
             >Show players</a
           >
         </p>
@@ -63,6 +79,7 @@ export default {
       serverData: null,
       fetching: false,
       showModal: false,
+      doneFetching: false,
     };
   },
   methods: {
@@ -71,31 +88,44 @@ export default {
       console.log("User:", uuid);
       return `https://crafatar.com/avatars/${uuid}`;
     },
+    async copyHostnameToClipboard() {
+      try {
+        await navigator.clipboard.writeText(this.serverData.hostname);
+        this.$toast.open({
+          message: "Copied to clipboard!",
+          type: "success",
+          position: "top",
+        });
+      } catch (err) {
+        this.$toast.open({
+          message: "Failed to copy to clipboard!",
+          type: "error",
+          position: "top",
+        });
+      }
+    },
   },
-  async mounted() {
+  async beforeMount() {
     this.fetching = true;
-    await axios
+    let result = await axios
       .get("https://api.mcsrvstat.us/2/minecraft.itulan.dk")
-      .then((res) => {
-        if (res.data.online) {
-          this.serverData = res.data;
-          console.log(res.data);
-        } else {
-          this.serverData = {
-            icon: "-",
-            hostname: res.data.hostname,
-            players: {
-              online: "-",
-              max: "-",
-            },
-            version: "-",
-            online: res.data.online,
-          };
-        }
-      })
-      .finally(() => {
-        this.fetching = false;
-      });
+      .then((res) => res.data);
+
+    if (!result.online) {
+      this.serverData = {
+        icon: "-",
+        hostname: result.hostname,
+        players: {
+          online: "-",
+          max: "-",
+        },
+        version: "-",
+        online: result.online,
+      };
+    }
+    this.doneFetching = true;
+    this.serverData = result;
+    this.fetching = false;
   },
 };
 </script>
@@ -103,10 +133,6 @@ export default {
 <style scoped>
 #minecraft-container {
   text-align: left;
-}
-
-.server-info {
-  /* border: 1px solid red; */
 }
 
 .server-info-container {
@@ -122,6 +148,30 @@ export default {
 .server-info .info {
   font-size: 1.2rem;
   font-weight: 900;
+}
+
+#show-players-button {
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #808080;
+  font-size: 0.8rem;
+}
+
+#show-players-button:hover {
+  text-decoration: underline;
+}
+
+#copy-to-clipboard-icon {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-left: 0.8rem;
+  cursor: pointer;
+}
+
+#copy-to-clipboard-icon:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  transform: scale(1.1);
 }
 
 @media (min-width: 600px) {

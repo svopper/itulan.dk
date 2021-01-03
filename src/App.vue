@@ -4,7 +4,7 @@
     <router-view class="router-view" />
     <footer-custom />
     <!-- <cookie-law theme="dark-lime">
-      <div slot="message">{{ $t('common.cookieNotice') }}</div>
+      <div slot="message">{{ $t("common.cookieNotice") }}</div>
     </cookie-law> -->
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
     Navbar,
     FooterCustom,
     // CookieLaw
-  }
+  },
 };
 </script>
 

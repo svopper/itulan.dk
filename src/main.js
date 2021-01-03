@@ -11,6 +11,11 @@ import "./assets/css/general-style.css";
 import "./assets/css/hamburgers.css";
 import "aos/dist/aos.css";
 
+import VueToast from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
+
+Vue.use(VueToast)
+
 Vue.config.productionTip = false;
 
 AOS.init();
