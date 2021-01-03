@@ -85,7 +85,6 @@ export default {
   methods: {
     fetchUserImage(userName) {
       let uuid = this.serverData.players.uuid[userName];
-      console.log("User:", uuid);
       return `https://crafatar.com/avatars/${uuid}`;
     },
     async copyHostnameToClipboard() {
