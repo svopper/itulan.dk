@@ -53,7 +53,10 @@ $ serve dist
 
 ## 🔥 Deployment
 
-Deployment happens through the Firebase CLI from the root folder.
+Deployment can be done in two different ways.
+
+1. Push code to master and GitHub Actions will build and deploy the code to Google Firebase.
+2. Deploy to Google Firebase by running the following command:
 
 ```bash
 $ npm run deploy
