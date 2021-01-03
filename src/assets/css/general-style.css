@@ -106,10 +106,12 @@ a:hover {
     border-color: #fff;
     outline-color: #fff;
   }
+
   50% {
     border-color: #ffffff22;
     outline-color: #ffffff22;
   }
+
   100% {
     border-color: #fff;
     outline-color: #fff;
@@ -230,4 +232,9 @@ input[type="text"]:disabled,
 input[type="email"]:disabled,
 textarea:disabled {
   opacity: 0.5;
+}
+
+
+img:not([alt]) {
+  border: 5px solid red;
 }

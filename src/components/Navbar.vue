@@ -1,14 +1,19 @@
 <template>
   <b-navbar
     class="navbar"
-    v-bind:class="{open: isMobile && mobileNavOpen}"
+    v-bind:class="{ open: isMobile && mobileNavOpen }"
     toggleable="lg"
     type="dark"
     variant="info"
   >
     <router-link class="router-link" to="/">
       <span @click="closeMenu" class="router-link-home">
-        <img src="../assets/img/common/navbar_logo2.png" alt="ITU LAN logo" height="30px" width="auto">
+        <img
+          src="../assets/img/common/navbar_logo2.png"
+          alt="ITU LAN logo"
+          height="30px"
+          width="auto"
+        />
       </span>
     </router-link>
 
@@ -19,7 +24,7 @@
       aria-label="Toggle navigation"
       aria-controls="nav-collapse"
       aria-expanded="false"
-      v-bind:class="{'is-active': mobileNavOpen}"
+      v-bind:class="{ 'is-active': mobileNavOpen }"
       class="hamburger hamburger--collapse"
       type="button"
     >
@@ -33,11 +38,13 @@
         <span
           v-for="route in routes"
           :key="route.name"
-          v-bind:class="{desktop: !isMobile}"
+          v-bind:class="{ desktop: !isMobile }"
           :id="`link-${route.meta.id}`"
         >
           <router-link class="router-link" :to="route.path">
-            <span @click="toggleOpen" class="router-link-text">{{ route.name }}</span>
+            <span @click="toggleOpen" class="router-link-text">{{
+              route.name
+            }}</span>
           </router-link>
         </span>
       </b-navbar-nav>
@@ -50,7 +57,11 @@
           target="_blank"
           rel="noopener"
         >
-          <img src="../assets/img/common/socialmedia/discord_icon.svg" height="25px" />
+          <img
+            alt="Discord logo"
+            src="../assets/img/common/socialmedia/discord_icon.svg"
+            height="25px"
+          />
         </b-nav-item>
         <b-nav-item
           class="some-button"
@@ -58,7 +69,11 @@
           target="_blank"
           rel="noopener"
         >
-          <img src="../assets/img/common/socialmedia/facebook_icon.svg" height="25px" />
+          <img
+            alt="Facebook logo"
+            src="../assets/img/common/socialmedia/facebook_icon.svg"
+            height="25px"
+          />
         </b-nav-item>
         <b-nav-item
           class="some-button"
@@ -66,7 +81,11 @@
           target="_blank"
           rel="noopener"
         >
-          <img src="../assets/img/common/socialmedia/insta_icon.svg" height="25px" />
+          <img
+            alt="Instagram logo"
+            src="../assets/img/common/socialmedia/insta_icon.svg"
+            height="25px"
+          />
         </b-nav-item>
         <b-nav-item
           class="some-button"
@@ -74,7 +93,11 @@
           target="_blank"
           rel="noopener"
         >
-          <img src="../assets/img/common/socialmedia/youtube_icon.png" height="20px" />
+          <img
+            alt="YouTube logo"
+            src="../assets/img/common/socialmedia/youtube_icon.png"
+            height="20px"
+          />
         </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
@@ -83,12 +106,7 @@
 
 
 <script>
-import {
-  BNavbar,
-  BCollapse,
-  BNavbarNav,
-  BNavItem,
-} from "bootstrap-vue";
+import { BNavbar, BCollapse, BNavbarNav, BNavItem } from "bootstrap-vue";
 
 export default {
   components: {
@@ -100,7 +118,7 @@ export default {
   data() {
     return {
       windowWidth: null,
-      mobileNavOpen: false
+      mobileNavOpen: false,
     };
   },
   methods: {
@@ -111,7 +129,7 @@ export default {
     },
     closeMenu() {
       this.mobileNavOpen = false;
-    }
+    },
   },
   mounted() {
     this.windowWidth = window.innerWidth;
@@ -126,12 +144,12 @@ export default {
     },
     routes() {
       let allRoutes = this.$router.options.routes;
-      let relevantRoutes = allRoutes.filter(r => {
+      let relevantRoutes = allRoutes.filter((r) => {
         return r.name !== "home" && r.name !== undefined;
       });
       return relevantRoutes;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -262,7 +280,6 @@ button {
     color: #fff;
     -webkit-text-stroke-width: initial;
     -webkit-text-stroke-color: initial;
-
   }
 
   .router-link-active :not(.router-link-home) {
