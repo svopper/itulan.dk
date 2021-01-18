@@ -13,16 +13,19 @@
         class="hand"
         width="25px"
         src="../assets/img/common/finger-down.svg"
-        alt
+        alt="Finger pointing down"
+        loading="lazy"
       />
       <div class="accordion-wrapper">
         <accordion v-for="t in tournaments" :key="t.url" :tournament="t" />
       </div>
     </div>
     <div v-else>
-      <em><h3 data-aos="fade-up" data-aos-delay="300">
-        {{ $t("tournaments.notPublic") }}
-      </h3></em>
+      <em
+        ><h3 data-aos="fade-up" data-aos-delay="300">
+          {{ $t("tournaments.notPublic") }}
+        </h3></em
+      >
     </div>
   </div>
 </template>
@@ -31,7 +34,7 @@
 import Accordion from "@/components/Accordion";
 export default {
   components: {
-    Accordion
+    Accordion,
   },
   mounted() {
     this.test = Boolean(this.$route.query.test);
@@ -50,13 +53,13 @@ export default {
       });
 
       return tournaments;
-    }
+    },
   },
   data() {
     return {
-      test: false
+      test: false,
     };
-  }
+  },
 };
 </script>
 

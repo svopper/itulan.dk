@@ -9,6 +9,7 @@
         alt="Ørsted logo"
         id="logo"
         src="../assets/img/common/sponsor_logos/Orsted_RGB_White.png"
+        loading="lazy"
       />
     </hyperlink>
   </div>
@@ -18,8 +19,8 @@
 import Hyperlink from "@/components/Hyperlink";
 export default {
   components: {
-    Hyperlink
-  }
+    Hyperlink,
+  },
 };
 </script>
 

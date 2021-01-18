@@ -5,27 +5,47 @@
     </span>
     <span>
       <hyperlink url="https://www.kmd.dk">
-        <img src="../assets/img/common/sponsor_logos/KMD_WHITE.png" alt />
+        <img
+          src="../assets/img/common/sponsor_logos/KMD_WHITE.png"
+          loading="lazy"
+          alt="Sponsor logo"
+        />
       </hyperlink>
     </span>
     <span>
       <hyperlink url="https://ida.dk/">
-        <img src="../assets/img/common/sponsor_logos/IDA_white.png" alt />
+        <img
+          src="../assets/img/common/sponsor_logos/IDA_white.png"
+          loading="lazy"
+          alt="Sponsor logo"
+        />
       </hyperlink>
     </span>
     <span>
       <hyperlink url="https://epiconextgen.dk/">
-        <img src="../assets/img/common/sponsor_logos/epico.svg" alt />
+        <img
+          src="../assets/img/common/sponsor_logos/epico.svg"
+          loading="lazy"
+          alt="Sponsor logo"
+        />
       </hyperlink>
     </span>
     <span>
       <hyperlink url="https://da-dk.sennheiser.com/">
-        <img src="../assets/img/common/sponsor_logos/sennheiser.svg" alt />
+        <img
+          src="../assets/img/common/sponsor_logos/sennheiser.svg"
+          loading="lazy"
+          alt="Sponsor logo"
+        />
       </hyperlink>
     </span>
     <span>
       <hyperlink url="https://www.milestonesys.com/">
-        <img src="../assets/img/common/sponsor_logos/milestone_png.png" alt />
+        <img
+          src="../assets/img/common/sponsor_logos/milestone_png.png"
+          loading="lazy"
+          alt="Sponsor logo"
+        />
       </hyperlink>
     </span>
   </div>
@@ -35,8 +55,8 @@
 import Hyperlink from "@/components/Hyperlink.vue";
 export default {
   components: {
-    Hyperlink
-  }
+    Hyperlink,
+  },
 };
 </script>
 

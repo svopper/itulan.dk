@@ -13,6 +13,7 @@
           alt="ITU LAN logo"
           height="30px"
           width="auto"
+          loading="lazy"
         />
       </span>
     </router-link>
@@ -61,6 +62,7 @@
             alt="Discord logo"
             src="../assets/img/common/socialmedia/discord_icon.svg"
             height="25px"
+            loading="lazy"
           />
         </b-nav-item>
         <b-nav-item
@@ -73,6 +75,7 @@
             alt="Facebook logo"
             src="../assets/img/common/socialmedia/facebook_icon.svg"
             height="25px"
+            loading="lazy"
           />
         </b-nav-item>
         <b-nav-item
@@ -85,6 +88,7 @@
             alt="Instagram logo"
             src="../assets/img/common/socialmedia/insta_icon.svg"
             height="25px"
+            loading="lazy"
           />
         </b-nav-item>
         <b-nav-item
@@ -97,6 +101,7 @@
             alt="YouTube logo"
             src="../assets/img/common/socialmedia/youtube_icon.png"
             height="20px"
+            loading="lazy"
           />
         </b-nav-item>
       </b-navbar-nav>

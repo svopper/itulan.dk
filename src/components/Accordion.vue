@@ -4,14 +4,17 @@
       <small>{{ tournament.platform }}</small>
       <h3>{{ tournament.title }}</h3>
       <div class="sponsor" v-if="tournament.logoPath">
-        <small>{{ $t('tournaments.by') }}</small>
-        <img :src="getImgUrl" alt />
+        <small>{{ $t("tournaments.by") }}</small>
+        <img :src="getImgUrl" loading="lazy" alt="Sponsor logo" />
       </div>
     </div>
     <div class="details" v-show="active">
       <hr />
       <div>
-        <p v-if="isMobile || tournament.title === 'Escape Room'" v-html="tournament.description"></p>
+        <p
+          v-if="isMobile || tournament.title === 'Escape Room'"
+          v-html="tournament.description"
+        ></p>
         <iframe
           v-if="tournament.widgetUrl"
           width="100%"
@@ -30,7 +33,7 @@ export default {
   data() {
     return {
       active: false,
-      windowWidth: null
+      windowWidth: null,
     };
   },
   props: ["tournament"],
@@ -48,8 +51,8 @@ export default {
     getImgUrl() {
       let path = require(`../assets/img/common/sponsor_logos/${this.tournament.logoPath}`);
       return path;
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -5,6 +5,7 @@
         <img
           alt="ITU LAN background"
           src="../assets/img/home/home_background.jpg"
+          loading="lazy"
         />
       </div>
       <div class="header-overlay"></div>
@@ -23,9 +24,18 @@
         <h2 data-aos-once="true" data-aos="fade-right" data-aos-delay="200">
           {{ $t("home.date.dayMonth") }}
         </h2> -->
-        <p>Due to Covid-19, we can't host any LAN's at the moment. Stay tuned for announcements.</p>
+        <p>
+          Due to Covid-19, we can't host any LAN's at the moment. Stay tuned for
+          announcements.
+        </p>
         <div class="button-container">
-          <a class="button" rel="noopener noreferrer" target="_blank" href="https://www.sst.dk/en/english/corona-eng">ABOUT COVID-19</a>
+          <a
+            class="button"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.sst.dk/en/english/corona-eng"
+            >ABOUT COVID-19</a
+          >
           <a class="button" href="/join">Join the crew?</a>
           <a class="button" href="/partner">Partner with us?</a>
         </div>
@@ -141,7 +151,6 @@ a:hover {
   position: absolute;
   right: 10%;
 }
-
 
 @media screen and (max-height: 800px) {
   #ticket-circle {

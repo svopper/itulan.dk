@@ -5,6 +5,7 @@
         v-if="doneFetching"
         :src="serverData.icon"
         alt="Minecraft Server Icon"
+        loading="lazy"
       />
     </h3>
     <div v-if="fetching">
@@ -21,6 +22,7 @@
             alt="Copy to clipboard image"
             height="20px"
             @click="copyHostnameToClipboard"
+            loading="lazy"
           />
         </p>
       </div>
@@ -54,7 +56,12 @@
       <Modal v-if="showModal" @close="showModal = false">
         <div v-for="p in serverData.players.list" :key="p">
           <p>
-            <img height="20px" :src="fetchUserImage(p)" alt="User Image" />
+            <img
+              height="20px"
+              :src="fetchUserImage(p)"
+              alt="User Image"
+              loading="lazy"
+            />
             {{ p }}
           </p>
         </div>

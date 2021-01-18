@@ -1,6 +1,6 @@
 <template>
   <div class="tickets">
-    <h1 class="title" data-aos="fade-up">{{ $t('tickets.title') }}</h1>
+    <h1 class="title" data-aos="fade-up">{{ $t("tickets.title") }}</h1>
     <hyperlink id="ticket-link" newTab :url="$t('common.ticketUrl')">
       <text-circle
         data-aos="fade-left"
@@ -9,30 +9,33 @@
         message="Buy ticket"
         radius="180px"
         font-size="2rem"
-      >{{$t('tickets.title')}}</text-circle>
+        >{{ $t("tickets.title") }}</text-circle
+      >
     </hyperlink>
 
     <div class="steps">
       <span data-aos="fade-left" data-aos-delay="300">
         <h3 class="hollow-text">1.</h3>
-        <h3>{{$t("tickets.steps.findSeat.title")}}</h3>
+        <h3>{{ $t("tickets.steps.findSeat.title") }}</h3>
       </span>
       <span data-aos="fade-left" data-aos-delay="600">
         <h3 class="hollow-text">2.</h3>
-        <h3>{{$t("tickets.steps.buyTicket.title")}}</h3>
+        <h3>{{ $t("tickets.steps.buyTicket.title") }}</h3>
       </span>
       <span data-aos="fade-left" data-aos-delay="900">
         <h3 class="hollow-text">3.</h3>
-        <h3>{{$t("tickets.steps.checkin.title")}}</h3>
+        <h3>{{ $t("tickets.steps.checkin.title") }}</h3>
       </span>
     </div>
 
     <div id="step-one" data-aos="fade-up" data-aos-delay="200">
       <span class="step-header">
-        <h3 class="hollow-text">{{$t("tickets.steps.findSeat.stepNumber")}}</h3>
-        <h3>{{$t("tickets.steps.findSeat.title")}}</h3>
+        <h3 class="hollow-text">
+          {{ $t("tickets.steps.findSeat.stepNumber") }}
+        </h3>
+        <h3>{{ $t("tickets.steps.findSeat.title") }}</h3>
       </span>
-      <p>{{$t("tickets.steps.findSeat.text")}}</p>
+      <p>{{ $t("tickets.steps.findSeat.text") }}</p>
       <div class="floor-wrapper">
         <img
           width="100%"
@@ -43,6 +46,7 @@
           data-aos-anchor="#step-one"
           data-aos-once="true"
           alt="ITU 4th floor"
+          loading="lazy"
         />
         <img
           width="100%"
@@ -53,6 +57,7 @@
           data-aos-anchor="#step-one"
           data-aos-once="true"
           alt="ITU 3rd floor"
+          loading="lazy"
         />
         <img
           width="100%"
@@ -63,28 +68,32 @@
           data-aos-anchor="#step-one"
           data-aos-once="true"
           alt="ITU 2nd floor"
+          loading="lazy"
         />
       </div>
     </div>
     <div class="flex-wrapper">
       <div id="step-two">
         <span class="step-header">
-          <h3 class="hollow-text">{{$t("tickets.steps.buyTicket.stepNumber")}}</h3>
-          <h3>{{$t("tickets.steps.buyTicket.title")}}</h3>
+          <h3 class="hollow-text">
+            {{ $t("tickets.steps.buyTicket.stepNumber") }}
+          </h3>
+          <h3>{{ $t("tickets.steps.buyTicket.title") }}</h3>
         </span>
         <p>
-          <hyperlink
-            id="inline-link"
-            :url="$t('common.ticketUrl')"
-          >{{$t("tickets.steps.buyTicket.text")}}</hyperlink>
+          <hyperlink id="inline-link" :url="$t('common.ticketUrl')">{{
+            $t("tickets.steps.buyTicket.text")
+          }}</hyperlink>
         </p>
       </div>
       <div id="step-three">
         <span class="step-header">
-          <h3 class="hollow-text">{{$t("tickets.steps.checkin.stepNumber")}}</h3>
-          <h3>{{$t("tickets.steps.checkin.title")}}</h3>
+          <h3 class="hollow-text">
+            {{ $t("tickets.steps.checkin.stepNumber") }}
+          </h3>
+          <h3>{{ $t("tickets.steps.checkin.title") }}</h3>
         </span>
-        <p>{{$t("tickets.steps.checkin.text")}}</p>
+        <p>{{ $t("tickets.steps.checkin.text") }}</p>
       </div>
     </div>
   </div>
@@ -96,8 +105,8 @@ import Hyperlink from "@/components/Hyperlink";
 export default {
   components: {
     TextCircle,
-    Hyperlink
-  }
+    Hyperlink,
+  },
 };
 </script>
 

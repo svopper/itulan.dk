@@ -6,31 +6,34 @@
         <br />
         <img
           class="footer-image"
+          loading="lazy"
           height="200px"
           src="../assets/img/common/logo_white.png"
           alt="ITU LAN logo"
         />
       </div>
       <div>
-        <h5>{{ $t('footer.address.title') }}</h5>
+        <h5>{{ $t("footer.address.title") }}</h5>
         <address>
-          {{ $t('footer.address.name') }}
+          {{ $t("footer.address.name") }}
           <br />
           <i>
-            <small>{{ $t('footer.address.partOf') }}</small>
+            <small>{{ $t("footer.address.partOf") }}</small>
           </i>
           <br />
-          {{ $t('footer.address.studentCouncil') }}
+          {{ $t("footer.address.studentCouncil") }}
           <br />
-          {{ $t('footer.address.location') }}
+          {{ $t("footer.address.location") }}
           <br />
-          {{ $t('footer.address.zipCode') }}
+          {{ $t("footer.address.zipCode") }}
           <br />
           <br />
-          {{ $t('footer.cvr') }}
+          {{ $t("footer.cvr") }}
           <br />
           <strong>
-            <a :href="`mailto:${$t('footer.email')}`" class="text-white">{{ $t('footer.email') }}</a>
+            <a :href="`mailto:${$t('footer.email')}`" class="text-white">{{
+              $t("footer.email")
+            }}</a>
           </strong>
         </address>
       </div>
