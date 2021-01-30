@@ -1,11 +1,13 @@
 @font-face {
   font-family: Anton;
   src: url("../fonts/Anton/Anton-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   src: url("../fonts/Roboto_Mono/RobotoMono-Regular.ttf");
+  font-display: swap;
 }
 
 body {
@@ -43,7 +45,7 @@ h3 {
 }
 
 small {
-  color: #808080;
+  color: #888888;
 }
 
 a:hover {

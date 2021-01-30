@@ -17,9 +17,9 @@
         <address>
           {{ $t("footer.address.name") }}
           <br />
-          <i>
+          <em>
             <small>{{ $t("footer.address.partOf") }}</small>
-          </i>
+          </em>
           <br />
           {{ $t("footer.address.studentCouncil") }}
           <br />
